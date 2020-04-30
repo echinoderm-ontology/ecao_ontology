@@ -1,0 +1,45 @@
+
+Prefix(:=<http://purl.obolibrary.org/obo/ecao.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/ecao.owl>
+
+Import(<http://purl.obolibrary.org/obo/ecao/imports/bfo_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/ecao/imports/ro_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/ecao/imports/uberon_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/ecao/components/all_templates.owl>)
+
+
+
+Annotation(dce:title "Echinoderm Anatomy and Development Ontology")
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/3.0/>)
+Annotation(dce:description "None")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/ECAO_00000000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002202>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002488>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002492>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/ECAO_00000000>
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECAO_00000000> "root node"@en)
+
+
+)
+
