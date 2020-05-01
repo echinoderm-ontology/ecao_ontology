@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/pellst/ecao.svg?branch=master)](https://travis-ci.org/pellst/ecao)
 [![DOI](https://zenodo.org/badge/13996/pellst/ecao.svg)](https://zenodo.org/badge/latestdoi/13996/pellst/ecao)
 
-# echinoderm anatomy ontology
+# The Echinoderm Anatomy and Development Ontology (ECAO)
 
 This ontology is intended to be used for the description and  curation of information related to gene regulatory processes in echinoderms (e.g., expression patterns of endogenous genes and reporter DNA constructs, phenotypic effects of gene perturbations, etc.). The ontology was developed in collaboration with Echinobase, a database of echinoderm genomics.
 
