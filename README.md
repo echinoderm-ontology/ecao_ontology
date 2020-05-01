@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/pellst/ecao.svg?branch=master)](https://travis-ci.org/pellst/ecao)
-[![DOI](https://zenodo.org/badge/13996/pellst/ecao.svg)](https://zenodo.org/badge/latestdoi/13996/pellst/ecao)
+<!--[![DOI](https://zenodo.org/badge/13996/pellst/ecao.svg)](https://zenodo.org/badge/latestdoi/13996/pellst/ecao)-->
 
 # The Echinoderm Anatomy and Development Ontology (ECAO)
 
