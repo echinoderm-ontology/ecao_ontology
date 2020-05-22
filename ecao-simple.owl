@@ -3,6 +3,7 @@
      xml:base="http://purl.obolibrary.org/obo/ecao/ecao-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:oio="oio:"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ecao/ecao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ecao/releases/2020-04-30/ecao-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ecao/releases/2020-05-22/ecao-simple.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Echinoderm Anatomy and Development Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
@@ -97,9 +98,7 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
-        <rdfs:label>subset_property</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     
 
 
@@ -140,6 +139,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#source -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- oio:hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="oio:hasOBONamespace"/>
     
 
 
@@ -347,6 +352,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Biological process during which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization.</obo:IAO_0000115>
         <rdfs:label>gametogenesis</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -363,6 +369,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Period during which female gametes (or oocytes, or eggs) develop and mature from primordial female germ cells to generate cells competent to further development upon fertilization by a mature spermatozoid.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ovogenesis period</oboInOwl:hasExactSynonym>
         <rdfs:label>oogenesis period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -378,6 +385,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A female gamete that is small in size, i.e. about 10??m in diameter, and that is at the previtellogenic stage.</obo:IAO_0000115>
         <rdfs:label>previtellogenic primary oocyte stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -399,6 +407,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A developing female gamete that started growing in size by accumulation of yolk proteins. At this stage, it is characterized by the presence of a large nucleus, the germinal vesicle, which contains a prominent nucleolus and occupies most of the cytoplasm.</obo:IAO_0000115>
         <rdfs:label>not fully grown oocyte stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -420,6 +429,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A developing female gamete that has reached its full size. It has grown up to ten times its original size, i.e. 80 to 100??m. It also displays a large germinal vesicle that is centered, but it is still not competent for fertilization.</obo:IAO_0000115>
         <rdfs:label>fully grown oocyte with centered germinal vesicle stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -442,6 +452,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>A developing female gamete that has reached its full size and in which the germinal vesicle has moved asymmetrically to the cell periphery. The germinal vesicle is now close to the animal pole.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>primary oocyte</oboInOwl:hasExactSynonym>
         <rdfs:label>fully grown oocyte with off-centered germinal vesicle stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -463,6 +474,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A developing female gamete in which the germinal vesicle has broken down. The germinal vesicle is no longer visible. However, the female gamete is still not mature. It is undergoing meiotic maturation, extruding successively a first and a second polar body.</obo:IAO_0000115>
         <rdfs:label>fully grown oocyte with no nucleus stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -486,6 +498,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> spawned egg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>unfertilized egg</oboInOwl:hasExactSynonym>
         <rdfs:label>mature oocyte stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -501,6 +514,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Period during which male gametes (or spermatozoa, or spermatozoid) develop and mature from primordial male germ cells to generate cells competent to further development upon fertilization of a mature oocyte.</obo:IAO_0000115>
         <rdfs:label>spermatogenesis period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -517,6 +531,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>A developing, immature male gamete undergoing mitosis and meiosis to ultimately produce mature spermatozoa.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>spermatid</oboInOwl:hasExactSynonym>
         <rdfs:label>developing spermatozoa stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -540,6 +555,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> spermatozoa</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sperm</oboInOwl:hasExactSynonym>
         <rdfs:label>mature spermatozoid stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -561,6 +577,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Biological process during which the embryo forms. This process starts with the fertilization of a mature oocyte by a mature spermatozoid. It is characterized by a succession of rapid mitotic divisions with no significant growth, but with axis establishment and cellular differentiation, thereby leading to the development of a multicellular embryo.</obo:IAO_0000115>
         <rdfs:label>embryogenesis</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -579,6 +596,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> fertilized egg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>zygote stage</oboInOwl:hasExactSynonym>
         <rdfs:label>1-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -601,6 +619,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Period during which the fertilized egg undergoes a succession of rapid cell divisions with no significant growth.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000107</oboInOwl:hasDbXref>
         <rdfs:label>cleavage period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -624,6 +643,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0007232</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>2c</oboInOwl:hasExactSynonym>
         <rdfs:label>2-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -647,6 +667,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0007233</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>4c</oboInOwl:hasExactSynonym>
         <rdfs:label>4-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -670,6 +691,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0007236</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>8c</oboInOwl:hasExactSynonym>
         <rdfs:label>8-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -692,6 +714,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An embryo that is composed of 16 cells and is surrounded by a fertilization envelope.  Note for euechinoid indirect developers: although the fourth cleavage occurred simultaneously in all cells, the pattern of cell division differed in the animal and vegetal blastomeres. In the animal hemisphere the four cells divided meridionally, producing eight blastomeres of equal volume arrayed in a single tier. These cells are called the mesomeres. In the vegetal hemisphere, the four cells underwent an unequal, equatorial cleavage, producing a tier of four large cells, the macromeres, and a tier of four small cells, the micromeres, located at the vegetal pole. At the 16-cell stage, the embryo is hence composed of three groups of cells with distinct sizes. In most sea urchin species,this is the first morphological indication of the animal-vegetal axis. </obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>16c</oboInOwl:hasExactSynonym>
         <rdfs:label>16-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -714,6 +737,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An embryo that is composed of 28 cells and is surrounded by a fertilization envelope.  Note for euechinoid indirect developers: In most sea urchin species, the fifth cleavage signed the end of cell division synchrony, with the mesomeres and macromeres dividing prior to the micromeres with a significant time difference. In the animal hemisphere, the mesomeres underwent an equal and equatorial cleavage, giving rise to two animal cell tiers, each composed of eight blastomeres of equal size: the an1 tier located at the animal pole and the an2 tier located below an1. In parallel, the macromeres divided meridionally, forming a ring of eight cells of equal volume located below the an2 tier. At that stage, the micromeres have not yet divided and are still at a number of four cells.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>28c</oboInOwl:hasExactSynonym>
         <rdfs:label>28-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -736,6 +760,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An embryo that is composed of 32 cells and is surrounded by a fertilization envelope. Note for euechinoid indirect developers: The micromeres have undergone a fifth cleavage (and this has occurred prior to a subsequent division of the other cells). This cleavage was unequal and equatorial, thereby producing four large micromeres and four small micromeres, the smallest cells still marking the vegetal pole.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>32c</oboInOwl:hasExactSynonym>
         <rdfs:label>32-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -758,6 +783,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An embryo that is composed of 56 cells and is surrounded by a fertilization envelope. Note for euechinoid indirect developers: In the animal hemisphere, cells of the an1 and an2 tiers underwent an additional meridional division, producing tiers composed of 16 cells. The macromeres divided equatorially and equally, generating two vegetal cell tiers, each composed of 8 cells of equal volume, namely the veg1 tier (located below an2) and the veg2 tier (located below veg1 and above the large micromeres). At that stage, the large and small micromeres (4 cells each) have not undergone yet a sixth division.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>56c</oboInOwl:hasExactSynonym>
         <rdfs:label>56-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -780,6 +806,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An embryo that is composed of 60 cells and is surrounded by a fertilization envelope. Note for euechinoid indirect developers: The large micromeres have achieved a sixth cleavage, which was meridional, thereby generating a ring of 8 cells. At that stage, from the animal to the vegetal pole, the embryo is composed of: 16 an1-cells, 16 an2-cells, 8 veg1-cells, 8 veg2-cells, 8 large micromeres and 4 small micromeres. </obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>60c</oboInOwl:hasExactSynonym>
         <rdfs:label>60-cell stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -802,6 +829,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Period during which the embryo is transformed into a hollow sphere that is one cell layer thick and encompasses a central, fluid-filled cavity called the blastocoel. During this period, every cell of the embryo is in contact on the inside with the blastocoel and on the outside with the hyaline layer.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000307</oboInOwl:hasDbXref>
         <rdfs:label>blastula period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -826,6 +854,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> B1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vEB</oboInOwl:hasExactSynonym>
         <rdfs:label>very early blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -849,6 +878,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> B2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>EB</oboInOwl:hasExactSynonym>
         <rdfs:label>early blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -873,6 +903,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> midB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mid-B</oboInOwl:hasExactSynonym>
         <rdfs:label>mid-blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -899,6 +930,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> prehatched blastula</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Late-B</oboInOwl:hasExactSynonym>
         <rdfs:label>late blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -923,6 +955,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> very late blastula stage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HB</oboInOwl:hasExactSynonym>
         <rdfs:label>hatched blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -945,6 +978,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>The embryo has hatched from the fertilization envelope and swims freely. It is still a hollow sphere that is one cell layer thick, but the cells constituting the vegetal plate (i.e. located at the vegetal pole) have started thickening along the apico-basal axis, thereby creating a morphological landmark that enables orienting the embryo along the animal-vegetal axis. In addition, at the animal pole, the apical tuft composed of long and immotile cilia has continued expending.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>SB</oboInOwl:hasExactSynonym>
         <rdfs:label>swimming blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -967,6 +1001,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>The embryo has started elongated along the animal-vegetal axis. Its vegetal region has further continued to thicken and it is marked by a characteristic &apos;V&apos; shape formed by the blastocoel at the level of the cells constituting the vegetal plate, thereby pointing to the vegetal pole. At the animal pole, the embryo is characterized by the presence of an apical tuft.  </obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>late-SB</oboInOwl:hasExactSynonym>
         <rdfs:label>late swimming blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -989,6 +1024,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Period during which complex and coordinated cellular movements take place and ultimately generate a three-layered embryo with inner tissues. A portion of cells will ingress, invaginate and/or migrate within the embryo and form the two inner layers (i.e. the endoderm and the mesoderm). The cells that remained outside will instead spread over the whole surface of the embryo and form the outer layer (i.e. the ectoderm).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000109</oboInOwl:hasDbXref>
         <rdfs:label>gastrula period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1010,6 +1046,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The phase during which skeletogenic primary mesenchyme cells (PMCs) move from the vegetal plate into the blastocoel (ingress) but before the vegetal plate has started to invaginate.</obo:IAO_0000115>
         <rdfs:label>mesenchyme blastula phase</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1032,6 +1069,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>The vegetal plate is apparent and skeletogenic primary mesenchyme cells (PMCs) are in the process of ingression, a type of epithelial–mesenchymal transition (EMT). The epithelial wall of the embryo has thickened at the animal pole, where a tuft of long, non-motile cilia has formed.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>eMB</oboInOwl:hasExactSynonym>
         <rdfs:label>early mesenchyme blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1054,6 +1092,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>All skeletogenic primary mesenchyme cells (PMCs) have ingressed into the blastocoel, leaving behind a reformed vegetal plate containing at its center the 8 small micromere descendants surrounded by non-skeletogenic mesoderm cells. The PMCs are organized in a mound on the vegetal plate but have not begun to disperse. The thickened apical pole domain with its tuft of long, non-motile cilia is still apparent.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mid-MB</oboInOwl:hasExactSynonym>
         <rdfs:label>mid-mesenchyme blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1075,6 +1114,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The skeletogenic primary mesenchyme cells (PMCs) have migrated away from the vegetal plate by extending filopodia and moving along the blastocoel wall. The vegetal plate has flattened but has not started to invaginate. The apical pole domain still bears an apical tuft of long, non-motile cilia. </obo:IAO_0000115>
         <rdfs:label>late mesenchyme blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1096,6 +1136,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Period during which the inpocketing and elongation of the archenteron takes place.</obo:IAO_0000115>
         <rdfs:label>invagination phase</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1119,6 +1160,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> blastopore gastrula stage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>blasto-G</oboInOwl:hasExactSynonym>
         <rdfs:label>blastopore formation stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1142,6 +1184,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> EG</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>eG</oboInOwl:hasExactSynonym>
         <rdfs:label>early gastrula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1165,6 +1208,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> mid-G</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>G</oboInOwl:hasExactSynonym>
         <rdfs:label>mid-gastrula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1188,6 +1232,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> late-G</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LG</oboInOwl:hasExactSynonym>
         <rdfs:label>late gastrula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1209,6 +1254,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>To be written</obo:IAO_0000115>
         <rdfs:label>organogenesis period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1232,6 +1278,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pr</oboInOwl:hasExactSynonym>
         <rdfs:label>prism stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1252,6 +1299,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval development</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1274,6 +1322,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Biological process during which the specific outcome is the progression of a free-living larva before the development of the adult. Indirect development represents the mainstream developmental mode of metazoans. This process usually starts with the emergence of a larva that is planktonic and stops at the end of metamorphosis once the animal assumes adult characters.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000069</oboInOwl:hasDbXref>
         <rdfs:label>early feeding larva period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1299,6 +1348,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> early pluteus stage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Eplut</oboInOwl:hasExactSynonym>
         <rdfs:label>early pluteus larva stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1326,6 +1376,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> pluteus larva</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pluteus</oboInOwl:hasExactSynonym>
         <rdfs:label>4-arm pluteus larva stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1347,6 +1398,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>To be written</obo:IAO_0000115>
         <rdfs:label>late feeding larva period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1370,6 +1422,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0008265</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Plut6a</oboInOwl:hasExactSynonym>
         <rdfs:label>6-arm pluteus larva stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1393,6 +1446,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0008265</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Plut8a</oboInOwl:hasExactSynonym>
         <rdfs:label>8-arm pluteus larva stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1417,6 +1471,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> Cpt8a</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cPlut</oboInOwl:hasExactSynonym>
         <rdfs:label>competent pluteus larva stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1440,6 +1495,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> meta</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>metamorphosis</oboInOwl:hasExactSynonym>
         <rdfs:label>metamorphic larva stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1461,6 +1517,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Biological process during which changes occur in biological and psychological domains to generate a sexually mature animal.</obo:IAO_0000115>
         <rdfs:label>adulthood</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1483,6 +1540,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Period during which a young individual, posing as a small adult, grows but remains unable to reproduce.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0034919</oboInOwl:hasDbXref>
         <rdfs:label>juvenile period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1508,6 +1566,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> postlarva</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PLJuv</oboInOwl:hasExactSynonym>
         <rdfs:label>early juvenile stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1531,6 +1590,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0007021</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ExJuv</oboInOwl:hasExactSynonym>
         <rdfs:label>late juvenile stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1553,6 +1613,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Period during which the animal reaches sexual maturity.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000066</oboInOwl:hasDbXref>
         <rdfs:label>adult period</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1577,6 +1638,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> gravid sea urchin</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sexual mature sea urchin</oboInOwl:hasExactSynonym>
         <rdfs:label>adult stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1599,6 +1661,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>The embryo is composed of about 800 cells and is surrounded by a fertilization envelope. The wall of the embryo is thinner and smoother than at previous stages. The vegetal plate has not formed. Many cells are ciliated but the embryo has not  begun to rotate within the fertilization envelope.  Note for euechinoid indirect developers: molecular labeling typically indicates the presence of 32 large micromere descendants and 4 small micromere descendants at this stage.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>vLB</oboInOwl:hasExactSynonym>
         <rdfs:label>very late blastula stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1621,6 +1684,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Stage when the vegetal plate is apparent but primary mesenchyme cells (PMCs) have not started to ingress. Embryos are motile due ciliary beating but have not completed hatching.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>VP</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal plate stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1631,6 +1695,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0001062</oboInOwl:hasDbXref>
         <rdfs:label>echinoderm anatomy</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1647,6 +1712,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism&apos;s own genome</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000061</oboInOwl:hasDbXref>
         <rdfs:label>anatomical structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1666,6 +1732,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> connected anatomical system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>organ system</oboInOwl:hasExactSynonym>
         <rdfs:label>anatomical system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1683,6 +1750,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0000475</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>organism subdivision</oboInOwl:hasExactSynonym>
         <rdfs:label>anatomical region</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1698,6 +1766,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000464</oboInOwl:hasDbXref>
         <rdfs:label>anatomical space</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1720,6 +1789,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical structure that is an individual member of a species and consists of one cell or more</obo:IAO_0000115>
         <rdfs:label>whole organism</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1749,6 +1819,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Anatomical structure that is an individual member of a species and consists of more than one cell</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000468</oboInOwl:hasDbXref>
         <rdfs:label>multicellular organism</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1772,6 +1843,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Anatomical entity that comprises the animal in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000922</oboInOwl:hasDbXref>
         <rdfs:label>embryo</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1800,6 +1872,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0002548</oboInOwl:hasDbXref>
         <rdfs:label>larva</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1828,6 +1901,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0034919</oboInOwl:hasDbXref>
         <rdfs:label>juvenile</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1850,6 +1924,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0007023</oboInOwl:hasDbXref>
         <rdfs:label>adult</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1879,6 +1954,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Anatomical system that has as its parts the organs devoted to the ingestion, digestion, and assimilation of food and the discharge of residual wastes.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0001007</oboInOwl:hasDbXref>
         <rdfs:label>digestive system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1901,6 +1977,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The gastrointestinal tract that is being formed during embryonic development starting with the formation of the primitive gut tube (or archenteron)</obo:IAO_0000115>
         <rdfs:label>embryonic digestive system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1935,6 +2012,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Organ system responsible for the food uptake and processing in the larva</obo:IAO_0000115>
         <rdfs:label>larval digestive system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1962,6 +2040,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile digestive system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -1990,6 +2069,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical system that processes ingested substances in the adult</obo:IAO_0000115>
         <rdfs:label>adult digestive system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2018,6 +2098,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0002405</oboInOwl:hasDbXref>
         <rdfs:label>immune system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2039,6 +2120,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>embryonic immune system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2066,6 +2148,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval immune system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2093,6 +2176,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile immune system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2114,6 +2198,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult immune system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2143,6 +2228,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Anatomical system that has as its parts the organs concerned with reproduction, i.e. the male and female gonads.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000990</oboInOwl:hasDbXref>
         <rdfs:label>reproductive system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2171,6 +2257,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0001016</oboInOwl:hasDbXref>
         <rdfs:label>nervous system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2193,6 +2280,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The sum of all the structures in the embryo that will develop into the larval nervous system</obo:IAO_0000115>
         <rdfs:label>embryonic nervous system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2227,6 +2315,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The sum of all the neural structures present in the larva</obo:IAO_0000115>
         <rdfs:label>larval nervous system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2254,6 +2343,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile nervous system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2282,6 +2372,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:6003559</oboInOwl:hasDbXref>
         <rdfs:label>adult nervous system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2310,6 +2401,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000383</oboInOwl:hasDbXref>
         <rdfs:label>muscular system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2331,6 +2423,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval muscular system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2358,6 +2451,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile muscular system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2386,6 +2480,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:6003218</oboInOwl:hasDbXref>
         <rdfs:label>adult muscular system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2415,6 +2510,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Internal support structure of an animal composed of mineralized tissue. It gives shape, support and protection to the body.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0001434</oboInOwl:hasDbXref>
         <rdfs:label>endoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2436,6 +2532,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>embryonic endoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2463,6 +2560,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval endoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2491,6 +2589,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>skeletal rudiment</oboInOwl:hasExactSynonym>
         <rdfs:label>rudiment endoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2518,6 +2617,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile endoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2539,6 +2639,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult endoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2568,6 +2669,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>The water vascular system is a hydraulic system used by sea urchins for locomotion, food and waste transportation, and respiration. The system is composed of canals connecting numerous tube feet. </obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0008251</oboInOwl:hasDbXref>
         <rdfs:label>water vascular system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2597,6 +2699,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>The hemal system contains the blood. It is composed of a complex network of vessels mainly located around the gut.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>haemal system</oboInOwl:hasExactSynonym>
         <rdfs:label>hemal system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2629,6 +2732,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> upper hemisphere</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>animal half</oboInOwl:hasExactSynonym>
         <rdfs:label>animal hemisphere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2661,6 +2765,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> lower hemisphere</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vegetal half</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal hemisphere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2676,6 +2781,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>cell cortex</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2691,6 +2797,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>cleavage furrow</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2719,6 +2826,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cell component comprising the outermost layer of the animal region of the oocyte. It consists of a phospholipid bilayer and associated proteins</obo:IAO_0000115>
         <rdfs:label>animal cortex</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2747,6 +2855,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Cell component comprising the outermost layer of the vegetal region of the oocyte. It consists of a phospholipid bilayer and associated proteins</obo:IAO_0000115>
         <rdfs:label>vegetal cortex</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2775,6 +2884,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The apical region of the animal hemisphere</obo:IAO_0000115>
         <rdfs:label>animal pole</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2803,6 +2913,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The apical most region of the vegetal hemisphere. Once cleavages have started the vegetal pole is characterized by the presence of the micromeres initially and then that of the small micromeres</obo:IAO_0000115>
         <rdfs:label>vegetal pole</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2835,6 +2946,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> neurogenic ectoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>apical pole domain</oboInOwl:hasExactSynonym>
         <rdfs:label>animal pole domain</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2863,6 +2975,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000100</oboInOwl:hasDbXref>
         <rdfs:label>blastopore</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2885,6 +2998,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:3010455</oboInOwl:hasDbXref>
         <rdfs:label>blastopore lip</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2912,6 +3026,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>bottle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2939,6 +3054,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>embryonic cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2966,6 +3082,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>vegetal plate</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -2988,6 +3105,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical structure that has as its parts a maximally connected cell compartment surrounded by a plasma membrane</obo:IAO_0000115>
         <rdfs:label>cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3016,6 +3134,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical structure that is part of a cell and that has a granularity level equal to that of a protein complex or higher.</obo:IAO_0000115>
         <rdfs:label>cell part</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3045,6 +3164,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Any of the organs or elements that are part of the digestive system</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0013765</oboInOwl:hasDbXref>
         <rdfs:label>digestive system element</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3073,6 +3193,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0004765</oboInOwl:hasDbXref>
         <rdfs:label>skeletal element</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3102,6 +3223,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Any anatomical structure that is part of an embryo</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0002050</oboInOwl:hasDbXref>
         <rdfs:label>embryonic structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3130,6 +3252,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any anatomical structure that is part of a larva</obo:IAO_0000115>
         <rdfs:label>larval structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3158,6 +3281,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any anatomical structure that is part of a juvenile</obo:IAO_0000115>
         <rdfs:label>juvenile structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3186,6 +3310,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any anatomical structure that is part of an adult</obo:IAO_0000115>
         <rdfs:label>adult structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3214,6 +3339,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000479</oboInOwl:hasDbXref>
         <rdfs:label>tissue</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3243,6 +3369,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> imaginal adult rudiment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>adult rudiment</oboInOwl:hasExactSynonym>
         <rdfs:label>rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3270,6 +3397,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>rudiment structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3297,6 +3425,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>non-rudiment adult structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3306,6 +3435,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104040"/>
         <rdfs:label>intracellular part</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3315,6 +3445,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104147"/>
         <rdfs:label>cytoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3330,6 +3461,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>microtubule</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3346,6 +3478,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A membrane-bounded organelle of in which chromosomes are housed and replicated. In most cells, it contains all of the cell&apos;s chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some specialized cell types, RNA metabolism or DNA replication may be absent</obo:IAO_0000115>
         <rdfs:label>nucleus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3368,6 +3501,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A female haploid germ cell.</obo:IAO_0000115>
         <rdfs:label>oocyte</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3396,6 +3530,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The enlarged, fluid filled nucleus of a primary oocyte, the development of which is suspended in prophase I of the first meiotic division between embryohood and sexual maturity</obo:IAO_0000115>
         <rdfs:label>germinal vesicle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3420,6 +3555,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> pigmented band</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pigment band</oboInOwl:hasExactSynonym>
         <rdfs:label>equatorial pigment band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3436,6 +3572,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures</obo:IAO_0000115>
         <rdfs:label>cytoplasm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3451,6 +3588,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>centrosome</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3466,6 +3604,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>mitotic spindle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3493,6 +3632,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>meiotic spindle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3510,6 +3650,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>A structure that lies outside the plasma membrane and surrounds the egg. The fertilization envelope forms from the vitelline membrane after fertilization as a result of cortical granule release</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>fertilization membrane</oboInOwl:hasExactSynonym>
         <rdfs:label>fertilization envelope</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3537,6 +3678,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> spermatozoan</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sperm</oboInOwl:hasExactSynonym>
         <rdfs:label>spermatozoid</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3560,6 +3702,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> mitotic aster</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>spindle aster</oboInOwl:hasExactSynonym>
         <rdfs:label>aster</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3588,6 +3731,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>spermatozoid aster</oboInOwl:hasExactSynonym>
         <rdfs:label>sperm aster</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3610,6 +3754,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0005764</oboInOwl:hasDbXref>
         <rdfs:label>acellular membrane</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3628,6 +3773,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> vitelline envelope</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vitelline layer</oboInOwl:hasExactSynonym>
         <rdfs:label>vitelline membrane</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3656,6 +3802,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>hyaline membrane</oboInOwl:hasExactSynonym>
         <rdfs:label>hyaline layer</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3683,6 +3830,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>microvillus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3711,6 +3859,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>fibropellin layer</oboInOwl:hasExactSynonym>
         <rdfs:label>apical lamina</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3738,6 +3887,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>secretory vesicle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3759,6 +3909,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>cilium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3786,6 +3937,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>filopodium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3808,6 +3960,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000482</oboInOwl:hasDbXref>
         <rdfs:label>basal lamina</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3831,6 +3984,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> basal vesicle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal lamina vesicle</oboInOwl:hasExactSynonym>
         <rdfs:label>basal laminar vesicle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3846,6 +4000,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>apical vesicle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3862,6 +4017,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>cortical vesicle</oboInOwl:hasExactSynonym>
         <rdfs:label>cortical granule</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3879,6 +4035,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> echinonectin granule</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nectosome</oboInOwl:hasExactSynonym>
         <rdfs:label>echinonectin vesicle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3894,6 +4051,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>mitochondrion</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3903,6 +4061,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104420">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104148"/>
         <rdfs:label>actin cytoskeleton</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3920,6 +4079,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> F-actin filament</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>microfilament</oboInOwl:hasExactSynonym>
         <rdfs:label>actin filament</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3941,6 +4101,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>nuclear part</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3950,6 +4111,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104450">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104440"/>
         <rdfs:label>nucleoplasm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3959,6 +4121,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104460">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104440"/>
         <rdfs:label>nuclear envelope</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3968,6 +4131,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104470">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104147"/>
         <rdfs:label>endoplasmic reticulum</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -3995,6 +4159,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>spermatozoid entry point</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4011,6 +4176,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>cell membrane</oboInOwl:hasExactSynonym>
         <rdfs:label>plasma membrane</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4039,6 +4205,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>A small cell formed by the meiotic division of an oocyte</obo:IAO_0000115>
         <rdfs:label>polar body</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4067,6 +4234,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>sperm part</oboInOwl:hasExactSynonym>
         <rdfs:label>spermatozoid part</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4077,6 +4245,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104510"/>
         <obo:IAO_0000115>The part of the late spermatid or spermatozoon that contains the nucleus and acrosome.</obo:IAO_0000115>
         <rdfs:label>spermatozoid head</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4088,6 +4257,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>A microtubule-based flagellum (or cilium) that is part of a sperm, a mature male germ cell that develops from a spermatid</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>sperm tail</oboInOwl:hasExactSynonym>
         <rdfs:label>spermatozoid flagellum</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4117,6 +4287,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An organelle that develops over the anterior half of the head in the spermatozoa</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>acrosome</oboInOwl:hasExactSynonym>
         <rdfs:label>acrosomal vesicle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4145,6 +4316,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>presumptive primordial germ cell</oboInOwl:hasExactSynonym>
         <rdfs:label>small micromere descendant cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4178,6 +4350,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>presumptive primordial germ cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4199,6 +4372,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>primordial germ cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4226,6 +4400,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>germ cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4247,6 +4422,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>gamete</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4269,6 +4445,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>immature egg</oboInOwl:hasExactSynonym>
         <rdfs:label>immature occyte</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4307,6 +4484,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> unfertilized egg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>egg</oboInOwl:hasExactSynonym>
         <rdfs:label>mature oocyte</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4324,6 +4502,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>An undifferentiated cell produced by early cleavages of the fertilized egg (zygote)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>blastoderm cell</oboInOwl:hasExactSynonym>
         <rdfs:label>blastomere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4339,6 +4518,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>blastomere of 2-cell embryo</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4360,6 +4540,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>blastomere of 4-cell embryo</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4389,6 +4570,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Intermediate size blastomere forming the animal hemisphere of the cleaving embryo</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mesomeres</oboInOwl:hasExactSynonym>
         <rdfs:label>mesomere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4418,6 +4600,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Larger blastomere of the vegetal hemisphere of the cleaving embryo located below the equator</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>macromeres</oboInOwl:hasExactSynonym>
         <rdfs:label>macromere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4440,6 +4623,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>blastomere tier</oboInOwl:hasExactSynonym>
         <rdfs:label>cell tier</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4467,6 +4651,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>macromere daughter cell tier</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4496,6 +4681,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Small blastomere of the vegetal hemisphere of the cleaving embryo located at to the vegetal pole</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>micromeres</oboInOwl:hasExactSynonym>
         <rdfs:label>micromere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4523,6 +4709,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>large micromere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4554,6 +4741,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> presumptive skeletogenic mesenchyme cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>large micromere progeny</oboInOwl:hasExactSynonym>
         <rdfs:label>large micromere descendant cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4582,6 +4770,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>SM</oboInOwl:hasExactSynonym>
         <rdfs:label>small micromere</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4605,6 +4794,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>A progenitor cell of the nervous system that will develop into a neuron</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>neuronal progenitor cell</oboInOwl:hasExactSynonym>
         <rdfs:label>presumptive neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4634,6 +4824,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> animal pole domain neuronal progenitor cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>apical pole domain presumptive neuron</oboInOwl:hasExactSynonym>
         <rdfs:label>animal pole domain presumptive neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4662,6 +4853,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>ectoderm neuronal progenitor cell</oboInOwl:hasExactSynonym>
         <rdfs:label>ectoderm presumptive neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4684,6 +4876,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>ciliary band neuronal progenitor cell</oboInOwl:hasExactSynonym>
         <rdfs:label>ciliary band presumptive neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4706,6 +4899,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>endoderm associated neuronal progenitor cell</oboInOwl:hasExactSynonym>
         <rdfs:label>endoderm associated presumptive neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4734,6 +4928,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>nerve cell</oboInOwl:hasExactSynonym>
         <rdfs:label>neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4761,6 +4956,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4782,6 +4978,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>serotonergic neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4791,6 +4988,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104820">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
         <rdfs:label>synaptotagmin-B neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4812,6 +5010,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dopaminergic neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4827,6 +5026,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>GABAergic neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4837,6 +5037,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
         <oboInOwl:hasExactSynonym>sensory cell</oboInOwl:hasExactSynonym>
         <rdfs:label>sensory neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4846,6 +5047,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
         <rdfs:label>biopolar neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4855,6 +5057,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0104870">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
         <rdfs:label>multipolar neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4883,6 +5086,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>neuronal structure</oboInOwl:hasExactSynonym>
         <rdfs:label>neural structure</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4895,6 +5099,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> axon bundle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>axonal tract</oboInOwl:hasExactSynonym>
         <rdfs:label>axon tract</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4911,6 +5116,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>peripheral neuron</oboInOwl:hasExactSynonym>
         <rdfs:label>ciliary band neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4934,6 +5140,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Primary germ layer that is the outer of the embryo&apos;s three germ layers and gives rise to epidermis and neural tissue.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0000924</oboInOwl:hasDbXref>
         <rdfs:label>ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4967,6 +5174,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>presumptive ciliary band cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4988,6 +5196,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>endoderm associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -4998,6 +5207,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104878"/>
         <oboInOwl:hasDbXref>UBERON:0000045</oboInOwl:hasDbXref>
         <rdfs:label>ganglion</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5026,6 +5236,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>apical organ</oboInOwl:hasExactSynonym>
         <rdfs:label>apical ganglion</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5047,6 +5258,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5068,6 +5280,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>circumoral nerve ring</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5092,6 +5305,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> digestive nerve plexus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>enteric plexus</oboInOwl:hasExactSynonym>
         <rdfs:label>enteric nerve plexus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5113,6 +5327,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>radial nerve cord</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5134,6 +5349,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>primary podia associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5155,6 +5371,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>secondary podia associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5164,6 +5381,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0105010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104950"/>
         <rdfs:label>definitive spine associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5173,6 +5391,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0105020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104950"/>
         <rdfs:label>pedicellaria associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5194,6 +5413,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>basiepidermal nerve plexus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5216,6 +5436,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Group of four cells of equal size forming the animal hemisphere of an eight-cell stage embryo</obo:IAO_0000115>
         <rdfs:label>animal quartet</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5238,6 +5459,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Group of four cells of equal size forming the vegetal hemisphere of an eight-cell stage embryo</obo:IAO_0000115>
         <rdfs:label>vegetal quartet</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5272,6 +5494,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>an1</oboInOwl:hasExactSynonym>
         <rdfs:label>animal tier 1</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5306,6 +5529,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>an2</oboInOwl:hasExactSynonym>
         <rdfs:label>animal tier 2</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5341,6 +5565,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> ectoendoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>veg1</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal tier 1</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5376,6 +5601,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> endomesoderm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>veg2</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal tier 2</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5406,6 +5632,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> veg1 upper</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>veg1U</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal tier 1 upper</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5435,6 +5662,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> veg1 lower</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>veg1L</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal tier 1 lower</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5464,6 +5692,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> veg2 upper</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>veg2U</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal tier 2 upper</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5494,6 +5723,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> veg2 lower</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>veg2L</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal tier 2 lower</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5512,6 +5742,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> embryonic germ layer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>primary germ layer</oboInOwl:hasExactSynonym>
         <rdfs:label>germ layer</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5540,6 +5771,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0005291</oboInOwl:hasDbXref>
         <rdfs:label>embryonic tissue</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5568,6 +5800,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0006601</oboInOwl:hasDbXref>
         <rdfs:label>presumptive ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5601,6 +5834,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>animal ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5634,6 +5868,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>vegetal ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5662,6 +5897,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>oral ectoderm</oboInOwl:hasExactSynonym>
         <rdfs:label>ventral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5690,6 +5926,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>aboral ectoderm</oboInOwl:hasExactSynonym>
         <rdfs:label>dorsal ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5719,6 +5956,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> veg1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vegetal tier 1</oboInOwl:hasExactSynonym>
         <rdfs:label>ectoendoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5749,6 +5987,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> veg2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>vegetal tier 2</oboInOwl:hasExactSynonym>
         <rdfs:label>endomesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5783,6 +6022,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>inner apical pole domain</oboInOwl:hasExactSynonym>
         <rdfs:label>inner animal pole domain</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5817,6 +6057,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>outer apical pole domain</oboInOwl:hasExactSynonym>
         <rdfs:label>outer animal pole domain</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5844,6 +6085,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>central ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5878,6 +6120,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>BE</oboInOwl:hasExactSynonym>
         <rdfs:label>border ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5905,6 +6148,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>near-apical ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5932,6 +6176,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>apical ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5959,6 +6204,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>veg1-lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -5986,6 +6232,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>veg-1 oral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6013,6 +6260,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6022,6 +6270,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0105330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105320"/>
         <rdfs:label>right lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6031,6 +6280,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0105340">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105320"/>
         <rdfs:label>left lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6058,6 +6308,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>arm tip ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6091,6 +6342,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal arm tip ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6124,6 +6376,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ventral arm tip ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6151,6 +6404,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>apical tuft</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6178,6 +6432,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval tissue</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6205,6 +6460,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>rudiment tissue</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6232,6 +6488,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile tissue</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6253,6 +6510,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult tissue</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6274,6 +6532,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>presumptive stomodeum</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6303,6 +6562,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0000930</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>presumptive mouth</oboInOwl:hasExactSynonym>
         <rdfs:label>stomodeum</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6330,6 +6590,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6351,6 +6612,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>oral hood ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6372,6 +6634,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>arm ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6393,6 +6656,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>animal pole ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6414,6 +6678,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>vegetal ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6435,6 +6700,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>lateral ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6453,6 +6719,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> preoral lobe</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>oh</oboInOwl:hasExactSynonym>
         <rdfs:label>oral hood</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6468,6 +6735,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>apex</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6483,6 +6751,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6500,6 +6769,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> ALA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>AL</oboInOwl:hasExactSynonym>
         <rdfs:label>right anterolateral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6517,6 +6787,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> ALA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>AL</oboInOwl:hasExactSynonym>
         <rdfs:label>left anterolateral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6527,6 +6798,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105540"/>
         <oboInOwl:hasExactSynonym>PO</oboInOwl:hasExactSynonym>
         <rdfs:label>right postoral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6537,6 +6809,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105540"/>
         <oboInOwl:hasExactSynonym>PO</oboInOwl:hasExactSynonym>
         <rdfs:label>left postoral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6553,6 +6826,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PD</oboInOwl:hasExactSynonym>
         <rdfs:label>right posterodorsal arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6569,6 +6843,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PD</oboInOwl:hasExactSynonym>
         <rdfs:label>left posterodorsal arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6586,6 +6861,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> PRO</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PR</oboInOwl:hasExactSynonym>
         <rdfs:label>right preoral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6603,6 +6879,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> PRO</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PR</oboInOwl:hasExactSynonym>
         <rdfs:label>left preoral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6612,6 +6889,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0105628">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104060"/>
         <rdfs:label>spicule rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6622,6 +6900,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105628"/>
         <oboInOwl:hasExactSynonym>spicule dot</oboInOwl:hasExactSynonym>
         <rdfs:label>spicule granule</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6638,6 +6917,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>spicule primordium</oboInOwl:hasExactSynonym>
         <rdfs:label>triradiate spicule rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6654,6 +6934,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>triradiate spicule</oboInOwl:hasExactSynonym>
         <rdfs:label>right ventrolateral triradiate spicule rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6669,6 +6950,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left ventrolateral triradiate spicule rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6691,6 +6973,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>hexaradiate spicule</oboInOwl:hasExactSynonym>
         <rdfs:label>hexaradiate spicule rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6720,6 +7003,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>A triradiate or hexaradiate minute calcareous skeletal element that initiates most if not all skeletal structures found within the sea urchin embryo, larva and adult.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>primary triradiate skeletal rudiment</oboInOwl:hasExactSynonym>
         <rdfs:label>larval spicule</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6756,6 +7040,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> primary mesenchyme</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SM</oboInOwl:hasExactSynonym>
         <rdfs:label>embryonic skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6784,6 +7069,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>spicule rod</oboInOwl:hasExactSynonym>
         <rdfs:label>skeletal rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6799,6 +7085,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>anonymous rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6814,6 +7101,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right anonymous rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6829,6 +7117,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left anonymous rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6850,6 +7139,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right dorsoventral connecting rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6877,6 +7167,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right anterolateral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6898,6 +7189,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left dorsoventral connecting rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6925,6 +7217,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left anterolateral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6952,6 +7245,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right postoral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -6979,6 +7273,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left postoral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7012,6 +7307,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right posterodorsal rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7045,6 +7341,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left posterodorsal rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7078,6 +7375,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal arch</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7111,6 +7409,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right preoral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7144,6 +7443,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left preoral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7165,6 +7465,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right ventral transverse rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7186,6 +7487,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left ventral transverse rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7213,6 +7515,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior tip of body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7247,6 +7550,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>body rod end</oboInOwl:hasExactSynonym>
         <rdfs:label>scheitel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7274,6 +7578,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7289,6 +7594,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7304,6 +7610,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7319,6 +7626,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior tip of left body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7334,6 +7642,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posteror tip of right body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7367,6 +7676,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right recurrent rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7400,6 +7710,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left recurrent rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7433,6 +7744,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior transverse rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7461,6 +7773,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000165</oboInOwl:hasDbXref>
         <rdfs:label>mouth</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7488,6 +7801,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval mouth</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7516,6 +7830,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0001245</oboInOwl:hasDbXref>
         <rdfs:label>anus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7543,6 +7858,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval anus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7572,6 +7888,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0006595</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>prospective endoderm</oboInOwl:hasExactSynonym>
         <rdfs:label>presumptive endoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7600,6 +7917,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000925</oboInOwl:hasDbXref>
         <rdfs:label>endoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7636,6 +7954,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> primitive gut</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>embryonic gut</oboInOwl:hasExactSynonym>
         <rdfs:label>archenteron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7670,6 +7989,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0001046</oboInOwl:hasDbXref>
         <rdfs:label>hindgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7703,6 +8023,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal hindgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7736,6 +8057,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ventral hindgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7770,6 +8092,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0001045</oboInOwl:hasDbXref>
         <rdfs:label>midgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7803,6 +8126,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ventral midgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7836,6 +8160,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal midgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7869,6 +8194,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>anterior midgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7902,6 +8228,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior midgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7935,6 +8262,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>anterior hindgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -7968,6 +8296,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior hindgut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8003,6 +8332,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0001041</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>tip of the digestive tract</oboInOwl:hasExactSynonym>
         <rdfs:label>foregut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8036,6 +8366,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ventral foregut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8069,6 +8400,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal foregut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8102,6 +8434,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>anterior foregut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8135,6 +8468,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior foregut</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8170,6 +8504,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:3010432</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>archenteron roof</oboInOwl:hasExactSynonym>
         <rdfs:label>tip of archenteron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8199,6 +8534,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0006603</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>prospective mesoderm</oboInOwl:hasExactSynonym>
         <rdfs:label>presumptive mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8227,6 +8563,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000926</oboInOwl:hasDbXref>
         <rdfs:label>mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8261,6 +8598,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The subset of the embryonic mesoderm that will later give rise to the skeletogenic mesenchyme and embryonic skeleton.</obo:IAO_0000115>
         <rdfs:label>embryonic skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8296,6 +8634,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> primary mesenchyme cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PMC</oboInOwl:hasExactSynonym>
         <rdfs:label>embryonic skeletogenic mesenchyme cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8309,6 +8648,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> syncytium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>multinucleate cell</oboInOwl:hasExactSynonym>
         <rdfs:label>syncytium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8343,6 +8683,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Anatomical structure composed of skeletogenic mesenchyme cells that have fused to form a single syncytial network.</obo:IAO_0000115>
         <rdfs:label>embryonic skeletogenic mesenchyme syncytium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8376,6 +8717,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> subequatorial primary mesenchyme cell ring</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SM ring</oboInOwl:hasExactSynonym>
         <rdfs:label>subequatorial skeletogenic mesenchyme ring</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8398,6 +8740,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subpopulation of skeletogenic mesenchyme forming a chain on the oral (i.e. ventral) side of the embryo.</obo:IAO_0000115>
         <rdfs:label>ventral skeletogenic mesenchyme chain</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8420,6 +8763,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subpopulation of skeletogenic mesenchyme forming a chain on the aboral (i.e. dorsal) side of the embryo.</obo:IAO_0000115>
         <rdfs:label>dorsal skeletogenic mesenchyme chain</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8442,6 +8786,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subpopulation of skeletogenic mesenchyme forming a cluster (i.e. a group of cells) in the ventrolateral region of the embryo.</obo:IAO_0000115>
         <rdfs:label>right ventrolateral skeletogenic mesenchyme cluster</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8463,6 +8808,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left ventrolateral skeletogenic mesenchyme cluster</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8485,6 +8831,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subpopulation of skeletogenic mesenchyme forming a chain on either side of the developing digestive tract, along the blastocoel wall and towards the animal pole.</obo:IAO_0000115>
         <rdfs:label>lateral chain of skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8513,6 +8860,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subpopulation of skeletogenic mesenchyme forming a chain along the blastocoel wall towards the animal pole on the right side of the embryo.</obo:IAO_0000115>
         <rdfs:label>right lateral chain of skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8541,6 +8889,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Subpopulation of skeletogenic mesenchyme forming a chain along the blastocoel wall towards the animal pole on the left side of the embryo.</obo:IAO_0000115>
         <rdfs:label>left lateral chain of skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8574,6 +8923,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>embryonic non-skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8607,6 +8957,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ventral non-skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8640,6 +8991,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal non-skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8675,6 +9027,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> NSM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>secondary mesenchyme</oboInOwl:hasExactSynonym>
         <rdfs:label>embryonic non-skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8710,6 +9063,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> secondary mesenchyme cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SMC</oboInOwl:hasExactSynonym>
         <rdfs:label>embryonic non-skeletogenic mesenchyme cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8737,6 +9091,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval non-skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8764,6 +9119,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval non-skeletogenic mesenchyme cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8797,6 +9153,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>presumptive blastocoelar cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8826,6 +9183,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> presumptive immunocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>presumptive pigmented cell</oboInOwl:hasExactSynonym>
         <rdfs:label>presumptive pigment cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8862,6 +9220,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> pigmented immunocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pigmented cell</oboInOwl:hasExactSynonym>
         <rdfs:label>pigment cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8883,6 +9242,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>embryonic pigment cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8910,6 +9270,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval pigment cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8931,6 +9292,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile pigment cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8958,6 +9320,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>rudiment pigment cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -8991,6 +9354,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>blastocoelar cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9012,6 +9376,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>globular cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9033,6 +9398,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>filopodial cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9054,6 +9420,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ovoid cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9075,6 +9442,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>amoeboid cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9103,6 +9471,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>presumptive muscle cell</oboInOwl:hasExactSynonym>
         <rdfs:label>muscle precursor cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9118,6 +9487,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9134,6 +9504,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>contractile muscle</oboInOwl:hasExactSynonym>
         <rdfs:label>larval muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9155,6 +9526,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>rudiment muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9170,6 +9542,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9191,6 +9564,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9219,6 +9593,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000090</oboInOwl:hasDbXref>
         <rdfs:label>blastocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9234,6 +9609,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>sphincter</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9268,6 +9644,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>midgut-hindgut constriction</oboInOwl:hasExactSynonym>
         <rdfs:label>pyloric sphincter</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9302,6 +9679,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>foregut-midgut constriction</oboInOwl:hasExactSynonym>
         <rdfs:label>cardiac sphincter</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9336,6 +9714,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>hindgut-ectoderm constriction</oboInOwl:hasExactSynonym>
         <rdfs:label>anal sphincter</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9364,6 +9743,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0004590</oboInOwl:hasDbXref>
         <rdfs:label>sphincter muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9392,6 +9772,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>myoepithelial cell</oboInOwl:hasExactSynonym>
         <rdfs:label>sphincter muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9415,6 +9796,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0001202</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>pyloric sphincter</oboInOwl:hasExactSynonym>
         <rdfs:label>pyloric sphincteric muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9437,6 +9819,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>cardiac sphincter</oboInOwl:hasExactSynonym>
         <rdfs:label>cardiac sphincteric muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9460,6 +9843,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0004916</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>anal sphincter</oboInOwl:hasExactSynonym>
         <rdfs:label>anal sphincteric muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9493,6 +9877,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval esophagus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9520,6 +9905,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>circumesophageal muscle</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9554,6 +9940,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>presumptive circumesophageal muscle cell</oboInOwl:hasExactSynonym>
         <rdfs:label>circumesophageal muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9587,6 +9974,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval stomach</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9620,6 +10008,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval intestine</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9648,6 +10037,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The mesenchyme cells that produce new skeletal elements  (i.e., the posterodorsal rods, dorsal arch, and preoral rods) in the larva after feeding begins</obo:IAO_0000115>
         <rdfs:label>larval skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9675,6 +10065,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval skeletogenic mesenchyme cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9709,6 +10100,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0011997</oboInOwl:hasDbXref>
         <rdfs:label>coelom</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9731,6 +10123,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>unpaired coelomic rudiment</oboInOwl:hasExactSynonym>
         <rdfs:label>unpaired coelomic pouch</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9764,6 +10157,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right coelomic pouch</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9798,6 +10192,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>left coelomic sac</oboInOwl:hasExactSynonym>
         <rdfs:label>left coelomic pouch</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9831,6 +10226,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right coelomic constriction</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9864,6 +10260,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left coelomic constriction</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9879,6 +10276,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>larval epithelium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9913,6 +10311,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>amniotic sac</oboInOwl:hasExactSynonym>
         <rdfs:label>vestibule</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9932,6 +10331,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasExactSynonym> circumoral epithelium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>oral epidermis</oboInOwl:hasExactSynonym>
         <rdfs:label>oral epithelium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9947,6 +10347,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>aboral epithelium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9957,6 +10358,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107100"/>
         <obo:IAO_0000115>The left lateral field is the lateral field located on the left side of the larva</obo:IAO_0000115>
         <rdfs:label>left lateral field</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -9991,6 +10393,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>Opening located in the left lateral field</obo:IAO_0000115>
         <rdfs:label>vestibular pore</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10019,6 +10422,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>anterior coelom</oboInOwl:hasExactSynonym>
         <rdfs:label>axocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10046,6 +10450,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left axocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10073,6 +10478,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>axial coelom</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10101,6 +10507,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>central coelom</oboInOwl:hasExactSynonym>
         <rdfs:label>hydrocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10129,6 +10536,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>posterior coelom</oboInOwl:hasExactSynonym>
         <rdfs:label>somatocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10144,6 +10552,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left hydrocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10159,6 +10568,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>left somatocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10193,6 +10603,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>anterior sac</oboInOwl:hasExactSynonym>
         <rdfs:label>right axohydrocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10208,6 +10619,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right somatocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10235,6 +10647,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>axial complex</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10268,6 +10681,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>stone canal</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10301,6 +10715,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ring canal</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10334,6 +10749,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>radial canal</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10368,6 +10784,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>hydropore canal</oboInOwl:hasExactSynonym>
         <rdfs:label>primary pore canal</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10395,6 +10812,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>hydropore</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10410,6 +10828,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right axocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10425,6 +10844,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>right hydrocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10458,6 +10878,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>axial sinus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10485,6 +10906,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>axial organ</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10512,6 +10934,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dorsal sac</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10545,6 +10968,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ciliated epaulette</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10572,6 +10996,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>anterior ciliated epaulette</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10599,6 +11024,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>posterior ciliated epaulette</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10627,6 +11053,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The lateral field is located in the aboral ectoderm of the larva. It separates the anterior and posterior pairs of epaulettes</obo:IAO_0000115>
         <rdfs:label>lateral field</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10637,6 +11064,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107100"/>
         <obo:IAO_0000115>The right lateral field is the lateral field located on the right side of the larva</obo:IAO_0000115>
         <rdfs:label>right lateral field</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10652,6 +11080,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ambulacral plate</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10674,6 +11103,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>The mesenchyme cells that produce biomineralized elements (e.g., spines, test plates, and teeth) in the juvenile and adult.</obo:IAO_0000115>
         <rdfs:label>adult skeletogenic mesenchyme</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10690,6 +11120,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>int</oboInOwl:hasExactSynonym>
         <rdfs:label>interambulacral plate</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10717,6 +11148,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ambulacra</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10744,6 +11176,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>interambulacra</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10759,6 +11192,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>genital plate</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10774,6 +11208,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>appendage</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10796,6 +11231,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0008261</oboInOwl:hasDbXref>
         <rdfs:label>pedicellaria</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10812,6 +11248,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>terminal plate</oboInOwl:hasExactSynonym>
         <rdfs:label>ocular plate</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10827,6 +11264,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>buccal plate</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10836,6 +11274,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107240">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107190"/>
         <rdfs:label>genital plate AB</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10845,6 +11284,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107190"/>
         <rdfs:label>genital plate BC</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10854,6 +11294,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107260">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107190"/>
         <rdfs:label>genital plate CD</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10863,6 +11304,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107270">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107190"/>
         <rdfs:label>genital plate DE</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10872,6 +11314,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107280">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107190"/>
         <rdfs:label>genital plate EA</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10895,6 +11338,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0008247</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>tube foot</oboInOwl:hasExactSynonym>
         <rdfs:label>podia</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10917,6 +11361,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>primary tube foot</oboInOwl:hasExactSynonym>
         <rdfs:label>primary podia</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10944,6 +11389,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>disk of primary podia</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10966,6 +11412,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>secondary tube foot</oboInOwl:hasExactSynonym>
         <rdfs:label>secondary podia</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -10987,6 +11434,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>disk of secondary podia</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11008,6 +11456,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>buccal podia</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11031,6 +11480,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0008260</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>spine appendage</oboInOwl:hasExactSynonym>
         <rdfs:label>spine</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11047,6 +11497,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>splayed spines</oboInOwl:hasExactSynonym>
         <rdfs:label>juvenile spine</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11057,6 +11508,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107350"/>
         <oboInOwl:hasExactSynonym>adult spine</oboInOwl:hasExactSynonym>
         <rdfs:label>definitive spine</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11078,6 +11530,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>sphaeridium</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11113,6 +11566,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:hasDbXref>UBERON:0008252</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>tube foot ampulla</oboInOwl:hasExactSynonym>
         <rdfs:label>ampulla</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11134,6 +11588,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult mouth</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11155,6 +11610,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult anus</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11183,6 +11639,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0008253</oboInOwl:hasDbXref>
         <rdfs:label>Aristotles lantern</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11210,6 +11667,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>tooth</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11232,6 +11690,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0009476</oboInOwl:hasDbXref>
         <rdfs:label>madreporite</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11260,6 +11719,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>genital pore</oboInOwl:hasExactSynonym>
         <rdfs:label>gonopore</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11282,6 +11742,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0000991</oboInOwl:hasDbXref>
         <rdfs:label>gonad</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11292,6 +11753,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107460"/>
         <oboInOwl:hasDbXref>UBERON:0000992</oboInOwl:hasDbXref>
         <rdfs:label>ovary</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11302,6 +11764,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107460"/>
         <oboInOwl:hasDbXref>UBERON:0000473</oboInOwl:hasDbXref>
         <rdfs:label>testis</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11329,6 +11792,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>juvenile digestive tract</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11362,6 +11826,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>adult digestive tract</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11390,6 +11855,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>UBERON:0002095</oboInOwl:hasDbXref>
         <rdfs:label>mesentery</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11417,6 +11883,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>perivisceral cavity</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
     
 
@@ -11439,6 +11906,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>photoreceptor cell</oboInOwl:hasExactSynonym>
         <rdfs:label>photosensory cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
 </rdf:RDF>
 

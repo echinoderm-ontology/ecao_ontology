@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ecao/releases/2020-04-30/ecao-base.owl
+data-version: ecao/releases/2020-05-22/ecao-base.owl
 ontology: ecao/ecao-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Echinoderm Anatomy and Development Ontology" xsd:string
@@ -20,6 +20,7 @@ name: gametogenesis
 def: "Biological process during which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization." []
 is_a: UBERON:0000105
 relationship: BFO:0000050 ECAO:0000010 ! life cycle period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000030
@@ -27,12 +28,14 @@ name: oogenesis period
 def: "Period during which female gametes (or oocytes, or eggs) develop and mature from primordial female germ cells to generate cells competent to further development upon fertilization by a mature spermatozoid." []
 synonym: "ovogenesis period" EXACT []
 relationship: BFO:0000050 ECAO:0000020 ! gametogenesis
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000040
 name: previtellogenic primary oocyte stage
 def: "A female gamete that is small in size, i.e. about 10??m in diameter, and that is at the previtellogenic stage." []
 relationship: BFO:0000050 ECAO:0000030 ! oogenesis period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000050
@@ -40,6 +43,7 @@ name: not fully grown oocyte stage
 def: "A developing female gamete that started growing in size by accumulation of yolk proteins. At this stage, it is characterized by the presence of a large nucleus, the germinal vesicle, which contains a prominent nucleolus and occupies most of the cytoplasm." []
 relationship: BFO:0000050 ECAO:0000030 ! oogenesis period
 relationship: RO:0002087 ECAO:0000040 ! previtellogenic primary oocyte stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000060
@@ -47,6 +51,7 @@ name: fully grown oocyte with centered germinal vesicle stage
 def: "A developing female gamete that has reached its full size. It has grown up to ten times its original size, i.e. 80 to 100??m. It also displays a large germinal vesicle that is centered, but it is still not competent for fertilization." []
 relationship: BFO:0000050 ECAO:0000030 ! oogenesis period
 relationship: RO:0002087 ECAO:0000050 ! not fully grown oocyte stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000070
@@ -55,6 +60,7 @@ def: "A developing female gamete that has reached its full size and in which the
 synonym: "primary oocyte" EXACT []
 relationship: BFO:0000050 ECAO:0000030 ! oogenesis period
 relationship: RO:0002087 ECAO:0000060 ! fully grown oocyte with centered germinal vesicle stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000080
@@ -62,6 +68,7 @@ name: fully grown oocyte with no nucleus stage
 def: "A developing female gamete in which the germinal vesicle has broken down. The germinal vesicle is no longer visible. However, the female gamete is still not mature. It is undergoing meiotic maturation, extruding successively a first and a second polar body." []
 relationship: BFO:0000050 ECAO:0000030 ! oogenesis period
 relationship: RO:0002087 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000090
@@ -71,12 +78,14 @@ synonym: " spawned egg" EXACT []
 synonym: "unfertilized egg" EXACT []
 relationship: BFO:0000050 ECAO:0000030 ! oogenesis period
 relationship: RO:0002087 ECAO:0000080 ! fully grown oocyte with no nucleus stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000100
 name: spermatogenesis period
 def: "Period during which male gametes (or spermatozoa, or spermatozoid) develop and mature from primordial male germ cells to generate cells competent to further development upon fertilization of a mature oocyte." []
 relationship: BFO:0000050 ECAO:0000020 ! gametogenesis
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000110
@@ -84,6 +93,7 @@ name: developing spermatozoa stage
 def: "A developing, immature male gamete undergoing mitosis and meiosis to ultimately produce mature spermatozoa." []
 synonym: "spermatid" EXACT []
 relationship: BFO:0000050 ECAO:0000100 ! spermatogenesis period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000120
@@ -93,6 +103,7 @@ synonym: " spermatozoa" EXACT []
 synonym: "sperm" EXACT []
 relationship: BFO:0000050 ECAO:0000100 ! spermatogenesis period
 relationship: RO:0002087 ECAO:0000110 ! developing spermatozoa stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000130
@@ -101,6 +112,7 @@ def: "Biological process during which the embryo forms. This process starts with
 is_a: UBERON:0000105
 relationship: BFO:0000050 ECAO:0000010 ! life cycle period
 relationship: RO:0002087 ECAO:0000020 ! gametogenesis
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000140
@@ -110,6 +122,7 @@ synonym: " fertilized egg" EXACT []
 synonym: "zygote stage" EXACT []
 xref: UBERON:0000106
 relationship: BFO:0000050 ECAO:0000130 ! embryogenesis
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000150
@@ -118,6 +131,7 @@ def: "Period during which the fertilized egg undergoes a succession of rapid cel
 xref: UBERON:0000107
 relationship: BFO:0000050 ECAO:0000130 ! embryogenesis
 relationship: RO:0002087 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000160
@@ -127,6 +141,7 @@ synonym: "2c" EXACT []
 xref: UBERON:0007232
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000170
@@ -136,6 +151,7 @@ synonym: "4c" EXACT []
 xref: UBERON:0007233
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000160 ! 2-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000180
@@ -145,6 +161,7 @@ synonym: "8c" EXACT []
 xref: UBERON:0007236
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000170 ! 4-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000190
@@ -153,6 +170,7 @@ def: "An embryo that is composed of 16 cells and is surrounded by a fertilizatio
 synonym: "16c" EXACT []
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000180 ! 8-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000200
@@ -161,6 +179,7 @@ def: "An embryo that is composed of 28 cells and is surrounded by a fertilizatio
 synonym: "28c" EXACT []
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000190 ! 16-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000210
@@ -169,6 +188,7 @@ def: "An embryo that is composed of 32 cells and is surrounded by a fertilizatio
 synonym: "32c" EXACT []
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000200 ! 28-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000220
@@ -177,6 +197,7 @@ def: "An embryo that is composed of 56 cells and is surrounded by a fertilizatio
 synonym: "56c" EXACT []
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000210 ! 32-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000230
@@ -185,6 +206,7 @@ def: "An embryo that is composed of 60 cells and is surrounded by a fertilizatio
 synonym: "60c" EXACT []
 relationship: BFO:0000050 ECAO:0000150 ! cleavage period
 relationship: RO:0002087 ECAO:0000220 ! 56-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000240
@@ -193,6 +215,7 @@ def: "Period during which the embryo is transformed into a hollow sphere that is
 xref: UBERON:0000307
 relationship: BFO:0000050 ECAO:0000130 ! embryogenesis
 relationship: RO:0002087 ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000250
@@ -203,6 +226,7 @@ synonym: " B1" EXACT []
 synonym: "vEB" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000230 ! 60-cell stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000260
@@ -212,6 +236,7 @@ synonym: " B2" EXACT []
 synonym: "EB" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000250 ! very early blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000270
@@ -222,6 +247,7 @@ synonym: " midB" EXACT []
 synonym: "mid-B" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000260 ! early blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000280
@@ -234,6 +260,7 @@ synonym: " prehatched blastula" EXACT []
 synonym: "Late-B" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000270 ! mid-blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000290
@@ -244,6 +271,7 @@ synonym: " very late blastula stage" EXACT []
 synonym: "HB" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000300
@@ -252,6 +280,7 @@ def: "The embryo has hatched from the fertilization envelope and swims freely. I
 synonym: "SB" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000290 ! hatched blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000310
@@ -260,6 +289,7 @@ def: "The embryo has started elongated along the animal-vegetal axis. Its vegeta
 synonym: "late-SB" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000300 ! swimming blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000320
@@ -268,6 +298,7 @@ def: "Period during which complex and coordinated cellular movements take place 
 xref: UBERON:0000109
 relationship: BFO:0000050 ECAO:0000130 ! embryogenesis
 relationship: RO:0002087 ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000330
@@ -275,6 +306,7 @@ name: mesenchyme blastula phase
 def: "The phase during which skeletogenic primary mesenchyme cells (PMCs) move from the vegetal plate into the blastocoel (ingress) but before the vegetal plate has started to invaginate." []
 relationship: BFO:0000050 ECAO:0000320 ! gastrula period
 relationship: RO:0002087 ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000340
@@ -283,6 +315,7 @@ def: "The vegetal plate is apparent and skeletogenic primary mesenchyme cells (P
 synonym: "eMB" EXACT []
 relationship: BFO:0000050 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002087 ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000350
@@ -291,6 +324,7 @@ def: "All skeletogenic primary mesenchyme cells (PMCs) have ingressed into the b
 synonym: "mid-MB" EXACT []
 relationship: BFO:0000050 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002087 ECAO:0000340 ! early mesenchyme blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000360
@@ -298,6 +332,7 @@ name: late mesenchyme blastula stage
 def: "The skeletogenic primary mesenchyme cells (PMCs) have migrated away from the vegetal plate by extending filopodia and moving along the blastocoel wall. The vegetal plate has flattened but has not started to invaginate. The apical pole domain still bears an apical tuft of long, non-motile cilia. " []
 relationship: BFO:0000050 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002087 ECAO:0000350 ! mid-mesenchyme blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000370
@@ -305,6 +340,7 @@ name: invagination phase
 def: "Period during which the inpocketing and elongation of the archenteron takes place." []
 relationship: BFO:0000050 ECAO:0000320 ! gastrula period
 relationship: RO:0002087 ECAO:0000330 ! mesenchyme blastula phase
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000380
@@ -314,6 +350,7 @@ synonym: " blastopore gastrula stage" EXACT []
 synonym: "blasto-G" EXACT []
 relationship: BFO:0000050 ECAO:0000370 ! invagination phase
 relationship: RO:0002087 ECAO:0000360 ! late mesenchyme blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000390
@@ -323,6 +360,7 @@ synonym: " EG" EXACT []
 synonym: "eG" EXACT []
 relationship: BFO:0000050 ECAO:0000370 ! invagination phase
 relationship: RO:0002087 ECAO:0000380 ! blastopore formation stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000400
@@ -332,6 +370,7 @@ synonym: " mid-G" EXACT []
 synonym: "G" EXACT []
 relationship: BFO:0000050 ECAO:0000370 ! invagination phase
 relationship: RO:0002087 ECAO:0000390 ! early gastrula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000410
@@ -341,6 +380,7 @@ synonym: " late-G" EXACT []
 synonym: "LG" EXACT []
 relationship: BFO:0000050 ECAO:0000370 ! invagination phase
 relationship: RO:0002087 ECAO:0000400 ! mid-gastrula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000420
@@ -348,6 +388,7 @@ name: organogenesis period
 def: "To be written" []
 relationship: BFO:0000050 ECAO:0000130 ! embryogenesis
 relationship: RO:0002087 ECAO:0000320 ! gastrula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000430
@@ -357,12 +398,14 @@ synonym: " D" EXACT []
 synonym: "Pr" EXACT []
 relationship: BFO:0000050 ECAO:0000420 ! organogenesis period
 relationship: RO:0002087 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000440
 name: larval development
 relationship: BFO:0000050 ECAO:0000010 ! life cycle period
 relationship: RO:0002087 ECAO:0000130 ! embryogenesis
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000450
@@ -372,6 +415,7 @@ xref: UBERON:0000069
 is_a: UBERON:0000105
 relationship: BFO:0000050 ECAO:0000440 ! larval development
 relationship: RO:0002087 ECAO:0000420 ! organogenesis period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000460
@@ -383,6 +427,7 @@ synonym: "Eplut" EXACT []
 xref: UBERON:0008265
 relationship: BFO:0000050 ECAO:0000450 ! early feeding larva period
 relationship: RO:0002087 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000470
@@ -396,6 +441,7 @@ synonym: "Pluteus" EXACT []
 xref: UBERON:0008265
 relationship: BFO:0000050 ECAO:0000450 ! early feeding larva period
 relationship: RO:0002087 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000480
@@ -403,6 +449,7 @@ name: late feeding larva period
 def: "To be written" []
 relationship: BFO:0000050 ECAO:0000440 ! larval development
 relationship: RO:0002087 ECAO:0000450 ! early feeding larva period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000490
@@ -412,6 +459,7 @@ synonym: "Plut6a" EXACT []
 xref: UBERON:0008265
 relationship: BFO:0000050 ECAO:0000480 ! late feeding larva period
 relationship: RO:0002087 ECAO:0000470 ! 4-arm pluteus larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000500
@@ -421,6 +469,7 @@ synonym: "Plut8a" EXACT []
 xref: UBERON:0008265
 relationship: BFO:0000050 ECAO:0000480 ! late feeding larva period
 relationship: RO:0002087 ECAO:0000490 ! 6-arm pluteus larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000510
@@ -431,6 +480,7 @@ synonym: "cPlut" EXACT []
 xref: UBERON:0008265
 relationship: BFO:0000050 ECAO:0000480 ! late feeding larva period
 relationship: RO:0002087 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000520
@@ -440,6 +490,7 @@ synonym: " meta" EXACT []
 synonym: "metamorphosis" EXACT []
 relationship: BFO:0000050 ECAO:0000480 ! late feeding larva period
 relationship: RO:0002087 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000530
@@ -448,6 +499,7 @@ def: "Biological process during which changes occur in biological and psychologi
 is_a: UBERON:0000105
 relationship: BFO:0000050 ECAO:0000010 ! life cycle period
 relationship: RO:0002087 ECAO:0000440 ! larval development
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000540
@@ -456,6 +508,7 @@ def: "Period during which a young individual, posing as a small adult, grows but
 xref: UBERON:0034919
 relationship: BFO:0000050 ECAO:0000530 ! adulthood
 relationship: RO:0002087 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000550
@@ -467,6 +520,7 @@ synonym: "PLJuv" EXACT []
 xref: UBERON:0007021
 relationship: BFO:0000050 ECAO:0000540 ! juvenile period
 relationship: RO:0002087 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000560
@@ -476,6 +530,7 @@ synonym: "ExJuv" EXACT []
 xref: UBERON:0007021
 relationship: BFO:0000050 ECAO:0000540 ! juvenile period
 relationship: RO:0002087 ECAO:0000550 ! early juvenile stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000570
@@ -484,6 +539,7 @@ def: "Period during which the animal reaches sexual maturity." []
 xref: UBERON:0000066
 relationship: BFO:0000050 ECAO:0000530 ! adulthood
 relationship: RO:0002087 ECAO:0000540 ! juvenile period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000580
@@ -494,6 +550,7 @@ synonym: "sexual mature sea urchin" EXACT []
 xref: UBERON:0000113
 relationship: BFO:0000050 ECAO:0000570 ! adult period
 relationship: RO:0002087 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000590
@@ -502,6 +559,7 @@ def: "The embryo is composed of about 800 cells and is surrounded by a fertiliza
 synonym: "vLB" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0000600
@@ -510,12 +568,14 @@ def: "Stage when the vegetal plate is apparent but primary mesenchyme cells (PMC
 synonym: "VP" EXACT []
 relationship: BFO:0000050 ECAO:0000240 ! blastula period
 relationship: RO:0002087 ECAO:0000590 ! very late blastula stage
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
 id: ECAO:0103500
 name: echinoderm anatomy
 def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." []
 xref: UBERON:0001062
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103510
@@ -523,6 +583,7 @@ name: anatomical structure
 def: "Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome" []
 xref: UBERON:0000061
 relationship: BFO:0000050 ECAO:0103500 ! echinoderm anatomy
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103520
@@ -533,6 +594,7 @@ synonym: " connected anatomical system" EXACT []
 synonym: "organ system" EXACT []
 xref: UBERON:0000467
 relationship: BFO:0000050 ECAO:0103500 ! echinoderm anatomy
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103530
@@ -541,12 +603,14 @@ def: "A region of the whole organism without well-defined compartmental boundari
 synonym: "organism subdivision" EXACT []
 xref: UBERON:0000475
 relationship: BFO:0000050 ECAO:0103500 ! echinoderm anatomy
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103540
 name: anatomical space
 xref: UBERON:0000464
 relationship: BFO:0000050 ECAO:0103500 ! echinoderm anatomy
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103550
@@ -555,6 +619,7 @@ def: "Anatomical structure that is an individual member of a species and consist
 is_a: ECAO:0103510 ! anatomical structure
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103560
@@ -565,6 +630,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000160 ! 2-cell stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103570
@@ -574,6 +640,7 @@ xref: UBERON:0000922
 is_a: ECAO:0103560 ! multicellular organism
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103580
@@ -583,6 +650,7 @@ is_a: ECAO:0103560 ! multicellular organism
 relationship: RO:0002202 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103590
@@ -592,6 +660,7 @@ is_a: ECAO:0103560 ! multicellular organism
 relationship: RO:0002202 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103600
@@ -601,6 +670,7 @@ is_a: ECAO:0103560 ! multicellular organism
 relationship: RO:0002202 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103610
@@ -611,6 +681,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103620
@@ -620,6 +691,7 @@ is_a: ECAO:0103610 ! digestive system
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103630
@@ -630,6 +702,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0103620 ! embryonic digestive system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103640
@@ -638,6 +711,7 @@ is_a: ECAO:0103610 ! digestive system
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103650
@@ -648,6 +722,7 @@ relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002202 ECAO:0103640 ! juvenile digestive system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103660
@@ -657,6 +732,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103670
@@ -665,6 +741,7 @@ is_a: ECAO:0103660 ! immune system
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103680
@@ -673,6 +750,7 @@ is_a: ECAO:0103660 ! immune system
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103690
@@ -681,6 +759,7 @@ is_a: ECAO:0103660 ! immune system
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103700
@@ -689,6 +768,7 @@ is_a: ECAO:0103660 ! immune system
 relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103710
@@ -699,6 +779,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103720
@@ -708,6 +789,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103730
@@ -717,6 +799,7 @@ is_a: ECAO:0103720 ! nervous system
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103740
@@ -727,6 +810,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0103730 ! embryonic nervous system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103750
@@ -735,6 +819,7 @@ is_a: ECAO:0103720 ! nervous system
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103760
@@ -745,6 +830,7 @@ relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002202 ECAO:0103750 ! juvenile nervous system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103770
@@ -754,6 +840,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103780
@@ -762,6 +849,7 @@ is_a: ECAO:0103770 ! muscular system
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103790
@@ -770,6 +858,7 @@ is_a: ECAO:0103770 ! muscular system
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103800
@@ -780,6 +869,7 @@ relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002202 ECAO:0103790 ! juvenile muscular system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103810
@@ -790,6 +880,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103820
@@ -798,6 +889,7 @@ is_a: ECAO:0103810 ! endoskeleton
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103830
@@ -806,6 +898,7 @@ is_a: ECAO:0103810 ! endoskeleton
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103840
@@ -815,6 +908,7 @@ is_a: ECAO:0103810 ! endoskeleton
 relationship: BFO:0000050 ECAO:0104120 ! rudiment
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103850
@@ -823,6 +917,7 @@ is_a: ECAO:0103810 ! endoskeleton
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103860
@@ -831,6 +926,7 @@ is_a: ECAO:0103810 ! endoskeleton
 relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103870
@@ -841,6 +937,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103880
@@ -851,6 +948,7 @@ is_a: ECAO:0103520 ! anatomical system
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103890
@@ -864,6 +962,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103900
@@ -877,6 +976,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103910
@@ -885,6 +985,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103920
@@ -893,6 +994,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103930
@@ -902,6 +1004,7 @@ is_a: ECAO:0103910 ! cell cortex
 relationship: BFO:0000050 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002488 ECAO:0000060 ! fully grown oocyte with centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103940
@@ -911,6 +1014,7 @@ is_a: ECAO:0103910 ! cell cortex
 relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000060 ! fully grown oocyte with centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103950
@@ -920,6 +1024,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000060 ! fully grown oocyte with centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103960
@@ -929,6 +1034,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000060 ! fully grown oocyte with centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103970
@@ -942,6 +1048,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000250 ! very early blastula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103980
@@ -951,6 +1058,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0103620 ! embryonic digestive system
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0103990
@@ -960,6 +1068,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0103980 ! blastopore
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104000
@@ -968,6 +1077,7 @@ is_a: ECAO:0104010 ! embryonic cell
 relationship: BFO:0000050 ECAO:0104020 ! vegetal plate
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000380 ! blastopore formation stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104010
@@ -976,6 +1086,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000160 ! 2-cell stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104020
@@ -984,6 +1095,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000600 ! vegetal plate stage
 relationship: RO:0002492 ECAO:0000360 ! late mesenchyme blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104030
@@ -992,6 +1104,7 @@ def: "Anatomical structure that has as its parts a maximally connected cell comp
 is_a: ECAO:0103510 ! anatomical structure
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104040
@@ -1001,6 +1114,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104050
@@ -1011,6 +1125,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103610 ! digestive system
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104060
@@ -1020,6 +1135,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104070
@@ -1030,6 +1146,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104080
@@ -1039,6 +1156,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104090
@@ -1048,6 +1166,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104100
@@ -1057,6 +1176,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104110
@@ -1066,6 +1186,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103560 ! multicellular organism
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104120
@@ -1076,6 +1197,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104130
@@ -1084,6 +1206,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0104120 ! rudiment
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104140
@@ -1092,6 +1215,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104147
@@ -1100,6 +1224,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104148
@@ -1108,6 +1233,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104150
@@ -1116,6 +1242,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104148 ! cytoskeleton
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104160
@@ -1125,6 +1252,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104168
@@ -1134,6 +1262,7 @@ is_a: ECAO:0104580 ! gamete
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000030 ! oogenesis period
 relationship: RO:0002492 ECAO:0000030 ! oogenesis period
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104170
@@ -1143,6 +1272,7 @@ is_a: ECAO:0104160 ! nucleus
 relationship: BFO:0000050 ECAO:0104168 ! oocyte
 relationship: RO:0002488 ECAO:0000050 ! not fully grown oocyte stage
 relationship: RO:0002492 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104180
@@ -1154,6 +1284,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000060 ! fully grown oocyte with centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104190
@@ -1163,6 +1294,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000050 ! not fully grown oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104200
@@ -1171,6 +1303,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104210
@@ -1179,6 +1312,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104220
@@ -1187,6 +1321,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104168 ! oocyte
 relationship: RO:0002488 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104230
@@ -1197,6 +1332,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104247
@@ -1211,6 +1347,7 @@ is_a: ECAO:0104580 ! gamete
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000100 ! spermatogenesis period
 relationship: RO:0002492 ECAO:0000100 ! spermatogenesis period
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104248
@@ -1221,6 +1358,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104148 ! cytoskeleton
 relationship: RO:0002488 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104250
@@ -1230,6 +1368,7 @@ is_a: ECAO:0104248 ! aster
 relationship: BFO:0000050 ECAO:0104247 ! spermatozoid
 relationship: RO:0002488 ECAO:0000120 ! mature spermatozoid stage
 relationship: RO:0002492 ECAO:0000120 ! mature spermatozoid stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104270
@@ -1238,6 +1377,7 @@ xref: UBERON:0005764
 is_a: ECAO:0103510 ! anatomical structure
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000090 ! mature oocyte stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104280
@@ -1249,6 +1389,7 @@ is_a: ECAO:0104270 ! acellular membrane
 relationship: BFO:0000050 ECAO:0104168 ! oocyte
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000090 ! mature oocyte stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104300
@@ -1258,6 +1399,7 @@ is_a: ECAO:0104270 ! acellular membrane
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104310
@@ -1266,6 +1408,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104320
@@ -1275,6 +1418,7 @@ is_a: ECAO:0104270 ! acellular membrane
 relationship: BFO:0000050 ECAO:0104300 ! hyaline layer
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104330
@@ -1283,6 +1427,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000140 ! 1-cell stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104340
@@ -1291,6 +1436,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000600 ! vegetal plate stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104350
@@ -1299,6 +1445,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000340 ! early mesenchyme blastula stage
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104360
@@ -1308,6 +1455,7 @@ is_a: ECAO:0104270 ! acellular membrane
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000470 ! 4-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104370
@@ -1318,6 +1466,7 @@ is_a: ECAO:0104330 ! secretory vesicle
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000470 ! 4-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104380
@@ -1326,6 +1475,7 @@ is_a: ECAO:0104330 ! secretory vesicle
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104390
@@ -1335,6 +1485,7 @@ is_a: ECAO:0104330 ! secretory vesicle
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104400
@@ -1345,6 +1496,7 @@ is_a: ECAO:0104330 ! secretory vesicle
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104410
@@ -1353,6 +1505,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104420
@@ -1361,6 +1514,7 @@ is_a: ECAO:0104148 ! cytoskeleton
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104430
@@ -1371,6 +1525,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104420 ! actin cytoskeleton
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104440
@@ -1379,6 +1534,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104160 ! nucleus
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104450
@@ -1387,6 +1543,7 @@ is_a: ECAO:0104440 ! nuclear part
 relationship: BFO:0000050 ECAO:0104160 ! nucleus
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104460
@@ -1395,6 +1552,7 @@ is_a: ECAO:0104440 ! nuclear part
 relationship: BFO:0000050 ECAO:0104160 ! nucleus
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104470
@@ -1403,6 +1561,7 @@ is_a: ECAO:0104147 ! intracellular part
 relationship: BFO:0000050 ECAO:0104030 ! cell
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104480
@@ -1411,6 +1570,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000140 ! 1-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104490
@@ -1420,6 +1580,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104500
@@ -1429,6 +1590,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0104168 ! oocyte
 relationship: RO:0002488 ECAO:0000070 ! fully grown oocyte with off-centered germinal vesicle stage
 relationship: RO:0002492 ECAO:0000080 ! fully grown oocyte with no nucleus stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104510
@@ -1438,6 +1600,7 @@ is_a: ECAO:0104040 ! cell part
 relationship: BFO:0000050 ECAO:0104247 ! spermatozoid
 relationship: RO:0002488 ECAO:0000100 ! spermatogenesis period
 relationship: RO:0002492 ECAO:0000100 ! spermatogenesis period
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104520
@@ -1447,6 +1610,7 @@ is_a: ECAO:0104510 ! spermatozoid part
 relationship: BFO:0000050 ECAO:0104247 ! spermatozoid
 relationship: RO:0002488 ECAO:0000100 ! spermatogenesis period
 relationship: RO:0002492 ECAO:0000100 ! spermatogenesis period
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104530
@@ -1457,6 +1621,7 @@ is_a: ECAO:0104510 ! spermatozoid part
 relationship: BFO:0000050 ECAO:0104247 ! spermatozoid
 relationship: RO:0002488 ECAO:0000100 ! spermatogenesis period
 relationship: RO:0002492 ECAO:0000100 ! spermatogenesis period
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104540
@@ -1467,6 +1632,7 @@ is_a: ECAO:0104330 ! secretory vesicle
 relationship: BFO:0000050 ECAO:0104520 ! spermatozoid head
 relationship: RO:0002488 ECAO:0000100 ! spermatogenesis period
 relationship: RO:0002492 ECAO:0000100 ! spermatogenesis period
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104548
@@ -1477,6 +1643,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0104720 ! small micromere
 relationship: RO:0002488 ECAO:0000250 ! very early blastula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104550
@@ -1486,6 +1653,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0104548 ! small micromere descendant cell
 relationship: RO:0002488 ECAO:0000210 ! 32-cell stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104560
@@ -1494,6 +1662,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104570
@@ -1503,6 +1672,7 @@ relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002202 ECAO:0104560 ! primordial germ cell
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104580
@@ -1511,6 +1681,7 @@ is_a: ECAO:0104570 ! germ cell
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000020 ! gametogenesis
 relationship: RO:0002492 ECAO:0000020 ! gametogenesis
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104600
@@ -1520,6 +1691,7 @@ is_a: ECAO:0104168 ! oocyte
 relationship: BFO:0000050 ECAO:0104560 ! primordial germ cell
 relationship: RO:0002488 ECAO:0000040 ! previtellogenic primary oocyte stage
 relationship: RO:0002492 ECAO:0000080 ! fully grown oocyte with no nucleus stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104610
@@ -1534,6 +1706,7 @@ relationship: BFO:0000050 ECAO:0104570 ! germ cell
 relationship: RO:0002202 ECAO:0104600 ! immature occyte
 relationship: RO:0002488 ECAO:0000090 ! mature oocyte stage
 relationship: RO:0002492 ECAO:0000090 ! mature oocyte stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104630
@@ -1544,6 +1717,7 @@ is_a: ECAO:0104010 ! embryonic cell
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000160 ! 2-cell stage
 relationship: RO:0002492 ECAO:0000230 ! 60-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104640
@@ -1552,6 +1726,7 @@ is_a: ECAO:0104630 ! blastomere
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000160 ! 2-cell stage
 relationship: RO:0002492 ECAO:0000160 ! 2-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104650
@@ -1560,6 +1735,7 @@ is_a: ECAO:0104630 ! blastomere
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000170 ! 4-cell stage
 relationship: RO:0002492 ECAO:0000170 ! 4-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104660
@@ -1570,6 +1746,7 @@ is_a: ECAO:0104630 ! blastomere
 relationship: BFO:0000050 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000190 ! 16-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104670
@@ -1580,6 +1757,7 @@ is_a: ECAO:0104630 ! blastomere
 relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000190 ! 16-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104678
@@ -1589,6 +1767,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000180 ! 8-cell stage
 relationship: RO:0002492 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104680
@@ -1597,6 +1776,7 @@ is_a: ECAO:0104678 ! cell tier
 relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000200 ! 28-cell stage
 relationship: RO:0002492 ECAO:0000210 ! 32-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104690
@@ -1607,6 +1787,7 @@ is_a: ECAO:0104630 ! blastomere
 relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000200 ! 28-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104700
@@ -1616,6 +1797,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0104690 ! micromere
 relationship: RO:0002488 ECAO:0000210 ! 32-cell stage
 relationship: RO:0002492 ECAO:0000230 ! 60-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104710
@@ -1629,6 +1811,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0104700 ! large micromere
 relationship: RO:0002488 ECAO:0000250 ! very early blastula stage
 relationship: RO:0002492 ECAO:0000340 ! early mesenchyme blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104720
@@ -1639,6 +1822,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0104690 ! micromere
 relationship: RO:0002488 ECAO:0000210 ! 32-cell stage
 relationship: RO:0002492 ECAO:0000230 ! 60-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104740
@@ -1649,6 +1833,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000280 ! late blastula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104750
@@ -1659,6 +1844,7 @@ is_a: ECAO:0104740 ! presumptive neuron
 relationship: BFO:0000050 ECAO:0103730 ! embryonic nervous system
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104760
@@ -1668,6 +1854,7 @@ is_a: ECAO:0104740 ! presumptive neuron
 relationship: BFO:0000050 ECAO:0103730 ! embryonic nervous system
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104770
@@ -1677,6 +1864,7 @@ is_a: ECAO:0104740 ! presumptive neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104780
@@ -1686,6 +1874,7 @@ is_a: ECAO:0104740 ! presumptive neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104790
@@ -1696,6 +1885,7 @@ relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002202 ECAO:0104740 ! presumptive neuron
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104800
@@ -1705,6 +1895,7 @@ relationship: BFO:0000050 ECAO:0103740 ! larval nervous system
 relationship: RO:0002202 ECAO:0104740 ! presumptive neuron
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104810
@@ -1714,12 +1905,14 @@ relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002202 ECAO:0104750 ! animal pole domain presumptive neuron
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104820
 name: synaptotagmin-B neuron
 is_a: ECAO:0104790 ! neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104830
@@ -1729,6 +1922,7 @@ relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002202 ECAO:0104760 ! ectoderm presumptive neuron
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104840
@@ -1737,6 +1931,7 @@ is_a: ECAO:0104790 ! neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104850
@@ -1746,6 +1941,7 @@ is_a: ECAO:0104790 ! neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104860
@@ -1754,6 +1950,7 @@ is_a: ECAO:0104790 ! neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104870
@@ -1762,6 +1959,7 @@ is_a: ECAO:0104790 ! neuron
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104878
@@ -1771,6 +1969,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104880
@@ -1782,6 +1981,7 @@ is_a: ECAO:0104878 ! neural structure
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104900
@@ -1792,6 +1992,7 @@ relationship: BFO:0000050 ECAO:0103740 ! larval nervous system
 relationship: RO:0002202 ECAO:0104770 ! ciliary band presumptive neuron
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104908
@@ -1802,6 +2003,7 @@ is_a: ECAO:0105150 ! germ layer
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104910
@@ -1811,6 +2013,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000280 ! late blastula stage
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104920
@@ -1820,6 +2023,7 @@ relationship: BFO:0000050 ECAO:0103740 ! larval nervous system
 relationship: RO:0002202 ECAO:0104780 ! endoderm associated presumptive neuron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104930
@@ -1829,6 +2033,7 @@ is_a: ECAO:0104878 ! neural structure
 relationship: BFO:0000050 ECAO:0103720 ! nervous system
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104940
@@ -1839,6 +2044,7 @@ relationship: BFO:0000050 ECAO:0103740 ! larval nervous system
 relationship: RO:0002202 ECAO:0103970 ! animal pole domain
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104950
@@ -1848,6 +2054,7 @@ relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002202 ECAO:0104740 ! presumptive neuron
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104960
@@ -1856,6 +2063,7 @@ is_a: ECAO:0104878 ! neural structure
 relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104970
@@ -1867,6 +2075,7 @@ is_a: ECAO:0104878 ! neural structure
 relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002488 ECAO:0000560 ! late juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104980
@@ -1875,6 +2084,7 @@ is_a: ECAO:0104878 ! neural structure
 relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0104990
@@ -1883,6 +2093,7 @@ is_a: ECAO:0104950 ! adult neuron
 relationship: BFO:0000050 ECAO:0104950 ! adult neuron
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105000
@@ -1891,6 +2102,7 @@ is_a: ECAO:0104950 ! adult neuron
 relationship: BFO:0000050 ECAO:0104950 ! adult neuron
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105010
@@ -1899,6 +2111,7 @@ is_a: ECAO:0104950 ! adult neuron
 relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105020
@@ -1907,6 +2120,7 @@ is_a: ECAO:0104950 ! adult neuron
 relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105030
@@ -1915,6 +2129,7 @@ is_a: ECAO:0104878 ! neural structure
 relationship: BFO:0000050 ECAO:0103760 ! adult nervous system
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105050
@@ -1924,6 +2139,7 @@ is_a: ECAO:0104678 ! cell tier
 relationship: BFO:0000050 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002488 ECAO:0000180 ! 8-cell stage
 relationship: RO:0002492 ECAO:0000180 ! 8-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105060
@@ -1933,6 +2149,7 @@ is_a: ECAO:0104678 ! cell tier
 relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000180 ! 8-cell stage
 relationship: RO:0002492 ECAO:0000180 ! 8-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105070
@@ -1943,6 +2160,7 @@ relationship: BFO:0000050 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002202 ECAO:0104660 ! mesomere
 relationship: RO:0002488 ECAO:0000200 ! 28-cell stage
 relationship: RO:0002492 ECAO:0000230 ! 60-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105080
@@ -1953,6 +2171,7 @@ relationship: BFO:0000050 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002202 ECAO:0104660 ! mesomere
 relationship: RO:0002488 ECAO:0000200 ! 28-cell stage
 relationship: RO:0002492 ECAO:0000230 ! 60-cell stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105090
@@ -1964,6 +2183,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0104670 ! macromere
 relationship: RO:0002488 ECAO:0000220 ! 56-cell stage
 relationship: RO:0002492 ECAO:0000260 ! early blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105100
@@ -1975,6 +2195,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0104670 ! macromere
 relationship: RO:0002488 ECAO:0000220 ! 56-cell stage
 relationship: RO:0002492 ECAO:0000260 ! early blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105110
@@ -1987,6 +2208,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0105090 ! vegetal tier 1
 relationship: RO:0002488 ECAO:0000270 ! mid-blastula stage
 relationship: RO:0002492 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105120
@@ -1998,6 +2220,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0105090 ! vegetal tier 1
 relationship: RO:0002488 ECAO:0000270 ! mid-blastula stage
 relationship: RO:0002492 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105130
@@ -2009,6 +2232,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000270 ! mid-blastula stage
 relationship: RO:0002492 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105140
@@ -2021,6 +2245,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000270 ! mid-blastula stage
 relationship: RO:0002492 ECAO:0000280 ! late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105150
@@ -2032,6 +2257,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000340 ! early mesenchyme blastula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105158
@@ -2041,6 +2267,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105160
@@ -2051,6 +2278,7 @@ relationship: BFO:0000050 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002202 ECAO:0104660 ! mesomere
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105180
@@ -2060,6 +2288,7 @@ relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002202 ECAO:0103890 ! animal hemisphere
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105190
@@ -2069,6 +2298,7 @@ relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002202 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000260 ! early blastula stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105200
@@ -2078,6 +2308,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105210
@@ -2087,6 +2318,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105220
@@ -2098,6 +2330,7 @@ relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002202 ECAO:0105090 ! vegetal tier 1
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000590 ! very late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105230
@@ -2110,6 +2343,7 @@ relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000230 ! 60-cell stage
 relationship: RO:0002492 ECAO:0000590 ! very late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105240
@@ -2120,6 +2354,7 @@ relationship: BFO:0000050 ECAO:0103970 ! animal pole domain
 relationship: RO:0002202 ECAO:0105070 ! animal tier 1
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105250
@@ -2130,6 +2365,7 @@ relationship: BFO:0000050 ECAO:0103970 ! animal pole domain
 relationship: RO:0002202 ECAO:0105070 ! animal tier 1
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105260
@@ -2138,6 +2374,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000280 ! late blastula stage
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105270
@@ -2148,6 +2385,7 @@ relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002202 ECAO:0105220 ! ectoendoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000330 ! mesenchyme blastula phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105280
@@ -2156,6 +2394,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000370 ! invagination phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105290
@@ -2164,6 +2403,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000240 ! blastula period
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105300
@@ -2172,6 +2412,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000370 ! invagination phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105310
@@ -2180,6 +2421,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000370 ! invagination phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105320
@@ -2188,6 +2430,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000370 ! invagination phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105330
@@ -2196,6 +2439,7 @@ is_a: ECAO:0105320 ! lateral ectoderm
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000370 ! invagination phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105340
@@ -2204,6 +2448,7 @@ is_a: ECAO:0105320 ! lateral ectoderm
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000370 ! invagination phase
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105350
@@ -2212,6 +2457,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105360
@@ -2221,6 +2467,7 @@ relationship: BFO:0000050 ECAO:0105350 ! arm tip ectoderm
 relationship: RO:0002202 ECAO:0105270 ! border ectoderm
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105370
@@ -2230,6 +2477,7 @@ relationship: BFO:0000050 ECAO:0105350 ! arm tip ectoderm
 relationship: RO:0002202 ECAO:0105270 ! border ectoderm
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105380
@@ -2239,6 +2487,7 @@ relationship: BFO:0000050 ECAO:0103970 ! animal pole domain
 relationship: RO:0002202 ECAO:0105070 ! animal tier 1
 relationship: RO:0002488 ECAO:0000590 ! very late blastula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105400
@@ -2247,6 +2496,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105410
@@ -2255,6 +2505,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0104120 ! rudiment
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105420
@@ -2263,6 +2514,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103590 ! juvenile
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105430
@@ -2271,6 +2523,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105440
@@ -2279,6 +2532,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0105200 ! ventral ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105450
@@ -2290,6 +2544,7 @@ relationship: BFO:0000050 ECAO:0105200 ! ventral ectoderm
 relationship: RO:0002202 ECAO:0105440 ! presumptive stomodeum
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105460
@@ -2298,6 +2553,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0104908 ! ectoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105470
@@ -2306,6 +2562,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0105460 ! ciliary band
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105480
@@ -2314,6 +2571,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0105460 ! ciliary band
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105490
@@ -2322,6 +2580,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0105460 ! ciliary band
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105500
@@ -2330,6 +2589,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0105460 ! ciliary band
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105510
@@ -2338,6 +2598,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0105460 ! ciliary band
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105520
@@ -2349,6 +2610,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105530
@@ -2357,6 +2619,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105540
@@ -2365,6 +2628,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105550
@@ -2375,6 +2639,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105560
@@ -2385,6 +2650,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105570
@@ -2394,6 +2660,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105580
@@ -2403,6 +2670,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105590
@@ -2412,6 +2680,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105600
@@ -2421,6 +2690,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105610
@@ -2431,6 +2701,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105620
@@ -2441,6 +2712,7 @@ is_a: ECAO:0105540 ! larval arm
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105628
@@ -2449,6 +2721,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105630
@@ -2458,6 +2731,7 @@ is_a: ECAO:0105628 ! spicule rudiment
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105650
@@ -2468,6 +2742,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105630 ! spicule granule
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105660
@@ -2478,6 +2753,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105630 ! spicule granule
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105670
@@ -2487,6 +2763,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105630 ! spicule granule
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105680
@@ -2497,6 +2774,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105630 ! spicule granule
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105690
@@ -2508,6 +2786,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105650 ! triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105698
@@ -2520,6 +2799,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0106220 ! embryonic skeletogenic mesoderm
 relationship: RO:0002488 ECAO:0000340 ! early mesenchyme blastula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105700
@@ -2530,6 +2810,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105698 ! embryonic skeletogenic mesenchyme
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000550 ! early juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105710
@@ -2538,6 +2819,7 @@ is_a: ECAO:0105700 ! skeletal rod
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105720
@@ -2547,6 +2829,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105660 ! right ventrolateral triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105730
@@ -2556,6 +2839,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105670 ! left ventrolateral triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105738
@@ -2565,6 +2849,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105660 ! right ventrolateral triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105740
@@ -2574,6 +2859,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105738 ! right dorsoventral connecting rod
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105748
@@ -2583,6 +2869,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105670 ! left ventrolateral triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105750
@@ -2592,6 +2879,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105748 ! left dorsoventral connecting rod
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105760
@@ -2601,6 +2889,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105720 ! right anonymous rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105770
@@ -2610,6 +2899,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105730 ! left anonymous rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105780
@@ -2619,6 +2909,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105650 ! triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105790
@@ -2628,6 +2919,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105650 ! triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105798
@@ -2637,6 +2929,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105650 ! triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105800
@@ -2646,6 +2939,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105798 ! dorsal arch
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105810
@@ -2655,6 +2949,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105798 ! dorsal arch
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105850
@@ -2664,6 +2959,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105660 ! right ventrolateral triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105860
@@ -2673,6 +2969,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105670 ! left ventrolateral triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105868
@@ -2681,6 +2978,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0105880 ! body rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105870
@@ -2691,6 +2989,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105868 ! posterior tip of body rod
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105880
@@ -2699,6 +2998,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105890
@@ -2708,6 +3008,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105730 ! left anonymous rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105900
@@ -2717,6 +3018,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105720 ! right anonymous rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105920
@@ -2725,6 +3027,7 @@ is_a: ECAO:0105868 ! posterior tip of body rod
 relationship: BFO:0000050 ECAO:0105890 ! left body rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105930
@@ -2733,6 +3036,7 @@ is_a: ECAO:0105868 ! posterior tip of body rod
 relationship: BFO:0000050 ECAO:0105900 ! right body rod
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105940
@@ -2742,6 +3046,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105738 ! right dorsoventral connecting rod
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105950
@@ -2751,6 +3056,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105748 ! left dorsoventral connecting rod
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105960
@@ -2760,6 +3066,7 @@ relationship: BFO:0000050 ECAO:0103830 ! larval endoskeleton
 relationship: RO:0002202 ECAO:0105650 ! triradiate spicule rudiment
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105970
@@ -2769,6 +3076,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105980
@@ -2778,6 +3086,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0105450 ! stomodeum
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0105990
@@ -2787,6 +3096,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106000
@@ -2796,6 +3106,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0103980 ! blastopore
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106010
@@ -2806,6 +3117,7 @@ is_a: ECAO:0105158 ! embryonic tissue
 relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002488 ECAO:0000260 ! early blastula stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106020
@@ -2816,6 +3128,7 @@ relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002202 ECAO:0106010 ! presumptive endoderm
 relationship: RO:0002488 ECAO:0000270 ! mid-blastula stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106030
@@ -2828,6 +3141,7 @@ relationship: BFO:0000050 ECAO:0103610 ! digestive system
 relationship: RO:0002202 ECAO:0104020 ! vegetal plate
 relationship: RO:0002488 ECAO:0000380 ! blastopore formation stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106040
@@ -2838,6 +3152,7 @@ relationship: BFO:0000050 ECAO:0106030 ! archenteron
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106050
@@ -2847,6 +3162,7 @@ relationship: BFO:0000050 ECAO:0106040 ! hindgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106060
@@ -2856,6 +3172,7 @@ relationship: BFO:0000050 ECAO:0106040 ! hindgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106070
@@ -2866,6 +3183,7 @@ relationship: BFO:0000050 ECAO:0106030 ! archenteron
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106080
@@ -2875,6 +3193,7 @@ relationship: BFO:0000050 ECAO:0106070 ! midgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106090
@@ -2884,6 +3203,7 @@ relationship: BFO:0000050 ECAO:0106070 ! midgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106100
@@ -2893,6 +3213,7 @@ relationship: BFO:0000050 ECAO:0106070 ! midgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106110
@@ -2902,6 +3223,7 @@ relationship: BFO:0000050 ECAO:0106070 ! midgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106120
@@ -2911,6 +3233,7 @@ relationship: BFO:0000050 ECAO:0106040 ! hindgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106130
@@ -2920,6 +3243,7 @@ relationship: BFO:0000050 ECAO:0106040 ! hindgut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106140
@@ -2931,6 +3255,7 @@ relationship: BFO:0000050 ECAO:0106030 ! archenteron
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106150
@@ -2940,6 +3265,7 @@ relationship: BFO:0000050 ECAO:0106140 ! foregut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106160
@@ -2949,6 +3275,7 @@ relationship: BFO:0000050 ECAO:0106140 ! foregut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106170
@@ -2958,6 +3285,7 @@ relationship: BFO:0000050 ECAO:0106140 ! foregut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106180
@@ -2967,6 +3295,7 @@ relationship: BFO:0000050 ECAO:0106140 ! foregut
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106190
@@ -2978,6 +3307,7 @@ relationship: BFO:0000050 ECAO:0106030 ! archenteron
 relationship: RO:0002202 ECAO:0104020 ! vegetal plate
 relationship: RO:0002488 ECAO:0000390 ! early gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106200
@@ -2989,6 +3319,7 @@ relationship: BFO:0000050 ECAO:0103900 ! vegetal hemisphere
 relationship: RO:0002202 ECAO:0104020 ! vegetal plate
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000600 ! vegetal plate stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106210
@@ -2999,6 +3330,7 @@ relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002202 ECAO:0106200 ! presumptive mesoderm
 relationship: RO:0002488 ECAO:0000190 ! 16-cell stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106220
@@ -3009,6 +3341,7 @@ relationship: BFO:0000050 ECAO:0106210 ! mesoderm
 relationship: RO:0002202 ECAO:0104700 ! large micromere
 relationship: RO:0002488 ECAO:0000210 ! 32-cell stage
 relationship: RO:0002492 ECAO:0000590 ! very late blastula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106240
@@ -3020,6 +3353,7 @@ relationship: BFO:0000050 ECAO:0105698 ! embryonic skeletogenic mesenchyme
 relationship: RO:0002202 ECAO:0104700 ! large micromere
 relationship: RO:0002488 ECAO:0000340 ! early mesenchyme blastula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106250
@@ -3029,6 +3363,7 @@ synonym: " syncytial cell" EXACT []
 synonym: " syncytium" EXACT []
 synonym: "multinucleate cell" EXACT []
 is_a: ECAO:0104030 ! cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106260
@@ -3039,6 +3374,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0105698 ! embryonic skeletogenic mesenchyme
 relationship: RO:0002488 ECAO:0000390 ! early gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106270
@@ -3054,6 +3390,7 @@ relationship: BFO:0000050 ECAO:0106260 ! embryonic skeletogenic mesenchyme syncy
 relationship: RO:0002202 ECAO:0105698 ! embryonic skeletogenic mesenchyme
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106280
@@ -3063,6 +3400,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106290
@@ -3072,6 +3410,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106300
@@ -3081,6 +3420,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106310
@@ -3089,6 +3429,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106320
@@ -3098,6 +3439,7 @@ is_a: ECAO:0104070 ! embryonic structure
 relationship: BFO:0000050 ECAO:0106260 ! embryonic skeletogenic mesenchyme syncytium
 relationship: RO:0002488 ECAO:0000400 ! mid-gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106330
@@ -3108,6 +3450,7 @@ relationship: BFO:0000050 ECAO:0106320 ! lateral chain of skeletogenic mesenchym
 relationship: RO:0002202 ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106340
@@ -3118,6 +3461,7 @@ relationship: BFO:0000050 ECAO:0106320 ! lateral chain of skeletogenic mesenchym
 relationship: RO:0002202 ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106350
@@ -3127,6 +3471,7 @@ relationship: BFO:0000050 ECAO:0106210 ! mesoderm
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000590 ! very late blastula stage
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106360
@@ -3136,6 +3481,7 @@ relationship: BFO:0000050 ECAO:0106350 ! embryonic non-skeletogenic mesoderm
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000390 ! early gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106370
@@ -3145,6 +3491,7 @@ relationship: BFO:0000050 ECAO:0106350 ! embryonic non-skeletogenic mesoderm
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000390 ! early gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106380
@@ -3156,6 +3503,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000390 ! early gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106390
@@ -3167,6 +3515,7 @@ relationship: BFO:0000050 ECAO:0106380 ! embryonic non-skeletogenic mesenchyme
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000390 ! early gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106400
@@ -3175,6 +3524,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106410
@@ -3183,6 +3533,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0106400 ! larval non-skeletogenic mesenchyme
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106420
@@ -3192,6 +3543,7 @@ relationship: BFO:0000050 ECAO:0106350 ! embryonic non-skeletogenic mesoderm
 relationship: RO:0002202 ECAO:0105100 ! vegetal tier 2
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106430
@@ -3202,6 +3554,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0106350 ! embryonic non-skeletogenic mesoderm
 relationship: RO:0002488 ECAO:0000330 ! mesenchyme blastula phase
 relationship: RO:0002492 ECAO:0000410 ! late gastrula stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106440
@@ -3214,6 +3567,7 @@ relationship: BFO:0000050 ECAO:0103660 ! immune system
 relationship: RO:0002202 ECAO:0106430 ! presumptive pigment cell
 relationship: RO:0002488 ECAO:0000390 ! early gastrula stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106450
@@ -3223,6 +3577,7 @@ relationship: BFO:0000050 ECAO:0103670 ! embryonic immune system
 relationship: RO:0002202 ECAO:0106430 ! presumptive pigment cell
 relationship: RO:0002488 ECAO:0000390 ! early gastrula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106460
@@ -3231,6 +3586,7 @@ is_a: ECAO:0106440 ! pigment cell
 relationship: BFO:0000050 ECAO:0103680 ! larval immune system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106470
@@ -3239,6 +3595,7 @@ is_a: ECAO:0106440 ! pigment cell
 relationship: BFO:0000050 ECAO:0103690 ! juvenile immune system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106480
@@ -3247,6 +3604,7 @@ is_a: ECAO:0106440 ! pigment cell
 relationship: BFO:0000050 ECAO:0104120 ! rudiment
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106490
@@ -3256,6 +3614,7 @@ relationship: BFO:0000050 ECAO:0103660 ! immune system
 relationship: RO:0002202 ECAO:0106420 ! presumptive blastocoelar cell
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106500
@@ -3264,6 +3623,7 @@ is_a: ECAO:0106490 ! blastocoelar cell
 relationship: BFO:0000050 ECAO:0103680 ! larval immune system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106510
@@ -3272,6 +3632,7 @@ is_a: ECAO:0106490 ! blastocoelar cell
 relationship: BFO:0000050 ECAO:0103680 ! larval immune system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106520
@@ -3280,6 +3641,7 @@ is_a: ECAO:0106490 ! blastocoelar cell
 relationship: BFO:0000050 ECAO:0103680 ! larval immune system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106530
@@ -3288,6 +3650,7 @@ is_a: ECAO:0106490 ! blastocoelar cell
 relationship: BFO:0000050 ECAO:0103680 ! larval immune system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106540
@@ -3297,12 +3660,14 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0103770 ! muscular system
 relationship: RO:0002488 ECAO:0000410 ! late gastrula stage
 relationship: RO:0002492 ECAO:0000460 ! early pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106550
 name: muscle
 is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103770 ! muscular system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106560
@@ -3312,6 +3677,7 @@ is_a: ECAO:0105400 ! larval tissue
 relationship: BFO:0000050 ECAO:0103780 ! larval muscular system
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106570
@@ -3320,6 +3686,7 @@ is_a: ECAO:0105410 ! rudiment tissue
 relationship: BFO:0000050 ECAO:0103770 ! muscular system
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106580
@@ -3328,6 +3695,7 @@ is_a: ECAO:0105420 ! juvenile tissue
 relationship: BFO:0000050 ECAO:0103790 ! juvenile muscular system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106590
@@ -3336,6 +3704,7 @@ is_a: ECAO:0105430 ! adult tissue
 relationship: BFO:0000050 ECAO:0103800 ! adult muscular system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106600
@@ -3345,6 +3714,7 @@ is_a: ECAO:0103540 ! anatomical space
 relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002488 ECAO:0000250 ! very early blastula stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106610
@@ -3353,6 +3723,7 @@ is_a: ECAO:0104050 ! digestive system element
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106620
@@ -3363,6 +3734,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106630
@@ -3373,6 +3745,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106640
@@ -3383,6 +3756,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106650
@@ -3393,6 +3767,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106660
@@ -3403,6 +3778,7 @@ relationship: BFO:0000050 ECAO:0106650 ! sphincter muscle
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106670
@@ -3414,6 +3790,7 @@ relationship: BFO:0000050 ECAO:0106620 ! pyloric sphincter
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106680
@@ -3424,6 +3801,7 @@ relationship: BFO:0000050 ECAO:0106630 ! cardiac sphincter
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106690
@@ -3435,6 +3813,7 @@ relationship: BFO:0000050 ECAO:0106640 ! anal sphincter
 relationship: RO:0002202 ECAO:0106030 ! archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106700
@@ -3444,6 +3823,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106140 ! foregut
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106708
@@ -3453,6 +3833,7 @@ relationship: BFO:0000050 ECAO:0106700 ! larval esophagus
 relationship: RO:0002202 ECAO:0106190 ! tip of archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106710
@@ -3463,6 +3844,7 @@ relationship: BFO:0000050 ECAO:0106708 ! circumesophageal muscle
 relationship: RO:0002202 ECAO:0106190 ! tip of archenteron
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106730
@@ -3472,6 +3854,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106070 ! midgut
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106740
@@ -3481,6 +3864,7 @@ relationship: BFO:0000050 ECAO:0103630 ! larval digestive system
 relationship: RO:0002202 ECAO:0106040 ! hindgut
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106750
@@ -3490,6 +3874,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106760
@@ -3498,6 +3883,7 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0106750 ! larval skeletogenic mesenchyme
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106770
@@ -3508,6 +3894,7 @@ relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002202 ECAO:0106190 ! tip of archenteron
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106780
@@ -3518,6 +3905,7 @@ relationship: BFO:0000050 ECAO:0103570 ! embryo
 relationship: RO:0002202 ECAO:0106190 ! tip of archenteron
 relationship: RO:0002488 ECAO:0000430 ! prism stage
 relationship: RO:0002492 ECAO:0000430 ! prism stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106790
@@ -3527,6 +3915,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106780 ! unpaired coelomic pouch
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000490 ! 6-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106800
@@ -3537,6 +3926,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106780 ! unpaired coelomic pouch
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000490 ! 6-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106810
@@ -3546,6 +3936,7 @@ relationship: BFO:0000050 ECAO:0106790 ! right coelomic pouch
 relationship: RO:0002202 ECAO:0106780 ! unpaired coelomic pouch
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000490 ! 6-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106820
@@ -3555,6 +3946,7 @@ relationship: BFO:0000050 ECAO:0106800 ! left coelomic pouch
 relationship: RO:0002202 ECAO:0106780 ! unpaired coelomic pouch
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000490 ! 6-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106828
@@ -3563,6 +3955,7 @@ is_a: ECAO:0105400 ! larval tissue
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000520 ! metamorphic larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106830
@@ -3573,6 +3966,7 @@ relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002202 ECAO:0105200 ! ventral ectoderm
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106840
@@ -3585,6 +3979,7 @@ is_a: ECAO:0105400 ! larval tissue
 relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106850
@@ -3593,6 +3988,7 @@ is_a: ECAO:0105400 ! larval tissue
 relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002488 ECAO:0000460 ! early pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106858
@@ -3602,6 +3998,7 @@ is_a: ECAO:0107100 ! lateral field
 relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106860
@@ -3612,6 +4009,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106858 ! left lateral field
 relationship: RO:0002488 ECAO:0000510 ! competent pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106868
@@ -3621,6 +4019,7 @@ is_a: ECAO:0106770 ! coelom
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106870
@@ -3630,6 +4029,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106800 ! left coelomic pouch
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106880
@@ -3639,6 +4039,7 @@ relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002202 ECAO:0106870 ! left axocoel
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106890
@@ -3648,6 +4049,7 @@ is_a: ECAO:0106770 ! coelom
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106910
@@ -3657,6 +4059,7 @@ is_a: ECAO:0106770 ! coelom
 relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106920
@@ -3666,6 +4069,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106800 ! left coelomic pouch
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106930
@@ -3675,6 +4079,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106800 ! left coelomic pouch
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106940
@@ -3685,6 +4090,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106790 ! right coelomic pouch
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106950
@@ -3694,6 +4100,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106790 ! right coelomic pouch
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106958
@@ -3702,6 +4109,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103870 ! water vascular system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106960
@@ -3711,6 +4119,7 @@ relationship: BFO:0000050 ECAO:0106958 ! axial complex
 relationship: RO:0002202 ECAO:0106800 ! left coelomic pouch
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106970
@@ -3720,6 +4129,7 @@ relationship: BFO:0000050 ECAO:0103870 ! water vascular system
 relationship: RO:0002202 ECAO:0106920 ! left hydrocoel
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106980
@@ -3729,6 +4139,7 @@ relationship: BFO:0000050 ECAO:0103870 ! water vascular system
 relationship: RO:0002202 ECAO:0106920 ! left hydrocoel
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0106990
@@ -3739,6 +4150,7 @@ relationship: BFO:0000050 ECAO:0103870 ! water vascular system
 relationship: RO:0002202 ECAO:0106380 ! embryonic non-skeletogenic mesenchyme
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000470 ! 4-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107000
@@ -3747,6 +4159,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103870 ! water vascular system
 relationship: RO:0002488 ECAO:0000470 ! 4-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107010
@@ -3756,6 +4169,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106940 ! right axohydrocoel
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107020
@@ -3765,6 +4179,7 @@ relationship: BFO:0000050 ECAO:0103580 ! larva
 relationship: RO:0002202 ECAO:0106940 ! right axohydrocoel
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000500 ! 8-arm pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107040
@@ -3774,6 +4189,7 @@ relationship: BFO:0000050 ECAO:0106958 ! axial complex
 relationship: RO:0002202 ECAO:0107020 ! right hydrocoel
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107050
@@ -3782,6 +4198,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0106958 ! axial complex
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107060
@@ -3790,6 +4207,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0106958 ! axial complex
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107070
@@ -3799,6 +4217,7 @@ relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002202 ECAO:0105460 ! ciliary band
 relationship: RO:0002488 ECAO:0000490 ! 6-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107080
@@ -3807,6 +4226,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0107070 ! ciliated epaulette
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107090
@@ -3815,6 +4235,7 @@ is_a: ECAO:0104080 ! larval structure
 relationship: BFO:0000050 ECAO:0107070 ! ciliated epaulette
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107100
@@ -3824,6 +4245,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107120
@@ -3833,6 +4255,7 @@ is_a: ECAO:0107100 ! lateral field
 relationship: BFO:0000050 ECAO:0106828 ! larval epithelium
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000510 ! competent pluteus larva stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107140
@@ -3841,6 +4264,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107150
@@ -3850,6 +4274,7 @@ is_a: ECAO:0104110 ! tissue
 relationship: BFO:0000050 ECAO:0103600 ! adult
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107160
@@ -3859,6 +4284,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107170
@@ -3867,6 +4293,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107180
@@ -3875,6 +4302,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107190
@@ -3883,12 +4311,14 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107200
 name: appendage
 is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107210
@@ -3898,6 +4328,7 @@ is_a: ECAO:0107200 ! appendage
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107220
@@ -3907,6 +4338,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107230
@@ -3915,6 +4347,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107240
@@ -3923,6 +4356,7 @@ is_a: ECAO:0107190 ! genital plate
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107250
@@ -3931,6 +4365,7 @@ is_a: ECAO:0107190 ! genital plate
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107260
@@ -3939,6 +4374,7 @@ is_a: ECAO:0107190 ! genital plate
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107270
@@ -3947,6 +4383,7 @@ is_a: ECAO:0107190 ! genital plate
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107280
@@ -3955,6 +4392,7 @@ is_a: ECAO:0107190 ! genital plate
 relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107290
@@ -3965,6 +4403,7 @@ is_a: ECAO:0107200 ! appendage
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107300
@@ -3974,6 +4413,7 @@ is_a: ECAO:0107290 ! podia
 relationship: BFO:0000050 ECAO:0107200 ! appendage
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107310
@@ -3982,6 +4422,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0107300 ! primary podia
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107320
@@ -3991,6 +4432,7 @@ is_a: ECAO:0107290 ! podia
 relationship: BFO:0000050 ECAO:0107200 ! appendage
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107330
@@ -3999,6 +4441,7 @@ is_a: ECAO:0104060 ! skeletal element
 relationship: BFO:0000050 ECAO:0107320 ! secondary podia
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107340
@@ -4007,6 +4450,7 @@ is_a: ECAO:0104990 ! primary podia associated neuron
 relationship: BFO:0000050 ECAO:0107200 ! appendage
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107350
@@ -4017,6 +4461,7 @@ is_a: ECAO:0107200 ! appendage
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107360
@@ -4026,6 +4471,7 @@ is_a: ECAO:0107350 ! spine
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107370
@@ -4035,6 +4481,7 @@ is_a: ECAO:0107350 ! spine
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000500 ! 8-arm pluteus larva stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107380
@@ -4043,6 +4490,7 @@ is_a: ECAO:0107200 ! appendage
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107390
@@ -4054,6 +4502,7 @@ relationship: BFO:0000050 ECAO:0103870 ! water vascular system
 relationship: RO:0002202 ECAO:0106980 ! radial canal
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107400
@@ -4062,6 +4511,7 @@ is_a: ECAO:0105970 ! mouth
 relationship: BFO:0000050 ECAO:0103650 ! adult digestive system
 relationship: RO:0002488 ECAO:0000560 ! late juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107410
@@ -4070,6 +4520,7 @@ is_a: ECAO:0105990 ! anus
 relationship: BFO:0000050 ECAO:0103650 ! adult digestive system
 relationship: RO:0002488 ECAO:0000560 ! late juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107418
@@ -4079,6 +4530,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103610 ! digestive system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107420
@@ -4087,6 +4539,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0107418 ! Aristotles lantern
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107440
@@ -4097,6 +4550,7 @@ relationship: BFO:0000050 ECAO:0103810 ! endoskeleton
 relationship: RO:0002202 ECAO:0107260 ! genital plate CD
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107450
@@ -4106,6 +4560,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0107190 ! genital plate
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107460
@@ -4115,6 +4570,7 @@ is_a: ECAO:0104100 ! adult structure
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107470
@@ -4124,6 +4580,7 @@ is_a: ECAO:0107460 ! gonad
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107480
@@ -4133,6 +4590,7 @@ is_a: ECAO:0107460 ! gonad
 relationship: BFO:0000050 ECAO:0103710 ! reproductive system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107490
@@ -4141,6 +4599,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103640 ! juvenile digestive system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000560 ! late juvenile stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107510
@@ -4150,6 +4609,7 @@ relationship: BFO:0000050 ECAO:0103650 ! adult digestive system
 relationship: RO:0002202 ECAO:0103630 ! larval digestive system
 relationship: RO:0002488 ECAO:0000580 ! adult stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107520
@@ -4159,6 +4619,7 @@ is_a: ECAO:0103510 ! anatomical structure
 relationship: BFO:0000050 ECAO:0103770 ! muscular system
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107530
@@ -4167,6 +4628,7 @@ is_a: ECAO:0103530 ! anatomical region
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Term]
 id: ECAO:0107540
@@ -4176,4 +4638,5 @@ is_a: ECAO:0104030 ! cell
 relationship: BFO:0000050 ECAO:0103550 ! whole organism
 relationship: RO:0002488 ECAO:0000550 ! early juvenile stage
 relationship: RO:0002492 ECAO:0000580 ! adult stage
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
