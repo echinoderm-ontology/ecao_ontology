@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ecao/ecao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ecao/releases/2020-05-22/ecao-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ecao/releases/2024-02-19/ecao-simple.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Echinoderm Anatomy and Development Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
@@ -52,7 +52,51 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -78,6 +122,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
@@ -90,9 +146,35 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -113,7 +195,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:label>has_exact_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
     </owl:AnnotationProperty>
     
 
@@ -130,15 +217,15 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
     
 
 
@@ -169,7 +256,7 @@
         <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
 
 A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
@@ -183,14 +270,22 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
         <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part_of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Part_of</rdfs:seeAlso>
     </owl:ObjectProperty>
     
 
@@ -198,35 +293,16 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002087">
-        <obo:IAO_0000115>X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</obo:IAO_0000115>
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
         <obo:IAO_0000118>starts_at_end_of</obo:IAO_0000118>
-        <obo:UBPROP_0000001>A non-transitive temporal relation in which one process immediately precedes another process, such that there is no interval of time between the two processes[SIO:000251].</obo:UBPROP_0000001>
         <oboInOwl:hasDbXref>RO:0002087</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>directly preceded by</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>is directly preceded by</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>is immediately preceded by</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>starts_at_end_of</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>immediately_preceded_by</oboInOwl:id>
         <oboInOwl:shorthand>immediately_preceded_by</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
+        <rdfs:label>immediately preceded by</rdfs:label>
         <rdfs:label xml:lang="en">immediately preceded by</rdfs:label>
-        <rdfs:label>immediately_preceded_by</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/SIO_000251"/>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
-        <owl:annotatedTarget>A non-transitive temporal relation in which one process immediately precedes another process, such that there is no interval of time between the two processes[SIO:000251].</owl:annotatedTarget>
-        <oboInOwl:source>SIO:000251</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>is immediately preceded by</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SIO:000251</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -234,27 +310,19 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        </owl:propertyChainAxiom>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">David Osumi-Sutherland</obo:IAO_0000117>
-        <obo:IAO_0000117>Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Terry Meehan</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0001-9114-8737"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-7073-9172"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-1980-3228"/>
         <oboInOwl:hasDbXref>RO:0002202</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>develops_from</oboInOwl:id>
         <oboInOwl:shorthand>develops_from</oboInOwl:shorthand>
         <rdfs:comment>This is the transitive form of the develops from relation</rdfs:comment>
+        <rdfs:label>develops from</rdfs:label>
         <rdfs:label xml:lang="en">develops from</rdfs:label>
-        <rdfs:label>develops_from</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -266,23 +334,14 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002488"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
-        <obo:IAO_0000115>Relation between continuant c and occurrent s, such that every instance of c comes into existing during some s.</obo:IAO_0000115>
         <obo:IAO_0000115>x existence starts during y if and only if the time point at which x starts is after or equivalent to the time point at which y starts and before or equivalent to the time point at which y ends. Formally: x existence starts during y iff α(x) &gt;= α(y) &amp; α(x) &lt;= ω(y).</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:hasDbXref>RO:0002488</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>begins_to_exist_during</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>RO:0002488</oboInOwl:id>
         <oboInOwl:id>existence_starts_during</oboInOwl:id>
         <oboInOwl:shorthand>existence_starts_during</oboInOwl:shorthand>
         <rdfs:label>existence starts during</rdfs:label>
     </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Relation between continuant c and occurrent s, such that every instance of c comes into existing during some s.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-    </owl:Axiom>
     
 
 
@@ -295,11 +354,10 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </owl:propertyChainAxiom>
         <obo:IAO_0000115>Relation between continuant c and occurrent s, such that every instance of c ceases to exist during some s, if it does not die prematurely.</obo:IAO_0000115>
         <obo:IAO_0000115>x existence ends during y if and only if the time point at which x ends is before or equivalent to the time point at which y ends and after or equivalent to the point at which y starts. Formally: x existence ends during y iff ω(x) &lt;= ω(y) and ω(x) &gt;= α(y).</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:hasDbXref>RO:0002492</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ceases_to_exist_during</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>RO:0002492</oboInOwl:id>
         <oboInOwl:id>existence_ends_during</oboInOwl:id>
         <oboInOwl:shorthand>existence_ends_during</oboInOwl:shorthand>
         <rdfs:comment>The relations here were created based on work originally by Fabian Neuhaus and David Osumi-Sutherland. The work has not yet been vetted and errors in definitions may have occurred during transcription.</rdfs:comment>
@@ -309,7 +367,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Relation between continuant c and occurrent s, such that every instance of c ceases to exist during some s, if it does not die prematurely.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -383,7 +441,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A female gamete that is small in size, i.e. about 10??m in diameter, and that is at the previtellogenic stage.</obo:IAO_0000115>
+        <obo:IAO_0000115>A female gamete that is small in size, i.e. about 10 microm in diameter, and that is at the previtellogenic stage.</obo:IAO_0000115>
         <rdfs:label>previtellogenic primary oocyte stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
@@ -427,7 +485,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A developing female gamete that has reached its full size. It has grown up to ten times its original size, i.e. 80 to 100??m. It also displays a large germinal vesicle that is centered, but it is still not competent for fertilization.</obo:IAO_0000115>
+        <obo:IAO_0000115>A developing female gamete that has reached its full size. It has grown up to ten times its original size, i.e. 80 to 100microm. It also displays a large germinal vesicle that is centered, but it is still not competent for fertilization.</obo:IAO_0000115>
         <rdfs:label>fully grown oocyte with centered germinal vesicle stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
@@ -639,7 +697,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000140"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An embryo that is composed of two cells and is surrounded by a fertilization envelope. The first cleavage plane took place meridionally (i.e. along the animal-vegetal axis), thereby generating two blastomeres of equal size, each containing both animal and vegetal cytoplasm. </obo:IAO_0000115>
+        <obo:IAO_0000115>An embryo that is composed of two cells and is surrounded by a fertilization envelope. The first cleavage plane took place meridionally (i.e. along the animal-vegetal axis), thereby generating two blastomeres of equal size, each containing both animal and vegetal cytoplasm.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0007232</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>2c</oboInOwl:hasExactSynonym>
         <rdfs:label>2-cell stage</rdfs:label>
@@ -663,7 +721,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An embryo that is composed of four cells and is surrounded by a fertilization envelope. The second cleavage plane was meridional and perpendicular to the first one, thereby producing four blastomeres of equal size, each containing both animal and vegetal cytoplasm. </obo:IAO_0000115>
+        <obo:IAO_0000115>An embryo that is composed of four cells and is surrounded by a fertilization envelope. The second cleavage plane was meridional and perpendicular to the first one, thereby producing four blastomeres of equal size, each containing both animal and vegetal cytoplasm.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0007233</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>4c</oboInOwl:hasExactSynonym>
         <rdfs:label>4-cell stage</rdfs:label>
@@ -711,7 +769,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000180"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An embryo that is composed of 16 cells and is surrounded by a fertilization envelope.  Note for euechinoid indirect developers: although the fourth cleavage occurred simultaneously in all cells, the pattern of cell division differed in the animal and vegetal blastomeres. In the animal hemisphere the four cells divided meridionally, producing eight blastomeres of equal volume arrayed in a single tier. These cells are called the mesomeres. In the vegetal hemisphere, the four cells underwent an unequal, equatorial cleavage, producing a tier of four large cells, the macromeres, and a tier of four small cells, the micromeres, located at the vegetal pole. At the 16-cell stage, the embryo is hence composed of three groups of cells with distinct sizes. In most sea urchin species,this is the first morphological indication of the animal-vegetal axis. </obo:IAO_0000115>
+        <obo:IAO_0000115>An embryo that is composed of 16 cells and is surrounded by a fertilization envelope.  Note for euechinoid indirect developers: although the fourth cleavage occurred simultaneously in all cells, the pattern of cell division differed in the animal and vegetal blastomeres. In the animal hemisphere the four cells divided meridionally, producing eight blastomeres of equal volume arrayed in a single tier. These cells are called the mesomeres. In the vegetal hemisphere, the four cells underwent an unequal, equatorial cleavage, producing a tier of four large cells, the macromeres, and a tier of four small cells, the micromeres, located at the vegetal pole. At the 16-cell stage, the embryo is hence composed of three groups of cells with distinct sizes. In most sea urchin species,this is the first morphological indication of the animal-vegetal axis.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>16c</oboInOwl:hasExactSynonym>
         <rdfs:label>16-cell stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
@@ -803,7 +861,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000220"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An embryo that is composed of 60 cells and is surrounded by a fertilization envelope. Note for euechinoid indirect developers: The large micromeres have achieved a sixth cleavage, which was meridional, thereby generating a ring of 8 cells. At that stage, from the animal to the vegetal pole, the embryo is composed of: 16 an1-cells, 16 an2-cells, 8 veg1-cells, 8 veg2-cells, 8 large micromeres and 4 small micromeres. </obo:IAO_0000115>
+        <obo:IAO_0000115>An embryo that is composed of 60 cells and is surrounded by a fertilization envelope. Note for euechinoid indirect developers: The large micromeres have achieved a sixth cleavage, which was meridional, thereby generating a ring of 8 cells. At that stage, from the animal to the vegetal pole, the embryo is composed of: 16 an1-cells, 16 an2-cells, 8 veg1-cells, 8 veg2-cells, 8 large micromeres and 4 small micromeres.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>60c</oboInOwl:hasExactSynonym>
         <rdfs:label>60-cell stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
@@ -898,7 +956,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000260"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The embryo is composed of about 300 cells and is surrounded by a fertilization envelope. Cell divisions are less synchronous than at earlier stages. The cells have  flattened slightly  on their inner (basal) surface, further contributing to the enlargement of the blastocoel. In some species, cells have started to form cilia on their outer surface. The embryo is still  spherical and does not display any obvious morphological landmarks that indicate the primary or secondary embryonic axes. Note for euechinoid indirect developers: molecular labeling typically indicates the presence of 16 to 32 large micromere descendant cells and 4 to 8 small micromere descendants at this stage . </obo:IAO_0000115>
+        <obo:IAO_0000115>The embryo is composed of about 300 cells and is surrounded by a fertilization envelope. Cell divisions are less synchronous than at earlier stages. The cells have  flattened slightly  on their inner (basal) surface, further contributing to the enlargement of the blastocoel. In some species, cells have started to form cilia on their outer surface. The embryo is still  spherical and does not display any obvious morphological landmarks that indicate the primary or secondary embryonic axes. Note for euechinoid indirect developers: molecular labeling typically indicates the presence of 16 to 32 large micromere descendant cells and 4 to 8 small micromere descendants at this stage .</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym> B3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym> midB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mid-B</oboInOwl:hasExactSynonym>
@@ -998,7 +1056,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000300"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The embryo has started elongated along the animal-vegetal axis. Its vegetal region has further continued to thicken and it is marked by a characteristic &apos;V&apos; shape formed by the blastocoel at the level of the cells constituting the vegetal plate, thereby pointing to the vegetal pole. At the animal pole, the embryo is characterized by the presence of an apical tuft.  </obo:IAO_0000115>
+        <obo:IAO_0000115>The embryo has started elongated along the animal-vegetal axis. Its vegetal region has further continued to thicken and it is marked by a characteristic &apos;V&apos; shape formed by the blastocoel at the level of the cells constituting the vegetal plate, thereby pointing to the vegetal pole. At the animal pole, the embryo is characterized by the presence of an apical tuft.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>late-SB</oboInOwl:hasExactSynonym>
         <rdfs:label>late swimming blastula stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
@@ -1112,7 +1170,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000350"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The skeletogenic primary mesenchyme cells (PMCs) have migrated away from the vegetal plate by extending filopodia and moving along the blastocoel wall. The vegetal plate has flattened but has not started to invaginate. The apical pole domain still bears an apical tuft of long, non-motile cilia. </obo:IAO_0000115>
+        <obo:IAO_0000115>The skeletogenic primary mesenchyme cells (PMCs) have migrated away from the vegetal plate by extending filopodia and moving along the blastocoel wall. The vegetal plate has flattened but has not started to invaginate. The apical pole domain still bears an apical tuft of long, non-motile cilia.</obo:IAO_0000115>
         <rdfs:label>late mesenchyme blastula stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
@@ -1180,7 +1238,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000380"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The embryo is mainly characterized morphologically by the presence in the blastocoel of a small archenteron (i.e. primitive digestive tract) that is about a third of its finally size. Following the initial invagination of the vegetal plate, the archenteron has slightly been extended, within the blastocoel, by the subsequent invagination of additional non-skeletogenic mesoderm cells and of some endoderm cells. In parallel, the skeletogenic mesenchyme cells (or SM cells, primary mesenchyme cells or PMC) have by now started migrating along the blastocoel wall, towards the animal pole, thereby creating two lateral chains (one left and one right), while around the developing archenteron, they have gathered into two ventrolateral clusters separated by an oral (or ventral) and an aboral (or dorsal) chain defined by the remaining skeletogenic mesenchyme cells. Within the oral and aboral skeletogenic mesenchyme chains, the cells have further started to fuse to form syncytial filopodial cables within which skeletal calcification will subsequently take place. At the animal pole, the animal neuroectoderm territory is still marked by an enlarged epithelium bearing long and immotile cilia.  </obo:IAO_0000115>
+        <obo:IAO_0000115>The embryo is mainly characterized morphologically by the presence in the blastocoel of a small archenteron (i.e. primitive digestive tract) that is about a third of its finally size. Following the initial invagination of the vegetal plate, the archenteron has slightly been extended, within the blastocoel, by the subsequent invagination of additional non-skeletogenic mesoderm cells and of some endoderm cells. In parallel, the skeletogenic mesenchyme cells (or SM cells, primary mesenchyme cells or PMC) have by now started migrating along the blastocoel wall, towards the animal pole, thereby creating two lateral chains (one left and one right), while around the developing archenteron, they have gathered into two ventrolateral clusters separated by an oral (or ventral) and an aboral (or dorsal) chain defined by the remaining skeletogenic mesenchyme cells. Within the oral and aboral skeletogenic mesenchyme chains, the cells have further started to fuse to form syncytial filopodial cables within which skeletal calcification will subsequently take place. At the animal pole, the animal neuroectoderm territory is still marked by an enlarged epithelium bearing long and immotile cilia.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym> EG</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>eG</oboInOwl:hasExactSynonym>
         <rdfs:label>early gastrula stage</rdfs:label>
@@ -1274,7 +1332,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The embryo is mainly characterized morphologically by a typical triangular shape, the beginning of the tripatition of the digestive tract and the presence of pigmented cells. The oral (or ventral) ectoderm has by now even more flattened, making an almost perfect right angle with the blastoporal side of the embryo. By contrast, on the opposite side, the aboral (or dorsal) ectoderm has round up and slightly elongated, thereby forming the primitive apex of the future larvae. These changes have conferred the embryo a typical and easy recognizable triangular shape. In the oral ectoderm, a small depression has further appeared, called the stomodeum, which will later fuse with the tip of the archenteron to form the mouth. In the blastocoel, the digestive tract has also by now bended toward the stomodeum and started to become tripartite. The cardiac sphincter has started forming, separating the future esophagus from the future stomach. The triradiate spicules have also continued elongating, thereby forming by now, towards the animal pole, the right and left dorsoventral connecting rods, towards the apex, the body rods, and along the vegetal, oral ectoderm the left and right ventral transverse rods. Moreover, some non-skeletogenic mesenchyme cells (or NSM cells, secondary mesenchyme cells or SMC) have started becoming pigmented and inserted into the aboral ectoderm. These cells represent part of the future immune system of the larvae along with other blastocoelar cells that are present in the blastocoel around the gut. In the vicinity of the future esophagus, other non-skeletogenic mesoderm descendant cells along with some endoderm cells have further arranged to form a single unpaired coelomic pouch. At the animal pole, the apical pole domain has also started to flatten making the embryo look like a square when viewed from the oral side, and it still arbors a tuft a long and immotile cilia. Finally, within the apical pole domain, but not yet in the ciliary band, molecular labeling surveys also start by this stage to reveal the presence of differentiating neuronal cells. </obo:IAO_0000115>
+        <obo:IAO_0000115>The embryo is mainly characterized morphologically by a typical triangular shape, the beginning of the tripatition of the digestive tract and the presence of pigmented cells. The oral (or ventral) ectoderm has by now even more flattened, making an almost perfect right angle with the blastoporal side of the embryo. By contrast, on the opposite side, the aboral (or dorsal) ectoderm has round up and slightly elongated, thereby forming the primitive apex of the future larvae. These changes have conferred the embryo a typical and easy recognizable triangular shape. In the oral ectoderm, a small depression has further appeared, called the stomodeum, which will later fuse with the tip of the archenteron to form the mouth. In the blastocoel, the digestive tract has also by now bended toward the stomodeum and started to become tripartite. The cardiac sphincter has started forming, separating the future esophagus from the future stomach. The triradiate spicules have also continued elongating, thereby forming by now, towards the animal pole, the right and left dorsoventral connecting rods, towards the apex, the body rods, and along the vegetal, oral ectoderm the left and right ventral transverse rods. Moreover, some non-skeletogenic mesenchyme cells (or NSM cells, secondary mesenchyme cells or SMC) have started becoming pigmented and inserted into the aboral ectoderm. These cells represent part of the future immune system of the larvae along with other blastocoelar cells that are present in the blastocoel around the gut. In the vicinity of the future esophagus, other non-skeletogenic mesoderm descendant cells along with some endoderm cells have further arranged to form a single unpaired coelomic pouch. At the animal pole, the apical pole domain has also started to flatten making the embryo look like a square when viewed from the oral side, and it still arbors a tuft a long and immotile cilia. Finally, within the apical pole domain, but not yet in the ciliary band, molecular labeling surveys also start by this stage to reveal the presence of differentiating neuronal cells.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym> D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pr</oboInOwl:hasExactSynonym>
         <rdfs:label>prism stage</rdfs:label>
@@ -1342,7 +1400,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000430"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The embryo is by now a fully formed pluteus larva. The mouth has opened and the digestive tract is becoming functional. On the ventral side, the mouth is surrounded anteriorly by an oral hood and posteriorly by two postoral arms. On the dorsal side, the apex has lengthened. The skeleton has indeed continued extending, expending the dorsoventral connecting rods, the body rods, and the ventral transverse rods as well as developing the anterolateral rods and the postoral rods. Within the larva, the tripartition of the digestive tract has further progressed. The cardiac sphincter is now fully formed in between the esophagus and the stomach, and the pyloric sphincter in between the stomach and the intestine and the anal sphincter at the level of the anus have also started forming. Around the esophagus, the coelomic pouch has further developed into two bilobed sacs (or pouches), one on each side of the digestive tract. Finally, within the apical pole domain, as well as within the ciliary band, differentiated neurons with their extended axons can also now be distinguished by immunostaining. In parallel, the apical tuft of long and immotile cilia remains discernable at the tip of the oral hood, while in parallel the ciliary band has further started growing a concentrated number of intermediate size motile cilia, which will be used by the larva to swim directionally.  </obo:IAO_0000115>
+        <obo:IAO_0000115>The embryo is by now a fully formed pluteus larva. The mouth has opened and the digestive tract is becoming functional. On the ventral side, the mouth is surrounded anteriorly by an oral hood and posteriorly by two postoral arms. On the dorsal side, the apex has lengthened. The skeleton has indeed continued extending, expending the dorsoventral connecting rods, the body rods, and the ventral transverse rods as well as developing the anterolateral rods and the postoral rods. Within the larva, the tripartition of the digestive tract has further progressed. The cardiac sphincter is now fully formed in between the esophagus and the stomach, and the pyloric sphincter in between the stomach and the intestine and the anal sphincter at the level of the anus have also started forming. Around the esophagus, the coelomic pouch has further developed into two bilobed sacs (or pouches), one on each side of the digestive tract. Finally, within the apical pole domain, as well as within the ciliary band, differentiated neurons with their extended axons can also now be distinguished by immunostaining. In parallel, the apical tuft of long and immotile cilia remains discernable at the tip of the oral hood, while in parallel the ciliary band has further started growing a concentrated number of intermediate size motile cilia, which will be used by the larva to swim directionally.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0008265</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym> 2-arm pluteus stage</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym> early pluteus stage</oboInOwl:hasExactSynonym>
@@ -1368,7 +1426,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000460"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The 4-arm pluteus larva is mainly characterized morphologically by the presence, on the ventral side, of four extended arms (two anterolateral arms at the level of the oral hood and two postoral arms) and on the dorsal side by a sleeked apex. The larva now possesses a completely tripartite and functional digestive tract composed of an esophagus, a stomach, and an intestine, respectively limited by a cardiac sphincter, a pyloric sphincter, and an anal sphincter. Around the esophagus, the right and left coelomic pouches have further started to grow in size and elongate. The first morphological indicator of a left-right asymmetry becomes apparent at that stage, the left coelomic pouch being slightly more elongated than the right one. Furthermore, a thin protrusion of non-skeletogenic mesenchyme cells can be seen extending from the left coelomic pouch to the anterior ectoderm. This is the primary pore canal, which opens to the exterior environment by the hydropore. The larva further now possesses, all around the esophagus, a network of contractile muscles allowing it to swallow and feed. Finally, the apical tuft previously observed at the animal pole has by now disappeared, leaving behind only the concentrated stretch of intermediate size cilia borne by the ciliary band. </obo:IAO_0000115>
+        <obo:IAO_0000115>The 4-arm pluteus larva is mainly characterized morphologically by the presence, on the ventral side, of four extended arms (two anterolateral arms at the level of the oral hood and two postoral arms) and on the dorsal side by a sleeked apex. The larva now possesses a completely tripartite and functional digestive tract composed of an esophagus, a stomach, and an intestine, respectively limited by a cardiac sphincter, a pyloric sphincter, and an anal sphincter. Around the esophagus, the right and left coelomic pouches have further started to grow in size and elongate. The first morphological indicator of a left-right asymmetry becomes apparent at that stage, the left coelomic pouch being slightly more elongated than the right one. Furthermore, a thin protrusion of non-skeletogenic mesenchyme cells can be seen extending from the left coelomic pouch to the anterior ectoderm. This is the primary pore canal, which opens to the exterior environment by the hydropore. The larva further now possesses, all around the esophagus, a network of contractile muscles allowing it to swallow and feed. Finally, the apical tuft previously observed at the animal pole has by now disappeared, leaving behind only the concentrated stretch of intermediate size cilia borne by the ciliary band.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0008265</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym> P</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym> Plut</oboInOwl:hasExactSynonym>
@@ -1418,7 +1476,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000470"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The 6-arm pluteus larva is mainly characterized morphologically by the presence, on the ventral side, of six arms, and by the development, on the anterior midline of the esophagus, of the dorsal arch. The larva has indeed extended on the ventral side two additional posterodorsal arms and has developed on the anterior side an additional skeletal element called the dorsal arch. In addition, at the basis of the postoral and posterodorsal arms, four small patches of ciliary band have by now cut off and migrated toward the apex, forming four patches of ciliated structures called the epaulettes (one posterior and one anterior pair). The nervous system of the larva has also become more complex with cell bodies and axons being present all along the arms and for the latter as well throughout the apex. The left and right coelomic pouches have continued to elongate on each side of the digestive tract. As a note this stage is relatively fleeting. </obo:IAO_0000115>
+        <obo:IAO_0000115>The 6-arm pluteus larva is mainly characterized morphologically by the presence, on the ventral side, of six arms, and by the development, on the anterior midline of the esophagus, of the dorsal arch. The larva has indeed extended on the ventral side two additional posterodorsal arms and has developed on the anterior side an additional skeletal element called the dorsal arch. In addition, at the basis of the postoral and posterodorsal arms, four small patches of ciliary band have by now cut off and migrated toward the apex, forming four patches of ciliated structures called the epaulettes (one posterior and one anterior pair). The nervous system of the larva has also become more complex with cell bodies and axons being present all along the arms and for the latter as well throughout the apex. The left and right coelomic pouches have continued to elongate on each side of the digestive tract. As a note this stage is relatively fleeting.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0008265</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Plut6a</oboInOwl:hasExactSynonym>
         <rdfs:label>6-arm pluteus larva stage</rdfs:label>
@@ -1466,7 +1524,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000500"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The competent pluteus larva is mainly characterized morphologically by the presence, on the ventral size, of still 8 arms and by the presence on the left side of the stomach of the rudiment that is now the size of or even bigger than the stomach. The rudiment further harbors by now five long primary podia (i.e. tube feet), five quartets of definitive spines located between the primary podia and five pairs of immature spines at the basis of the primary podia, while on the opposite side, i.e. on the right side of the larva, five to seven immature spines have further developed, supported by the genital plates, along with one to four pedicaellariae. At the level of the larva, in parallel, the anterior and posterior pairs of epaulettes have also considerably increased in size by now and even fused dorsally to the hydropore and to the anus respectively, thereby leaving exempt of cilia two lateral fields in between them. At the center of the left lateral field, the vestibular roof has also by now ruptured and this opening has created the vestibular pore, through which some primary podia of the rudiment protrude outside the larva and scrutinize the substrate looking for the adequate cues to begin metamorphosis. At that stage, the larva is thus exhibiting a typical substrate-test behavior, going to the sea bottom and scrutinizing the substrate. This behavior is characteristic of a larva named competent to metamorphosis, which it will accomplish providing that it is adequately stimulated by environmental factors. </obo:IAO_0000115>
+        <obo:IAO_0000115>The competent pluteus larva is mainly characterized morphologically by the presence, on the ventral size, of still 8 arms and by the presence on the left side of the stomach of the rudiment that is now the size of or even bigger than the stomach. The rudiment further harbors by now five long primary podia (i.e. tube feet), five quartets of definitive spines located between the primary podia and five pairs of immature spines at the basis of the primary podia, while on the opposite side, i.e. on the right side of the larva, five to seven immature spines have further developed, supported by the genital plates, along with one to four pedicaellariae. At the level of the larva, in parallel, the anterior and posterior pairs of epaulettes have also considerably increased in size by now and even fused dorsally to the hydropore and to the anus respectively, thereby leaving exempt of cilia two lateral fields in between them. At the center of the left lateral field, the vestibular roof has also by now ruptured and this opening has created the vestibular pore, through which some primary podia of the rudiment protrude outside the larva and scrutinize the substrate looking for the adequate cues to begin metamorphosis. At that stage, the larva is thus exhibiting a typical substrate-test behavior, going to the sea bottom and scrutinizing the substrate. This behavior is characteristic of a larva named competent to metamorphosis, which it will accomplish providing that it is adequately stimulated by environmental factors.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0008265</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym> Cpt8a</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cPlut</oboInOwl:hasExactSynonym>
@@ -1491,7 +1549,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000510"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The metamorphic larva stage consists essentially of the evagination of the echinoid rudiment. It is characterized by the execution of conspicuous and relatively abrupt physical changes that take place quite quickly, in about one hour, and during which the planktonic larva is transformed into a benthic juvenile. At that stage, the larva is settled on the substrate and is firmly attached to it by the primary podia of the rudiment. The ectodermal epithelium of its arms has started to collapse, making the spicules supporting the larval arms piercing through the epidermis. The larval mouth and anus have further closed, while in parallel, within the larva, the rudiment spines have lifted up thereby distending the vestibular wall and wide opening the vestibular pore. Following these movements, the rudiment has farther down accomplished and finalized its complete eversion, encapsulating the digestive tract and reaching the right side of the larval body. During this process, the genital plates and the associated pedicellariae and immature spines present on the right side of the larva have further completed the production of the aboral part of the adult body. At the end of metamorphosis, hence at the end of the metamorphic larva stage, the individual has thus become benthic, it is settled in the substrate, and it looks like an adult pentaradial sea urchin although it is smaller in size, deprived of a functional digestive system and sexually immature. </obo:IAO_0000115>
+        <obo:IAO_0000115>The metamorphic larva stage consists essentially of the evagination of the echinoid rudiment. It is characterized by the execution of conspicuous and relatively abrupt physical changes that take place quite quickly, in about one hour, and during which the planktonic larva is transformed into a benthic juvenile. At that stage, the larva is settled on the substrate and is firmly attached to it by the primary podia of the rudiment. The ectodermal epithelium of its arms has started to collapse, making the spicules supporting the larval arms piercing through the epidermis. The larval mouth and anus have further closed, while in parallel, within the larva, the rudiment spines have lifted up thereby distending the vestibular wall and wide opening the vestibular pore. Following these movements, the rudiment has farther down accomplished and finalized its complete eversion, encapsulating the digestive tract and reaching the right side of the larval body. During this process, the genital plates and the associated pedicellariae and immature spines present on the right side of the larva have further completed the production of the aboral part of the adult body. At the end of metamorphosis, hence at the end of the metamorphic larva stage, the individual has thus become benthic, it is settled in the substrate, and it looks like an adult pentaradial sea urchin although it is smaller in size, deprived of a functional digestive system and sexually immature.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym> meta</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>metamorphosis</oboInOwl:hasExactSynonym>
         <rdfs:label>metamorphic larva stage</rdfs:label>
@@ -1684,6 +1742,160 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000115>Stage when the vegetal plate is apparent but primary mesenchyme cells (PMCs) have not started to ingress. Embryos are motile due ciliary beating but have not completed hatching.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>VP</oboInOwl:hasExactSynonym>
         <rdfs:label>vegetal plate stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000610">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>open mouth stage</obo:IAO_0000115>
+        <rdfs:label>open mouth stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000620">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000450"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000460"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>early pluteus stage</obo:IAO_0000115>
+        <rdfs:label>early pluteus stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000630">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>early prism stage</obo:IAO_0000115>
+        <rdfs:label>early prism stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000640">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>late organogenesis stage</obo:IAO_0000115>
+        <rdfs:label>late organogenesis stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000650">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>late prism stage</obo:IAO_0000115>
+        <rdfs:label>late prism stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000660">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>mid-organogenesis stage</obo:IAO_0000115>
+        <rdfs:label>mid-organogenesis stage</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000670">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>mesenchyme blastula stage</obo:IAO_0000115>
+        <rdfs:label>mesenchyme blastula stage</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     
@@ -2666,7 +2878,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The water vascular system is a hydraulic system used by sea urchins for locomotion, food and waste transportation, and respiration. The system is composed of canals connecting numerous tube feet. </obo:IAO_0000115>
+        <obo:IAO_0000115>The water vascular system is a hydraulic system used by sea urchins for locomotion, food and waste transportation, and respiration. The system is composed of canals connecting numerous tube feet.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON:0008251</oboInOwl:hasDbXref>
         <rdfs:label>water vascular system</rdfs:label>
         <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
@@ -11906,6 +12118,2003 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>photoreceptor cell</oboInOwl:hasExactSynonym>
         <rdfs:label>photosensory cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000190"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A population of embryonic cells that share a common developmental fate or program of gene expression and comprising a region that lacks clear morphological boundaries</obo:IAO_0000115>
+        <rdfs:label>embryonic territory</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A multicellular organism that existence_ends_with a post-juvenile adult stage and existence_starts_with a post-juvenile adult stage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0007023</oboInOwl:hasDbXref>
+        <rdfs:label>adult organism</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107580">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103770"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The muscle system of the embryo.</obo:IAO_0000115>
+        <rdfs:label>embryonic muscular system</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107590 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104270"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103550"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A structure lying external to one or more cells, which provides structural support, biochemical or biomechanical cues for cells or tissues.</obo:IAO_0000115>
+        <rdfs:label>extracellular matrix</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104630"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A blastomere of an 8-cell embryo.</obo:IAO_0000115>
+        <rdfs:label>blastomere of 8-cell embryo</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104630"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000190"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000190"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A blastomere of a 16-cell embryo.</obo:IAO_0000115>
+        <rdfs:label>blastomere of 16-cell embryo</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104740"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that will develop into a neuron of the animal pole domain.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> animal pole domain neuronal progenitor cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>apical pole domain presumptive neuron</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive animal pole domain neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104740"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An ectodermal  cell that will develop into a neuron.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ectoderm neuronal progenitor cell</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive ectoderm neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104740"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that will develop into a neuron of the ciliary band.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ciliary band neuronal progenitor cell</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive ciliary band neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104740"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An endodermal cell that will develop into a neuron.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> endoderm-ssociated neuronal progenitor cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>presumptive endodermal neuron</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive endoderm-associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuron located near the base of an oral arm and outside the ciliary band.</obo:IAO_0000115>
+        <rdfs:label>postoral neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104740"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that will give rise to a postoral neuron.</obo:IAO_0000115>
+        <rdfs:label>presumptive postoral neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000530"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuron that produces the synaptotagmin-B protein.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> synaptotagmin-positive neuron</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>synaptotagmin- B neuron</oboInOwl:hasExactSynonym>
+        <rdfs:label>synaptotagmin-B-expressing neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000530"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuron that produces the nitric oxide synthase protein.</obo:IAO_0000115>
+        <rdfs:label>nitric oxide synthase-expressing neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107700">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000530"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuron that uses acetylcholine as a vesicular neurotransmitter.</obo:IAO_0000115>
+        <rdfs:label>cholinergic neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104790"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuron that uses both acetylcholine and catecholamines as vesicular neurotransmitters.</obo:IAO_0000115>
+        <rdfs:label>catecholaminergic/cholinergic neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107720">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104800"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104780"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuron derived from endoderm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>endodermal neuron</oboInOwl:hasExactSynonym>
+        <rdfs:label>endoderm-associated neuron</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107730 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107730">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104930"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103740"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103970"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>One of two bilateral ganglia that arise in the oral ectoderm near the ciliary band.</obo:IAO_0000115>
+        <rdfs:label>lateral ganglion</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107740 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107730"/>
+        <obo:IAO_0000115>The lateral ganglion that forms on the right side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>right lateral ganglion</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107750 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107750">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107730"/>
+        <obo:IAO_0000115>The lateral ganglion that forms on the left side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>left lateral ganglion</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107760 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107760">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000400"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The part of the blastula that will give rise to ventral ectoderm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>presumptive oral ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive ventral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107770 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107770">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000400"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The part of the blastula that will give rise to dorsal ectoderm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>presumptive aboral ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive dorsal ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A dynamic terriritory within the prospective ectoderm of the early embryo, located at the anterior (animal) end of the embryo and shaped by Wnt signaling, that contains cells with neurogenic potential.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> ANE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>animal ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>anterior neuroectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107790 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107790">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A dynamic territory within the prospective ectoderm of the early embryo, located between the anterior neuroectoderm and the endomesoderm.</obo:IAO_0000115>
+        <rdfs:label>equatorial ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107800 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107800">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103970"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The innermost part of the anterior neuroectoderm, immediately surrounding the animal pole.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> inner apical pole domain</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inner ANE</oboInOwl:hasExactSynonym>
+        <rdfs:label>inner anterior neuroectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103970"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A torus shaped region comprising the outer part of the anterior neuroectoderm.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> outer apical pole domain</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>outer ANE</oboInOwl:hasExactSynonym>
+        <rdfs:label>outer anterior neuroectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107820">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A region of the ectoderm derived from the animal hemisphere (i.e., mesomere descendants) and located just above the equator on the ventral side of the embryo.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>central oral ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>central ventral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107830 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107830">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A region of the ectoderm derived from the animal hemisphere (i.e., mesomere descendants) and located between the central ventral ectoderm and the animal pole domain on the ventral side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>near apical ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107840 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107840">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A region of border ectoderm located on a lateral surface of the embryo.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> lateral BE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>veg1 lateral ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>lateral border ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107850 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107850">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A region of border ectoderm located on the ventral side of the embryo.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> oral BE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> oral border ectoderm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> ventral BE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>veg1 oral ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>ventral border ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107860 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A region of border ectoderm located on the dorsal side of the embryo.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym> aboral BE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> aboral border ectoderm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> dorsal BE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>veg1 aboral ectoderm</oboInOwl:hasExactSynonym>
+        <rdfs:label>dorsal border ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107870">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000390"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A region of ectoderm derived from the animal hemisphere and located laterally at the boundary between hte ventral and dorsal ectoderm; this region overlaps with part of the prospective ciliary band.</obo:IAO_0000115>
+        <rdfs:label>animal lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107880 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107880">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105320"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000390"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The animal lateral ectoderm on the right side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>right animal lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105320"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000390"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The animal lateral ectoderm on the left side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>left animal lateral ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107900 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107900">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105350"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A portion of the ectoderm located at the tip of a postoral arm.</obo:IAO_0000115>
+        <rdfs:label>postoral arm tip ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107910 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107910">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A portion of the ectoderm located at the tip of the right postoral arm.</obo:IAO_0000115>
+        <rdfs:label>right postoral arm tip ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107920 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103530"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A portion of the ectoderm located at the tip of the left postoral arm.</obo:IAO_0000115>
+        <rdfs:label>left postoral arm tip ectoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103730"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104908"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000670"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The cells that will give rise to the ciliary band.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>presumptive ciliated band</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103510"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An elongated extension of the embryo on the ventral side, supported by a simple or fenestrated skeletal rod and often covered in part by a ciliary band. Arms develop in bilaterally symmetrical pairs.</obo:IAO_0000115>
+        <rdfs:label>arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107940"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A type of arm that projects from the oral hood; forms after the postoral arms appear and prior to the appearance of the preoral and posterodorsal arms.</obo:IAO_0000115>
+        <rdfs:label>anterolateral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107960 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107960">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107940"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A type of arm that forms between the equator and the posterior pole, near the position of the skeletal rudiment; the first type of arm to appear.</obo:IAO_0000115>
+        <rdfs:label>postoral arm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105700"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A rod that forms by the branching or pronounced curving of the anterior tip of a dorsoventral connecting rod and that projects ventrally from the oral hood, supporting an anterolateral arm.</obo:IAO_0000115>
+        <rdfs:label>anterolateral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107980 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107980">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105700"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A rod that forms by the branching of the anonymous rod and projects ventrally, supporting a postoral arm.</obo:IAO_0000115>
+        <rdfs:label>postoral rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0107990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0107990">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105700"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A rod that initially forms as one of the three arms of the embryonic triradiate spicule rudiment; this rod extends toward the animal pole before branching or curving to form the anterolateral rod and, in some species, the recurrent rod.</obo:IAO_0000115>
+        <rdfs:label>dorsoventral connecting rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105700"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A rod that initially forms as one of the three arms of the embryonic triradiate spicule rudiment; this rod projects toward the ventral midline and ceases growth early in development without branching.</obo:IAO_0000115>
+        <rdfs:label>ventral transverse rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105880"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The growing tip of the body rod as it extends dorsally.</obo:IAO_0000115>
+        <rdfs:label>distal tip of body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105868"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The distal tip of the body rod that forms on the right side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>distal tip of right body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105868"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The distal tip of the body rod that forms on the left side of the embryo..</obo:IAO_0000115>
+        <rdfs:label>distal tip of left body rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105700"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107990"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A rod that forms from the branching of a dorsoventral transverse rod and extends dorsally.</obo:IAO_0000115>
+        <rdfs:label>recurrent rod</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000210"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The part of the embryonic presumptive mesoderm that will later give rise to the skeletogenic mesenchyme and embryonic skeleton.</obo:IAO_0000115>
+        <rdfs:label>presumptive embryonic skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105698"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000400"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cluster of skeletogenic cell bodies that forms in the ventrolateral region of the subequatorial skeletogenic mesenchyme ring; one triradiate spicule rudiment will form in each of two ventrolateral clusters.</obo:IAO_0000115>
+        <rdfs:label>ventrolateral skeletogenic mesenchyme cluster</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000280"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Embryonic cells tin the epithelial wall of the vegetal plate or the archenteron that will give rise to mesodermal derivatives other than skeleton.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>NSM</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive embryonic non-skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0108070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000390"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The presumptive embryonic non-skeletogenic mesoderm on the ventral side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>ventral presumptive embryonic non-skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0108070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000390"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The presumptive embryonic non-skeletogenic mesoderm on the dorsal side of the embryo.</obo:IAO_0000115>
+        <rdfs:label>dorsal presumptive embryonic non-skeletogenic mesoderm</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103770"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that will give rise to a muscle cell.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>muscle precursor cell</oboInOwl:hasExactSynonym>
+        <rdfs:label>presumptive muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0104030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106550"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0108100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000530"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that is part of a muscle.</obo:IAO_0000115>
+        <rdfs:label>muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103540"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The inner, extracellular space between blastomeres of the cleavage stage embryo that will gradually expand and form the blastocoel.</obo:IAO_0000115>
+        <rdfs:label>presumptive blastocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106660"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that is part of the pyloric sphincter.</obo:IAO_0000115>
+        <rdfs:label>pyloric sphincter muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106660"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that is part of the cardiac sphincter.</obo:IAO_0000115>
+        <rdfs:label>cardiac sphincter muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106660"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106640"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell that is part of the anal sphincter.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON:0004916</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>anal pore muscle cell</oboInOwl:hasExactSynonym>
+        <rdfs:label>anal sphincter muscle cell</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103510"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103870"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106800"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A strand of mesenchyme cells that extends from the left coelom to the ectoderm and that will give rise to the primary pore canal.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>presumptive hydropore canal</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary pore canal rudiment</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106770"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000640"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An evagination of the midgut that will contribute to the coelom.</obo:IAO_0000115>
+        <rdfs:label>posterior enterocoel</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106770"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>In species with a posterior enterocoel, the left coelomic pouch that evaginates from the unpaired coelomic pouch at the anterior end of the archenteron.</obo:IAO_0000115>
+        <rdfs:label>left anterior coelomic pouch</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0106770"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103570"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>In species with a posterior enterocoel, the right coelomic pouch that evaginates from the unpaired coelomic pouch at the anterior end of the archenteron.</obo:IAO_0000115>
+        <rdfs:label>right anterior coelomic pouch</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105460"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107930"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>In species with two separate ciliary bands, a ciliary band that surrounds the anterior-ventral end of the embryo, anterior to the mouth.</obo:IAO_0000115>
+        <rdfs:label>preoral ciliary band</rdfs:label>
+        <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0108210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0108210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECAO_0105460"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0103580"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0107930"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>In species with two separate ciliary bands, a ciliary band that surrounds the posterior-dorsal end of the embryo, posterior to the mouth.</obo:IAO_0000115>
+        <rdfs:label>postoral ciliary band</rdfs:label>
         <oio:hasOBONamespace>echinoderm_anatomy</oio:hasOBONamespace>
     </owl:Class>
 </rdf:RDF>
