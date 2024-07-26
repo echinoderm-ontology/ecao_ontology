@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ecao/releases/2024-02-20/ecao-simple.owl
+data-version: ecao/releases/2024-07-25/ecao-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -75,7 +75,7 @@ property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 [Term]
 id: ECAO:0000090
 name: mature oocyte stage
-def: "A mature female gamete that has achieved its meiotic maturation and in which the female pronucleus is visible. The mature oocyte is arrested in G1 phase and its average size is 80 to 100 µm. It is surrounded by a transparent jelly coat that is about 30 µm thick. It is competent to fertilization and it is located in the female gonad where it may be stored for weeks to months before its release in sea water by spawning. In the P. lividus species, the mature female gametes are characterized by the presence of pigment granules concentrated  in a subequatorial band. This band is classically called the pigment band and allows to visualize the first embryonic axis, i.e. the animal-vegetal axis, which is perpendicular to the band." []
+def: "A mature female gamete that has achieved its meiotic maturation and in which the female pronucleus is visible. The mature oocyte is arrested in G1 phase and its average size is 80 to 100 Âµm. It is surrounded by a transparent jelly coat that is about 30 Âµm thick. It is competent to fertilization and it is located in the female gonad where it may be stored for weeks to months before its release in sea water by spawning. In the P. lividus species, the mature female gametes are characterized by the presence of pigment granules concentrated  in a subequatorial band. This band is classically called the pigment band and allows to visualize the first embryonic axis, i.e. the animal-vegetal axis, which is perpendicular to the band." []
 synonym: " spawned egg" EXACT []
 synonym: "unfertilized egg" EXACT []
 relationship: immediately_preceded_by ECAO:0000080 ! fully grown oocyte with no nucleus stage
@@ -212,6 +212,15 @@ relationship: part_of ECAO:0000150 ! cleavage period
 property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
+id: ECAO:0000235
+name: 64-cell stage
+def: "64-cell stage" []
+synonym: "64c" EXACT []
+relationship: immediately_preceded_by ECAO:0000210 ! 32-cell stage
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
 id: ECAO:0000240
 name: blastula period
 def: "Period during which the embryo is transformed into a hollow sphere that is one cell layer thick and encompasses a central, fluid-filled cavity called the blastocoel. During this period, every cell of the embryo is in contact on the inside with the blastocoel and on the outside with the hyaline layer." []
@@ -314,7 +323,7 @@ property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 [Term]
 id: ECAO:0000340
 name: early mesenchyme blastula stage
-def: "The vegetal plate is apparent and skeletogenic primary mesenchyme cells (PMCs) are in the process of ingression, a type of epithelial–mesenchymal transition (EMT). The epithelial wall of the embryo has thickened at the animal pole, where a tuft of long, non-motile cilia has formed." []
+def: "The vegetal plate is apparent and skeletogenic primary mesenchyme cells (PMCs) are in the process of ingression, a type of epithelialâ€“mesenchymal transition (EMT). The epithelial wall of the embryo has thickened at the animal pole, where a tuft of long, non-motile cilia has formed." []
 synonym: "eMB" EXACT []
 relationship: immediately_preceded_by ECAO:0000600 ! vegetal plate stage
 relationship: part_of ECAO:0000330 ! mesenchyme blastula phase
@@ -514,7 +523,7 @@ property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 [Term]
 id: ECAO:0000550
 name: early juvenile stage
-def: "The early juvenile is morphologically similar to both the late rudiment and a miniature sea urchin adult. Like the rudiment, it harbors five primary podia (or tube feet), five quartet of definitive spines, five pairs of immature spines located at the basis of the primary podia, 5 to 7 immature spines supported by the genital plates as well as 1 to 4 pedicellariae. Like the adult, it displays a pentarial symmetry and is settled on the substrate. An early juvenile is about 300 µm in diameter. On its aboral side, it still exhibits some remaining larval rods and tissues, although these will soon disappear. In addition, the plates forming its endoskeleton are still rather light and porous making it looking relatively clear, although it bears lots of red-pigmented cells. However, the postlarva is still deprived of a mouth and an anus, hence of a functional digestive tract. The early juvenile is thus endotrophic, meaning that its growth and development solely relies on energy derived from internal sources. Furthermore, the early juvenile is sexually immature." []
+def: "The early juvenile is morphologically similar to both the late rudiment and a miniature sea urchin adult. Like the rudiment, it harbors five primary podia (or tube feet), five quartet of definitive spines, five pairs of immature spines located at the basis of the primary podia, 5 to 7 immature spines supported by the genital plates as well as 1 to 4 pedicellariae. Like the adult, it displays a pentarial symmetry and is settled on the substrate. An early juvenile is about 300 Âµm in diameter. On its aboral side, it still exhibits some remaining larval rods and tissues, although these will soon disappear. In addition, the plates forming its endoskeleton are still rather light and porous making it looking relatively clear, although it bears lots of red-pigmented cells. However, the postlarva is still deprived of a mouth and an anus, hence of a functional digestive tract. The early juvenile is thus endotrophic, meaning that its growth and development solely relies on energy derived from internal sources. Furthermore, the early juvenile is sexually immature." []
 synonym: " endotrophic juvenile" EXACT []
 synonym: " postlarva" EXACT []
 synonym: "PLJuv" EXACT []
@@ -641,6 +650,21 @@ name: mesenchyme blastula stage
 def: "mesenchyme blastula stage" []
 relationship: immediately_preceded_by ECAO:0000280 ! late blastula stage
 relationship: part_of ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000700
+name: motile blastula stage
+def: "motile blastula stage" []
+synonym: "MotB" EXACT []
+relationship: part_of ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000710
+name: invagination episode
+def: "invagination episode" []
+relationship: part_of ECAO:0000320 ! gastrula period
 property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
@@ -1323,7 +1347,7 @@ property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 [Term]
 id: ECAO:0104180
 name: equatorial pigment band
-def: "The subequatorial accumulation of pigment granules (the so-called ‘pigment band’) in eggs or early stage embryos, which constitutes an unambiguous marker of animal-vegetal polarity" []
+def: "The subequatorial accumulation of pigment granules (the so-called â€˜pigment bandâ€™) in eggs or early stage embryos, which constitutes an unambiguous marker of animal-vegetal polarity" []
 synonym: " pigmented band" EXACT []
 synonym: "pigment band" EXACT []
 is_a: ECAO:0104147 ! intracellular part
@@ -5060,6 +5084,3073 @@ relationship: develops_from ECAO:0107930 ! presumptive ciliary band
 relationship: existence_ends_during ECAO:0000440 ! larval development
 relationship: existence_starts_during ECAO:0000610 ! open mouth stage
 relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109000
+name: anatomical element
+def: "An anatomical structure that is a subdivision of a tissue, a germ layer, or an organ of the whole organism but with well-defined morphological boundaries." []
+synonym: "anatomical object" EXACT []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109010
+name: zygote
+def: "A diploid cell produced by the fusion of a male and a female gamete at fertilization. It constitutes the first stage of the embryogenesis life cycle phase." []
+synonym: " 1-cell" EXACT []
+synonym: "fertilized egg" EXACT []
+is_a: ECAO:0104030 ! cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109020
+name: cleavage embryo
+def: "A multicellular organism at an early stage of development characterized by cleavage. It includes all forms of the cleavage period during the embryogenesis life cycle phase (i.e., from first cleavage to before the formation of the blastula)." []
+synonym: "cleaving embryo" EXACT []
+is_a: ECAO:0103570 ! embryo
+relationship: develops_from ECAO:0109010 ! zygote
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109030
+name: blastula
+def: "A multicellular organism at an early stage of development corresponding to a hollow, spherical, multicellular, monolayered embryo with a hollow cavity (the blastocoel) in the center. It includes all forms of the blastula period during the embryogenesis life cycle phase." []
+synonym: "morula" EXACT []
+is_a: ECAO:0103570 ! embryo
+relationship: develops_from ECAO:0109020 ! cleavage embryo
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109040
+name: gastrula
+def: "A multicellular organism at an early stage of development characterized by morphogenetic movements. It includes all forms of the gastrula period during the embryogenesis life cycle phase." []
+synonym: "gastrulating embryo" EXACT []
+is_a: ECAO:0103570 ! embryo
+relationship: develops_from ECAO:0109030 ! blastula
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109050
+name: pre-metamorphic organism
+def: "A multicellular organism the existence of which starts at fertilization and ends with metamorphosis. It includes all forms during the embryogenesis and larval development life cycle phases." []
+synonym: "pre-metamorphosing organism" EXACT []
+is_a: ECAO:0103560 ! multicellular organism
+relationship: develops_from ECAO:0109010 ! zygote
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109060
+name: post-embryonic organism
+def: "A multicellular organism the existence of which starts upon the opening of the mouth and ends with death. It includes all forms during the larval development and adulthood life cycle phases." []
+is_a: ECAO:0103560 ! multicellular organism
+relationship: develops_from ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109070
+name: mature adult
+def: "A multicellular organism the existence of which starts with gamete production and ends with death." []
+synonym: " post-juvenile adult" EXACT []
+synonym: "sexually mature adult" EXACT []
+is_a: ECAO:0103560 ! multicellular organism
+relationship: develops_from ECAO:0103590 ! juvenile
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109080
+name: embryonic region
+def: "A portion of an embryo (or a population of embryonic cells) that is characterized by a common developmental fate or a common gene expression program but lacks any clear morphological boundaries." []
+synonym: "embryonic territory" EXACT []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109090
+name: larval region
+def: "A portion of a larva (or a population of larval cells) that is characterized by a common developmental fate or a common gene expression program but lacks any clear morphological boundaries." []
+synonym: "larval territory" EXACT []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109100
+name: pre-metamorphic organism region
+def: "A population of cells that, throughout the embryogenesis and larval development life cycle phases, is characterized by a common developmental fate or a common gene expression program but lacks any clear morphological boundaries." []
+synonym: "pre-metamorphic territory" EXACT []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109110
+name: organ
+def: "A multicellular anatomical structure made of several tissues, performing a specific function or group of functions." []
+is_a: ECAO:0109000 ! anatomical element
+relationship: part_of ECAO:0103520 ! anatomical system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109120
+name: pre-metamorphic organism tissue
+def: "A tissue that is present in a pre-metamorphic organism." []
+is_a: ECAO:0104110 ! tissue
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109130
+name: pre-metamorphic organism structure
+def: "An anatomical structure that is part of a pre-metamorphic organism." []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109140
+name: pre-metamorphic organism immune system
+def: "The immune system of a pre-metamorphic organism." []
+is_a: ECAO:0103660 ! immune system
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109150
+name: female reproductive system
+def: "An anatomical reproductive system that is present in a female multicellular organism." []
+is_a: ECAO:0103710 ! reproductive system
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109160
+name: male reproductive system
+def: "An anatomical reproductive system that is present in a male multicellular organism." []
+is_a: ECAO:0103710 ! reproductive system
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109170
+name: pre-metamorphic organism nervous system
+def: "The neurons and glial cells constituting the nervous system of a pre-metamorphic organism." []
+is_a: ECAO:0103720 ! nervous system
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109180
+name: pre-metamorphic organism endoskeleton
+def: "The endoskeleton of a pre-metamorphic organism." []
+synonym: "pre-metamorphic organism skeleton" EXACT []
+is_a: ECAO:0103810 ! endoskeleton
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109190
+name: skeletal tissue
+def: "A specialized form of connective tissue in which the extracellular matrix is mineralized and that functions in mechanical and structural support." []
+is_a: ECAO:0104110 ! tissue
+relationship: part_of ECAO:0103810 ! endoskeleton
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109200
+name: embryonic hemisphere
+def: "One of two hemispheres of an embryo." []
+synonym: "hemisphere of embryo" EXACT []
+is_a: ECAO:0104070 ! embryonic structure
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109210
+name: animal cell tier
+def: "A cell tier present in the animal hemisphere of an embryo. " []
+synonym: "animal blastomere tier" EXACT []
+is_a: ECAO:0104678 ! cell tier
+relationship: part_of ECAO:0103890 ! animal hemisphere
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109220
+name: vegetal cell tier
+def: "A cell tier present in the vegetal hemisphere of an embryo. " []
+synonym: "vegetal blastomere tier" EXACT []
+is_a: ECAO:0104678 ! cell tier
+relationship: part_of ECAO:0103900 ! vegetal hemisphere
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109230
+name: cell body
+def: "The portion of a cell bearing surface projections such as axons, filopodia, dendrites, cilia, or flagella that includes the nucleus, but excludes all cell projections." []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0104030 ! cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109240
+name: germ line cell
+def: "A cell that is within the developmental lineage of gametes and is able to pass along its genetic material to offspring." []
+synonym: " germline cell" EXACT []
+synonym: "germ line stem cell" EXACT []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0103710 ! reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109250
+name: female germ cell
+def: "A germ cell that supports female gamete production." []
+is_a: ECAO:0104570 ! germ cell
+relationship: part_of ECAO:0109150 ! female reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109260
+name: male germ cell
+def: "A germ cell that supports male gamete production." []
+is_a: ECAO:0104570 ! germ cell
+relationship: part_of ECAO:0109160 ! male reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109270
+name: mature germ cell
+def: "The reproductive haploid, mature sexual reproductive cell of a multicellular organism." []
+synonym: "gamete" EXACT []
+is_a: ECAO:0104570 ! germ cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109280
+name: primary oocyte
+def: "An immature oocyte that is diploid and has not completed female meiosis I." []
+is_a: ECAO:0104560 ! primordial germ cell
+relationship: part_of ECAO:0109150 ! female reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109290
+name: secondary oocyte
+def: "An immature oocyte that is haploid but has not completed female meiosis II." []
+is_a: ECAO:0104560 ! primordial germ cell
+relationship: develops_from ECAO:0109280 ! primary oocyte
+relationship: part_of ECAO:0109150 ! female reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109300
+name: spermatogonium
+def: "An euploid male germ cell of an early stage of spermatogenesis. It is morphologically unlike spermatocytes and spermatids." []
+is_a: ECAO:0104560 ! primordial germ cell
+relationship: part_of ECAO:0109160 ! male reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109310
+name: spermatocyte
+def: "A male germ cell that develops from spermatogonia." []
+is_a: ECAO:0104560 ! primordial germ cell
+relationship: develops_from ECAO:0109300 ! spermatogonium
+relationship: part_of ECAO:0109160 ! male reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109320
+name: spermatid
+def: "A male germ cell that develops from spermatocytes." []
+is_a: ECAO:0104560 ! primordial germ cell
+relationship: develops_from ECAO:0109310 ! spermatocyte
+relationship: part_of ECAO:0109160 ! male reproductive system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109330
+name: spermatozoid nucleus
+def: "An intracellular anatomical structure in which the male chromosomes are housed." []
+synonym: " male germ cell nucleus" EXACT []
+synonym: "sperm nucleus" EXACT []
+is_a: ECAO:0104160 ! nucleus
+relationship: part_of ECAO:0104247 ! spermatozoid
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109340
+name: oocyte nucleus
+def: "An intracellular anatomical structure in which the female chromosomes are housed." []
+synonym: " female germ cell nucleus" EXACT []
+synonym: "female nucleus" EXACT []
+is_a: ECAO:0104160 ! nucleus
+relationship: part_of ECAO:0104168 ! oocyte
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109350
+name: cellular anatomical entity
+def: "Any constituent part of a cell that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical structure." []
+synonym: "cell part" EXACT []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0104030 ! cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109360
+name: intracellular anatomical structure
+def: "A component of a cell contained within (but not including) the plasma membrane. It includes as examples the nucleus, mitochondria, vesicles, and the cytoskeleton." []
+synonym: " organelle" EXACT []
+synonym: "intracellular part" EXACT []
+is_a: ECAO:0109350 ! cellular anatomical entity
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109370
+name: cell-cell junction
+def: "A cell junction that forms a connection between two or more cells of a multicellular organism." []
+is_a: ECAO:0109350 ! cellular anatomical entity
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109380
+name: desmosome
+def: "A strong cell-cell junction usually found in tissue that experience intense mechanical stress." []
+synonym: "spot desmosome" EXACT []
+is_a: ECAO:0109370 ! cell-cell junction
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109390
+name: septate junction
+def: "A cell-cell junction that forms a continuous band around each cell in an epithelium." []
+synonym: "spetate desmosome" EXACT []
+is_a: ECAO:0109370 ! cell-cell junction
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109400
+name: adherens junction
+def: "A cell-cell junction composed of the epithelial cadherin-catenin complex. " []
+is_a: ECAO:0109370 ! cell-cell junction
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109410
+name: microtubule cytoskeleton
+def: "The part of the cytoskeleton composed of microtubules and associated proteins." []
+is_a: ECAO:0104148 ! cytoskeleton
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109420
+name: filament
+def: "A component of a cytoskeleton consisting of a homo or heteropolymeric fiber constructed from an indeterminate number of protein subunits." []
+synonym: " fiber" EXACT []
+synonym: " polymeric cytoskeletal fiber" EXACT []
+synonym: "protein filament" EXACT []
+is_a: ECAO:0109360 ! intracellular anatomical structure
+relationship: part_of ECAO:0104148 ! cytoskeleton
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109430
+name: spindle pole
+def: "The either end of a spindle, from where the spindle microtubules emanate." []
+is_a: ECAO:0109360 ! intracellular anatomical structure
+relationship: part_of ECAO:0109410 ! microtubule cytoskeleton
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109440
+name: equator region
+def: "The middle region of an oocyte or a zygote, which comprises the most basal portion of the animal and vegetal hemispheres." []
+synonym: "equator" EXACT []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109450
+name: kinetochore
+def: "A multisubunit complex that is located on chromosomes and provides an attachment point for the spindle microtubules." []
+is_a: ECAO:0109350 ! cellular anatomical entity
+relationship: part_of ECAO:0109510 ! chromosome
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109460
+name: apical cilium
+def: "A cilium that develops on the apical surface of a cell." []
+is_a: ECAO:0104340 ! cilium
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109470
+name: short motile cilium
+def: "A cilium of short size exhibiting motility thanks to the molecular motors it contains. In echinoderms, short motile cilia are encountered on the outer surface of the developing embryo as well as in the developing and developed digestive tract of embryos and larvae." []
+is_a: ECAO:0104340 ! cilium
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109480
+name: long immotile cilium
+def: "A cilium of long size that does not contain molecular motors and as such does not exhibit any beating movement. In some echinoderms, long immotile cilia are found, when present, at the animal pole of embryos and constitute the apical tuft." []
+synonym: " elongated cilium" EXACT []
+synonym: "long non-motile cilium" EXACT []
+is_a: ECAO:0104340 ! cilium
+relationship: part_of ECAO:0105380 ! apical tuft
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109490
+name: filopodial cable
+def: "A sheet-like cellular projection that is supported by an ordered network of actin filaments and that is involved in cellular motility and syncytium formation." []
+synonym: "lamellipodia" EXACT []
+is_a: ECAO:0109350 ! cellular anatomical entity
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109500
+name: nucleolus
+def: "A small, dense body present in the nucleus of cells and that is rich in RNA and protein, not bounded by a limiting membrane, and not seen during mitosis. " []
+is_a: ECAO:0109360 ! intracellular anatomical structure
+relationship: part_of ECAO:0104160 ! nucleus
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109510
+name: chromosome
+def: "A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information." []
+is_a: ECAO:0109360 ! intracellular anatomical structure
+relationship: part_of ECAO:0104160 ! nucleus
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109520
+name: animal blastomere
+def: "An undifferentiated cell part of the animal hemisphere of an embryo." []
+is_a: ECAO:0104630 ! blastomere
+relationship: part_of ECAO:0103890 ! animal hemisphere
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109530
+name: vegetal blastomere
+def: "An undifferentiated cell part of the vegetal hemisphere of an embryo." []
+is_a: ECAO:0104630 ! blastomere
+relationship: part_of ECAO:0103900 ! vegetal hemisphere
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109540
+name: macromere descendant cell
+def: "A cell derived from a macromere through cell division." []
+is_a: ECAO:0104010 ! embryonic cell
+relationship: develops_from ECAO:0104670 ! macromere
+relationship: part_of ECAO:0103900 ! vegetal hemisphere
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109550
+name: presumptive blastocoel 
+def: "The inner, extracellular space between blastomeres of the cleavage stage embryos that will gradually expand and form the blastocoel." []
+is_a: ECAO:0103540 ! anatomical space
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109560
+name: blastocoel roof
+def: "The most apical region of the blastocoel." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0106600 ! blastocoel
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109570
+name: blastocoel wall
+def: "The region of the blastocoel comprised in the middle region of the embryo, below the blastocoel roof. " []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0106600 ! blastocoel
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109580
+name: ectoderm cell
+def: "A cell part of the ectoderm germ layer." []
+synonym: "ectodermal cell" EXACT []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0104908 ! ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109590
+name: epidermis
+def: "An epithelium derived from ectoderm and constituting the outermost protective layer of an embryo, a larva, or an adult." []
+is_a: ECAO:0104110 ! tissue
+relationship: develops_from ECAO:0104908 ! ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109600
+name: epithelium
+def: "A tissue that consists of one or more layers of epithelial cells connected to each other by cell junctions and which is underlain by a basal lamina." []
+is_a: ECAO:0104110 ! tissue
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109610
+name: embryonic ectoderm
+def: "The ectoderm that is specifically present in an embryo " []
+is_a: ECAO:0104908 ! ectoderm
+relationship: develops_from ECAO:0105160 ! presumptive ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109620
+name: larval ectoderm
+def: "The ectoderm that is specifically present in a larva." []
+is_a: ECAO:0104908 ! ectoderm
+relationship: develops_from ECAO:0109610 ! embryonic ectoderm
+relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109630
+name: pre-metamorphic organism ectoderm
+def: "The ectoderm that is specifically present in an embryo and a larva but not in an adult." []
+is_a: ECAO:0104908 ! ectoderm
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109640
+name: vegetal tier 1  ectoderm
+def: "The ectoderm that specifically derives from cells of the veg1 tier." []
+synonym: " veg1 ectoderm" EXACT []
+synonym: "veg1 ecto" EXACT []
+is_a: ECAO:0105160 ! presumptive ectoderm
+relationship: develops_from ECAO:0105220 ! ectoendoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109650
+name: non-apical ectoderm
+def: "The ectoderm that is part of the animal ectoderm but located below the apical pole domain ectoderm." []
+is_a: ECAO:0105160 ! presumptive ectoderm
+relationship: part_of ECAO:0105180 ! animal ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109660
+name: apical pole domain
+def: "A thickened region at the animal hemisphere, located at the animal pole, and that contains developing neurons and cells with elongated cilia." []
+synonym: " animal plate" EXACT []
+synonym: " apical plate" EXACT []
+synonym: "animal pole domain" EXACT []
+is_a: ECAO:0109080 ! embryonic region
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109670
+name: apical pole domain ectoderm
+def: "The ectoderm that is part of the animal ectoderm and is specifically restricted to the apical pole domain." []
+synonym: "apical ectoderm" EXACT []
+is_a: ECAO:0105180 ! animal ectoderm
+relationship: part_of ECAO:0109660 ! apical pole domain
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109680
+name: presumptive oral ectoderm
+def: "The portion of the presumptive ectoderm that is located on the oral side of the embryo (which will later generate the ventral side of the larva)." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0105160 ! presumptive ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109690
+name: oral ectoderm
+def: "The portion of the embryonic ectoderm that is located on the oral side of the embryo and will give rise to ventral ectoderm of the larva. " []
+is_a: ECAO:0105160 ! presumptive ectoderm
+relationship: develops_from ECAO:0109680 ! presumptive oral ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109700
+name: presumptive aboral ectoderm
+def: "The portion of the presumptive ectoderm that is located on the aboral side of the embryo (which will later generate the dorsal side of the larva)." []
+synonym: "lateral-aboral pre-state ectoderm" EXACT []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0105160 ! presumptive ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109710
+name: aboral ectoderm
+def: "The portion of the embryonic ectoderm that is located on the aboral side of the embryo and will give rise to dorsal ectoderm of the larva. " []
+is_a: ECAO:0105160 ! presumptive ectoderm
+relationship: develops_from ECAO:0109700 ! presumptive aboral ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109720
+name: oral border ectoderm
+def: "The portion of the border ectoderm that is located on the oral side of the embryo." []
+synonym: " equatorial oral ectoderm" EXACT []
+synonym: " oral BE" EXACT []
+synonym: " ventral BE" EXACT []
+synonym: "veg1 oral ectoderm" EXACT []
+is_a: ECAO:0109080 ! embryonic region
+relationship: develops_from ECAO:0105220 ! ectoendoderm
+relationship: part_of ECAO:0105270 ! border ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109730
+name: aboral border ectoderm
+def: "The portion of the border ectoderm that is located on the aboral side of the embryo." []
+synonym: " aboral BE " EXACT []
+synonym: " dorsal BE" EXACT []
+synonym: "veg1 aboral ectoderm" EXACT []
+is_a: ECAO:0109080 ! embryonic region
+relationship: develops_from ECAO:0105220 ! ectoendoderm
+relationship: part_of ECAO:0105270 ! border ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109740
+name: stomodeal presumptive ectoderm
+def: "The portion of the presumptive oral ectoderm where the stomodeum will form." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0109680 ! presumptive oral ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109750
+name: stomodeal ectoderm
+def: "The portion of the oral ectoderm where the stomodeum forms." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0109690 ! oral ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109760
+name: neuroectoderm 
+def: "The portion of the ectoderm where  neurons form." []
+is_a: ECAO:0104110 ! tissue
+relationship: part_of ECAO:0104908 ! ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109770
+name: presumptive apical pole domain neuron
+def: "An ectodermal progenitor cell from the animal pole domain that will develop into a neuron." []
+synonym: " animal pole domain neuronal progenitor cell" EXACT []
+synonym: "apical pole domain presumptive neuron" EXACT []
+is_a: ECAO:0104740 ! presumptive neuron
+relationship: part_of ECAO:0109660 ! apical pole domain
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109780
+name: presumptive endoderm neuron
+def: "An endodermal cell that will develop into a neuron." []
+synonym: " endoderm-ssociated neuronal progenitor cell" EXACT []
+synonym: "presumptive endodermal neuron" EXACT []
+is_a: ECAO:0104740 ! presumptive neuron
+relationship: part_of ECAO:0106020 ! endoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109790
+name: presumptive postoral arm neuron
+def: "A neuronal progenitor cell present in the epidermis of a postoral arm." []
+is_a: ECAO:0104740 ! presumptive neuron
+relationship: part_of ECAO:0110400 ! postoral arm ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109800
+name: presumptive oral hood neuron
+def: "A neuronal progenitor cell present in the epidermis of the oral hood." []
+is_a: ECAO:0104740 ! presumptive neuron
+relationship: part_of ECAO:0105520 ! oral hood
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109810
+name: postoral arm neuron
+def: "A neuron that is located in the postoral arm ectoderm outside the ciliary band." []
+is_a: ECAO:0104800 ! larval neuron
+relationship: develops_from ECAO:0109790 ! presumptive postoral arm neuron
+relationship: part_of ECAO:0107960 ! postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109820
+name: oral hood neuron
+def: "A neuron that is located in the oral hood." []
+is_a: ECAO:0104800 ! larval neuron
+relationship: develops_from ECAO:0109800 ! presumptive oral hood neuron
+relationship: part_of ECAO:0105520 ! oral hood
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109830
+name: nitric oxide synthase neuron
+def: "A neuron of which transmission is mediated by nitric oxide." []
+synonym: "nitrergic neuron" EXACT []
+is_a: ECAO:0104790 ! neuron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109840
+name: axon
+def: "The long process of a neuron that conducts nerve impulses, usually away from the neural cell body." []
+synonym: "nerve fiber" EXACT []
+is_a: ECAO:0109350 ! cellular anatomical entity
+relationship: part_of ECAO:0104790 ! neuron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109850
+name: neural cell body
+def: "The portion of a neuron that includes the nucleus, but excludes cell projections such as axons." []
+synonym: "neuonal cell body" EXACT []
+is_a: ECAO:0109230 ! cell body
+relationship: part_of ECAO:0104790 ! neuron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109860
+name: apical organ
+def: "A neural structure that develops from the apical pole domain, above the mouth, and contains neurons." []
+is_a: ECAO:0104878 ! neural structure
+relationship: part_of ECAO:0103740 ! larval nervous system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109870
+name: presumptive oral ciliary band
+def: "A specific embryonic or larval ectodermal territory located on the oral side and that will give rise to the oral hood ciliary band." []
+synonym: "pre-oral ciliary band" EXACT []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0104908 ! ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109880
+name: ciliary band cell
+def: "A cell that composes the ciliary band." []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0105460 ! ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109890
+name: oral hood ciliary band cell
+def: "A cell that composes the oral hood ciliary band." []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0105470 ! oral hood ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109900
+name: arm bud ciliary band
+def: "The portion of the ciliary band that covers the arm buds." []
+is_a: ECAO:0107930 ! presumptive ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109910
+name: arm distal tip ciliary band
+def: "The portion of the arm ciliary band that covers the arm distal tip." []
+is_a: ECAO:0105480 ! arm ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109920
+name: arm proximal tip ciliary band
+def: "The portion of the arm ciliary band that covers the arm proximal tip." []
+is_a: ECAO:0105480 ! arm ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109930
+name: arm middle portion ciliary band
+def: "The portion of the arm ciliary band that covers the region of the arm between the distal and proximal tips." []
+is_a: ECAO:0105480 ! arm ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109940
+name: animal presumptive ciliary band
+def: "The portion of the presumptive ciliary band that overlaps with the animal pole domain." []
+is_a: ECAO:0107930 ! presumptive ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109950
+name: vegetal presumtive ciliary band
+def: "The portion of the presumptive ciliary band  located close to the vegetal pole." []
+is_a: ECAO:0107930 ! presumptive ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109960
+name: lateral presumptive ciliary band
+def: "The portion of the presumptive ciliary located between the animal and the vegetal presumptive ciliary bands." []
+is_a: ECAO:0107930 ! presumptive ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109970
+name: preoral presumptive ciliary band
+def: "In species with two separate ciliary bands, a specific embryonic territory that will develop into the preoral ciliary band." []
+is_a: ECAO:0107930 ! presumptive ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109980
+name: postoral presumptive ciliary band
+def: "In species with two separate ciliary bands, a specific embryonic territory that will develop into the postoral ciliary band. " []
+is_a: ECAO:0107930 ! presumptive ciliary band
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0109990
+name: pre-oral hood
+def: "A specific ectodermal territory located on the oral side of the embryo or the larva and that will give rise to the oral hood." []
+synonym: " preoral lobe" EXACT []
+synonym: "preoral hood" EXACT []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110000
+name: arm bud
+def: "An embryonic region that will develop into an arm." []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110010
+name: arm distal tip
+def: "The distal extremity of a larval arm, i.e. the further away from the larval body" []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0107940 ! arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110020
+name: arm proximal tip
+def: "The proximal extremity of a larval arm, i.e. the closest to the larval body" []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0107940 ! arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110030
+name: arm middle portion
+def: "The portion of a larval arm comprised between the distal and proximal tips of the arm.  " []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0107940 ! arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110040
+name: arm bud ectoderm
+def: "The thickened ectodermal region that outlines the arm bud." []
+is_a: ECAO:0104908 ! ectoderm
+relationship: develops_from ECAO:0105270 ! border ectoderm
+relationship: part_of ECAO:0110000 ! arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110050
+name: arm ectoderm
+def: "The ectodermal (or epidermal) portion of the arm skin and that does not include the ciliary band." []
+synonym: "arm epidermis" EXACT []
+is_a: ECAO:0104908 ! ectoderm
+relationship: develops_from ECAO:0110040 ! arm bud ectoderm
+relationship: part_of ECAO:0107940 ! arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110060
+name: arm distal tip ectoderm
+def: "The ectodermal (or epidermal) that covers the distal arm tip and does not include the ciliary band." []
+is_a: ECAO:0110050 ! arm ectoderm
+relationship: part_of ECAO:0110010 ! arm distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110070
+name: arm proximal tip ectoderm
+def: "The ectodermal (or epidermal) that covers the proximal arm tip and does not include the ciliary band." []
+is_a: ECAO:0110050 ! arm ectoderm
+relationship: part_of ECAO:0110020 ! arm proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110080
+name: arm middle portion ectoderm
+def: "The ectodermal (or epidermal) that covers the portion of the arm located between the distal and proximal tips and that does not include the ciliary band." []
+is_a: ECAO:0110050 ! arm ectoderm
+relationship: part_of ECAO:0110030 ! arm middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110090
+name: arm bud skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell present in the arm bud and that will contribute to the development of a skeletal rod." []
+is_a: ECAO:0112340 ! skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110000 ! arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110100
+name: skeletal rod distal tip
+def: "The distal tip of a skeletal rod,  i.e. the further away from its initiation site." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0105700 ! skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110110
+name: skeletal rod proximal tip
+def: "The proximal tip of a skeletal rod,  i.e. the closest to its initiation site." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0105700 ! skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110120
+name: skeletal rod middle portion
+def: "The portion of a skeletal rod comprised between the distal and proximal tips of the rod.  " []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0105700 ! skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110130
+name: arm skeletal rod
+def: "A skeletal rod supporting an arm." []
+is_a: ECAO:0105700 ! skeletal rod
+relationship: develops_from ECAO:0105700 ! skeletal rod
+relationship: part_of ECAO:0107940 ! arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110140
+name: arm skeletal rod distal tip
+def: "The distal tip of an arm skeletal rod,  i.e. the further away from its initiation site and the larval body." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0110130 ! arm skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110150
+name: arm skeletal rod proximal tip
+def: "The proximal tip of an arm skeletal rod,  i.e. the closest to its initiation site and the larval body." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0110130 ! arm skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110160
+name: arm skeletal rod middle portion
+def: "The portion of an arm skeletal rod comprised between the distal and proximal tips of the rod.  " []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0110130 ! arm skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110170
+name: skeletal rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a skeletal rod. " []
+is_a: ECAO:0112340 ! skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105700 ! skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110180
+name: skeletal rod distal tip skeletogenic mesenchyme cell 
+def: "A skeletogenic mesenchyme cell composing the distal tip of a skeletal rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110100 ! skeletal rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110190
+name: skeletal rod proximal tip skeletogenic mesenchyme cell 
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a skeletal rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110110 ! skeletal rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110200
+name: skeletal rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of the region of a skeletal rod comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110120 ! skeletal rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110210
+name: arm skeletal rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of an arm skeletal rod. " []
+synonym: "arm skeletogenic mesenchyme cell " EXACT []
+is_a: ECAO:0112340 ! skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110130 ! arm skeletal rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110220
+name: arm skeletal rod distal tip skeletogenic mesenchyme cell 
+def: "A skeletogenic mesenchyme cell composing the distal tip of an arm skeletal rod. " []
+is_a: ECAO:0110210 ! arm skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110140 ! arm skeletal rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110230
+name: arm skeletal rod proximal tip skeletogenic mesenchyme cell 
+def: "A skeletogenic mesenchyme cell composing the proximal tip of an arm skeletal rod. " []
+is_a: ECAO:0110210 ! arm skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110150 ! arm skeletal rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110240
+name: arm skeletal rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of the region of an arm skeletal rod comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110210 ! arm skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110160 ! arm skeletal rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110250
+name: postoral arm bud
+def: "An arm bud that will develop into a postoral arm." []
+is_a: ECAO:0110000 ! arm bud
+relationship: develops_from ECAO:0105270 ! border ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110260
+name: right postoral arm bud
+def: "The arm bud on the right side of the embryo that will develop into a postoral arm." []
+is_a: ECAO:0110250 ! postoral arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110270
+name: left postoral arm bud
+def: "The arm bud on the left side of the embryo that will develop into a postoral arm." []
+is_a: ECAO:0110250 ! postoral arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110280
+name: postoral arm distal tip
+def: "The distal tip of a postoral arm." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0107960 ! postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110290
+name: right postoral arm distal tip
+def: "The distal tip of a right postoral arm." []
+is_a: ECAO:0110280 ! postoral arm distal tip
+relationship: part_of ECAO:0105570 ! right postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110300
+name: left postoral arm distal tip
+def: "The distal tip of a left postoral arm." []
+is_a: ECAO:0110280 ! postoral arm distal tip
+relationship: part_of ECAO:0105580 ! left postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110310
+name: postoral arm proximal tip
+def: "The proximal tip of a postoral arm." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0107960 ! postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110320
+name: right postoral arm proximal tip
+def: "The proximal tip of a right postoral arm." []
+is_a: ECAO:0110310 ! postoral arm proximal tip
+relationship: part_of ECAO:0105570 ! right postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110330
+name: left postoral arm proximal tip
+def: "The proximal tip of a left postoral arm." []
+is_a: ECAO:0110310 ! postoral arm proximal tip
+relationship: part_of ECAO:0105580 ! left postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110340
+name: postoral arm middle portion
+def: "The middle region of a postoral arm comprised between the distal and proximal tip of the arm." []
+is_a: ECAO:0103530 ! anatomical region
+relationship: part_of ECAO:0107960 ! postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110350
+name: right postoral arm middle portion
+def: "The middle region of a right postoral arm." []
+is_a: ECAO:0110340 ! postoral arm middle portion
+relationship: part_of ECAO:0105570 ! right postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110360
+name: left postoral arm middle portion
+def: "The middle region of a left postoral arm." []
+is_a: ECAO:0110340 ! postoral arm middle portion
+relationship: part_of ECAO:0105580 ! left postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110370
+name: postoral arm bud ectoderm
+def: "The portion of the ectoderm that outlines a postoral arm bud." []
+is_a: ECAO:0110040 ! arm bud ectoderm
+relationship: part_of ECAO:0110250 ! postoral arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110380
+name: right postoral arm bud ectoderm
+def: "The portion of the ectoderm that outlines a postoral arm bud on the right side of the embryo." []
+is_a: ECAO:0110370 ! postoral arm bud ectoderm
+relationship: part_of ECAO:0110260 ! right postoral arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110390
+name: left postoral arm bud ectoderm
+def: "The portion of the ectoderm that outlines a postoral arm bud on the left side of the embryo." []
+is_a: ECAO:0110370 ! postoral arm bud ectoderm
+relationship: part_of ECAO:0110270 ! left postoral arm bud
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110400
+name: postoral arm ectoderm
+def: "The ectoderm (or epidermis) that covers a postoral arm but does not include the ciliary band." []
+synonym: "postoral ectoderm" EXACT []
+is_a: ECAO:0110050 ! arm ectoderm
+relationship: develops_from ECAO:0110370 ! postoral arm bud ectoderm
+relationship: part_of ECAO:0107960 ! postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110410
+name: right postoral arm ectoderm
+def: "The ectoderm (or epidermis) that covers a right postoral arm but does not include the ciliary band." []
+synonym: "right postoral ectoderm" EXACT []
+is_a: ECAO:0110400 ! postoral arm ectoderm
+relationship: develops_from ECAO:0110380 ! right postoral arm bud ectoderm
+relationship: part_of ECAO:0105570 ! right postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110420
+name: left postoral arm ectoderm
+def: "The ectoderm (or epidermis) that covers a left postoral arm but does not include the ciliary band." []
+synonym: "left postoral ectoderm" EXACT []
+is_a: ECAO:0110400 ! postoral arm ectoderm
+relationship: develops_from ECAO:0110390 ! left postoral arm bud ectoderm
+relationship: part_of ECAO:0105580 ! left postoral arm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110430
+name: postoral arm distal tip ectoderm
+def: "The portion of a postoral arm ectoderm located at the distal tip of the arm." []
+is_a: ECAO:0110060 ! arm distal tip ectoderm
+relationship: part_of ECAO:0110280 ! postoral arm distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110440
+name: right postoral arm distal tip ectoderm
+def: "The postoral arm distal tip ectoderm part of a right postoral arm." []
+is_a: ECAO:0110430 ! postoral arm distal tip ectoderm
+relationship: part_of ECAO:0110290 ! right postoral arm distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110450
+name: left postoral arm distal tip ectoderm
+def: "The postoral arm distal tip ectoderm part of a left postoral arm." []
+is_a: ECAO:0110430 ! postoral arm distal tip ectoderm
+relationship: part_of ECAO:0110300 ! left postoral arm distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110460
+name: postoral arm proximal tip ectoderm
+def: "The portion of a postoral arm ectoderm located at the proximal tip of the arm." []
+is_a: ECAO:0110070 ! arm proximal tip ectoderm
+relationship: part_of ECAO:0110310 ! postoral arm proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110470
+name: right postoral arm proximal tip ectoderm
+def: "The postoral arm proximal tip ectoderm part of a right postoral arm." []
+is_a: ECAO:0110460 ! postoral arm proximal tip ectoderm
+relationship: part_of ECAO:0110320 ! right postoral arm proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110480
+name: left postoral arm proximal tip ectoderm
+def: "The postoral arm proximal tip ectoderm part of a left postoral arm." []
+is_a: ECAO:0110460 ! postoral arm proximal tip ectoderm
+relationship: part_of ECAO:0110330 ! left postoral arm proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110490
+name: postoral arm middle portion ectoderm
+def: "The portion of a postoral arm ectoderm located between the distal and proximal tips of the arm." []
+is_a: ECAO:0110080 ! arm middle portion ectoderm
+relationship: part_of ECAO:0110340 ! postoral arm middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110500
+name: right postoral arm middle portion ectoderm
+def: "The postoral arm middle portion ectoderm part of a right postoral arm." []
+is_a: ECAO:0110490 ! postoral arm middle portion ectoderm
+relationship: part_of ECAO:0110350 ! right postoral arm middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110510
+name: left postoral arm middle portion ectoderm
+def: "The postoral arm middle portion ectoderm part of a left postoral arm." []
+is_a: ECAO:0110490 ! postoral arm middle portion ectoderm
+relationship: part_of ECAO:0110360 ! left postoral arm middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110520
+name: postoral rod distal tip
+def: "The distal tip of a postoral rod." []
+is_a: ECAO:0110140 ! arm skeletal rod distal tip
+relationship: part_of ECAO:0107980 ! postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110530
+name: right postoral rod distal tip
+def: "The distal tip of a right postoral rod." []
+is_a: ECAO:0110520 ! postoral rod distal tip
+relationship: part_of ECAO:0105760 ! right postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110540
+name: left postoral rod distal tip
+def: "The distal tip of a left postoral rod." []
+is_a: ECAO:0110520 ! postoral rod distal tip
+relationship: part_of ECAO:0105770 ! left postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110550
+name: postoral rod proximal tip
+def: "The proximal tip of a postoral rod." []
+is_a: ECAO:0110150 ! arm skeletal rod proximal tip
+relationship: part_of ECAO:0107980 ! postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110560
+name: right postoral rod proximal tip
+def: "The proximal tip of a right postoral rod." []
+is_a: ECAO:0110550 ! postoral rod proximal tip
+relationship: part_of ECAO:0105760 ! right postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110570
+name: left postoral rod proximal tip
+def: "The proximal tip of a left postoral rod." []
+is_a: ECAO:0110550 ! postoral rod proximal tip
+relationship: part_of ECAO:0105770 ! left postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110580
+name: postoral rod middle portion
+def: "The middle region of a postoral rod comprised between the distal and proximal tip of the rod." []
+is_a: ECAO:0110160 ! arm skeletal rod middle portion
+relationship: part_of ECAO:0107980 ! postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110590
+name: right postoral rod middle portion
+def: "The middle region of a right postoral rod." []
+is_a: ECAO:0110580 ! postoral rod middle portion
+relationship: part_of ECAO:0105760 ! right postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110600
+name: left postoral rod middle portion
+def: "The middle region of a left postoral rod." []
+is_a: ECAO:0110580 ! postoral rod middle portion
+relationship: part_of ECAO:0105770 ! left postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110610
+name: postoral rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a postoral rod. " []
+is_a: ECAO:0110210 ! arm skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0107980 ! postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110620
+name: right postoral rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right postoral rod. " []
+is_a: ECAO:0110610 ! postoral rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105760 ! right postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110630
+name: left postoral rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left postoral rod. " []
+is_a: ECAO:0110610 ! postoral rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105770 ! left postoral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110640
+name: postoral rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a postoral rod. " []
+is_a: ECAO:0110220 ! arm skeletal rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110520 ! postoral rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110650
+name: right postoral rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right postoral rod. " []
+is_a: ECAO:0110640 ! postoral rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110530 ! right postoral rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110660
+name: left postoral rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left postoral rod. " []
+is_a: ECAO:0110640 ! postoral rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110540 ! left postoral rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110670
+name: postoral rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a postoral rod. " []
+is_a: ECAO:0110230 ! arm skeletal rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110550 ! postoral rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110680
+name: right postoral rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right postoral rod. " []
+is_a: ECAO:0110670 ! postoral rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110560 ! right postoral rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110690
+name: left postoral rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left postoral rod. " []
+is_a: ECAO:0110670 ! postoral rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110570 ! left postoral rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110700
+name: postoral rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a postoral rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110240 ! arm skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110580 ! postoral rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110710
+name: right postoral rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right postoral rod. " []
+is_a: ECAO:0110700 ! postoral rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110590 ! right postoral rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110720
+name: left postoral rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left postoral rod. " []
+is_a: ECAO:0110700 ! postoral rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110600 ! left postoral rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110730
+name: anonymous rod distal tip
+def: "The distal tip of an anonymous rod." []
+is_a: ECAO:0110100 ! skeletal rod distal tip
+relationship: part_of ECAO:0105710 ! anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110740
+name: right anonymous rod distal tip
+def: "The distal tip of a right anonymous rod." []
+is_a: ECAO:0110730 ! anonymous rod distal tip
+relationship: part_of ECAO:0105720 ! right anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110750
+name: left anonymous rod distal tip
+def: "The distal tip of a left anonymous rod." []
+is_a: ECAO:0110730 ! anonymous rod distal tip
+relationship: part_of ECAO:0105730 ! left anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110760
+name: anonymous rod proximal tip
+def: "The proximal tip of an anonymous rod." []
+is_a: ECAO:0110110 ! skeletal rod proximal tip
+relationship: part_of ECAO:0105710 ! anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110770
+name: right anonymous rod proximal tip
+def: "The proximal tip of a right anonymous rod." []
+is_a: ECAO:0110760 ! anonymous rod proximal tip
+relationship: part_of ECAO:0105720 ! right anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110780
+name: left anonymous rod proximal tip
+def: "The proximal tip of a left anonymous rod." []
+is_a: ECAO:0110760 ! anonymous rod proximal tip
+relationship: part_of ECAO:0105730 ! left anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110790
+name: anonymous rod middle portion
+def: "The middle region of an anonymous rod comprised between the distal and proximal tip of the rod." []
+is_a: ECAO:0110120 ! skeletal rod middle portion
+relationship: part_of ECAO:0105710 ! anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110800
+name: right anonymous rod middle portion
+def: "The middle region of a right anonymous rod." []
+is_a: ECAO:0110790 ! anonymous rod middle portion
+relationship: part_of ECAO:0105720 ! right anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110810
+name: left anonymous rod middle portion
+def: "The middle region of a left anonymous rod." []
+is_a: ECAO:0110790 ! anonymous rod middle portion
+relationship: part_of ECAO:0105730 ! left anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110820
+name: anonymous rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of an anonymous rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105710 ! anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110830
+name: right anonymous rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right anonymous rod. " []
+is_a: ECAO:0110820 ! anonymous rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105720 ! right anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110840
+name: left anonymous rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left anonymous rod. " []
+is_a: ECAO:0110820 ! anonymous rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105730 ! left anonymous rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110850
+name: anonymous rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of an anonymous rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110730 ! anonymous rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110860
+name: right anonymous rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right anonymous rod. " []
+is_a: ECAO:0110850 ! anonymous rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110740 ! right anonymous rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110870
+name: left anonymous rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left anonymous rod. " []
+is_a: ECAO:0110850 ! anonymous rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110750 ! left anonymous rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110880
+name: anonymous rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of an anonymous rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110760 ! anonymous rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110890
+name: right anonymous rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right anonymous rod. " []
+is_a: ECAO:0110880 ! anonymous rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110770 ! right anonymous rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110900
+name: left anonymous rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left anonymous rod. " []
+is_a: ECAO:0110880 ! anonymous rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110780 ! left anonymous rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110910
+name: anonymous rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of an anonymous rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110200 ! skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110790 ! anonymous rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110920
+name: right anonymous rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right anonymous rod. " []
+is_a: ECAO:0110910 ! anonymous rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110800 ! right anonymous rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110930
+name: left anonymous rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left anonymous rod. " []
+is_a: ECAO:0110910 ! anonymous rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110810 ! left anonymous rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110940
+name: anterolateral rod distal tip
+def: "The distal tip of an anterolateral rod, i.e. away from its connection with the dorsoventral connecting rod." []
+is_a: ECAO:0110140 ! arm skeletal rod distal tip
+relationship: part_of ECAO:0107970 ! anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110950
+name: right anterolateral rod distal tip
+def: "The distal tip of a right anterolateral rod." []
+is_a: ECAO:0110940 ! anterolateral rod distal tip
+relationship: part_of ECAO:0105740 ! right anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110960
+name: left anterolateral rod distal tip
+def: "The distal tip of a left anterolateral rod." []
+is_a: ECAO:0110940 ! anterolateral rod distal tip
+relationship: part_of ECAO:0105750 ! left anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110970
+name: anterolateral rod proximal tip
+def: "The proximal tip of an anterolateral rod, i.e. in connection with the dorsoventral connecting rod." []
+is_a: ECAO:0110140 ! arm skeletal rod distal tip
+relationship: part_of ECAO:0107970 ! anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110980
+name: right anterolateral rod proximal tip
+def: "The proximal tip of a right anterolateral rod." []
+is_a: ECAO:0110970 ! anterolateral rod proximal tip
+relationship: part_of ECAO:0105740 ! right anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0110990
+name: left anterolateral rod proximal tip
+def: "The proximal tip of a left anterolateral rod." []
+is_a: ECAO:0110970 ! anterolateral rod proximal tip
+relationship: part_of ECAO:0105750 ! left anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111000
+name: anterolateral rod middle portion
+def: "The middle portion of an anterolateral rod, i.e., comprised between the distal and proximal tips of the rod." []
+is_a: ECAO:0110140 ! arm skeletal rod distal tip
+relationship: part_of ECAO:0107970 ! anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111010
+name: right anterolateral rod middle portion
+def: "The middle portion of a right anterolateral rod." []
+is_a: ECAO:0111000 ! anterolateral rod middle portion
+relationship: part_of ECAO:0105740 ! right anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111020
+name: left anterolateral rod middle portion
+def: "The middle portion of a left anterolateral rod." []
+is_a: ECAO:0111000 ! anterolateral rod middle portion
+relationship: part_of ECAO:0105750 ! left anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111030
+name: anterolateral rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of an anterolateral rod. " []
+is_a: ECAO:0110210 ! arm skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0107970 ! anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111040
+name: right anterolateral rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right anterolateral rod. " []
+is_a: ECAO:0111030 ! anterolateral rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105740 ! right anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111050
+name: left anterolateral rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left anterolateral rod. " []
+is_a: ECAO:0111030 ! anterolateral rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105750 ! left anterolateral rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111060
+name: anterolateral rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of an anterolateral rod. " []
+is_a: ECAO:0110220 ! arm skeletal rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110940 ! anterolateral rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111070
+name: right anterolateral rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right anterolateral rod. " []
+is_a: ECAO:0111060 ! anterolateral rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110950 ! right anterolateral rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111080
+name: left anterolateral rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left anterolateral rod. " []
+is_a: ECAO:0111060 ! anterolateral rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110960 ! left anterolateral rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111090
+name: anterolateral rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of an anterolateral rod. " []
+is_a: ECAO:0110230 ! arm skeletal rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110970 ! anterolateral rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111100
+name: right anterolateral rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right anterolateral rod. " []
+is_a: ECAO:0111090 ! anterolateral rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110980 ! right anterolateral rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111110
+name: left anterolateral rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left anterolateral rod. " []
+is_a: ECAO:0111090 ! anterolateral rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0110990 ! left anterolateral rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111120
+name: anterolateral rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of an anterolateral rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110240 ! arm skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111000 ! anterolateral rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111130
+name: right anterolateral rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right anterolateral rod. " []
+is_a: ECAO:0111120 ! anterolateral rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111010 ! right anterolateral rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111140
+name: left anterolateral rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left anterolateral rod. " []
+is_a: ECAO:0111120 ! anterolateral rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111020 ! left anterolateral rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111150
+name: dorsoventral connecting rod animal tip
+def: "The portion of a dorsoventral connecting rod that bends (or branches) to give rise to the anterolateral rod and in some echinoid species to the recurrent rod." []
+synonym: " anterior tip of dorsoventral connecting rod" EXACT []
+synonym: "anterior end of dorsoventral connecting rod" EXACT []
+is_a: ECAO:0104060 ! skeletal element
+relationship: part_of ECAO:0107990 ! dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111160
+name: right dorsoventral connecting rod animal tip
+def: "The animal tip of a right dorsoventral connecting rod." []
+is_a: ECAO:0111150 ! dorsoventral connecting rod animal tip
+relationship: part_of ECAO:0105738 ! right dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111170
+name: left dorsoventral connecting rod animal tip
+def: "The animal tip of a left dorsoventral connecting rod." []
+is_a: ECAO:0111150 ! dorsoventral connecting rod animal tip
+relationship: part_of ECAO:0105748 ! left dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111180
+name: dorsoventral connecting rod distal tip
+def: "The distal tip of a dorsoventral connecting rod, i.e. in connection with the anterolateral rod and in some echinoid species the recurrent rod." []
+is_a: ECAO:0110100 ! skeletal rod distal tip
+relationship: part_of ECAO:0107990 ! dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111190
+name: right dorsoventral connecting rod distal tip
+def: "The distal tip of a right dorsoventral connecting rod." []
+is_a: ECAO:0111180 ! dorsoventral connecting rod distal tip
+relationship: part_of ECAO:0105738 ! right dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111200
+name: left dorsoventral connecting rod distal tip
+def: "The distal tip of a left dorsoventral connecting rod." []
+is_a: ECAO:0111180 ! dorsoventral connecting rod distal tip
+relationship: part_of ECAO:0105748 ! left dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111210
+name: dorsoventral connecting rod proximal tip
+def: "The proximal tip of a dorsoventral connecting rod, i.e. in connection with the anonymous and ventral transverse rods." []
+is_a: ECAO:0110110 ! skeletal rod proximal tip
+relationship: part_of ECAO:0107990 ! dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111220
+name: right dorsoventral connecting rod proximal tip
+def: "The proximal tip of a right dorsoventral connecting rod." []
+is_a: ECAO:0111210 ! dorsoventral connecting rod proximal tip
+relationship: part_of ECAO:0105738 ! right dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111230
+name: left dorsoventral connecting rod proximal tip
+def: "The proximal tip of a left dorsoventral connecting rod." []
+is_a: ECAO:0111210 ! dorsoventral connecting rod proximal tip
+relationship: part_of ECAO:0105748 ! left dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111240
+name: dorsoventral connecting rod middle portion
+def: "The middle portion of a dorsoventral connecting rod, i.e., comprised between the distal and proximal tips of the rod." []
+is_a: ECAO:0110120 ! skeletal rod middle portion
+relationship: part_of ECAO:0107990 ! dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111250
+name: right dorsoventral connecting rod middle portion
+def: "The middle portion of a right dorsoventral connecting rod." []
+is_a: ECAO:0111240 ! dorsoventral connecting rod middle portion
+relationship: part_of ECAO:0105738 ! right dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111260
+name: left dorsoventral connecting rod middle portion
+def: "The middle portion of a left dorsoventral connecting rod." []
+is_a: ECAO:0111240 ! dorsoventral connecting rod middle portion
+relationship: part_of ECAO:0105748 ! left dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111270
+name: dorsoventral connecting rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a dorsoventral connecting rod." []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0107990 ! dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111280
+name: right dorsoventral connecting rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right dorsoventral connecting rod. " []
+is_a: ECAO:0111270 ! dorsoventral connecting rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105738 ! right dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111290
+name: left dorsoventral connecting rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left dorsoventral connecting rod. " []
+is_a: ECAO:0111270 ! dorsoventral connecting rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105748 ! left dorsoventral connecting rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111300
+name: dorsoventral connecting rod animal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of the bended portion of a dorsoventral connecting rod, before this portion elongates and becomes an anterolateral rod or in some echinoid species branches into a anterolateral and a recurrent rods." []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111270 ! dorsoventral connecting rod skeletogenic mesenchyme cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111310
+name: right dorsoventral connecting rod animal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the animal tip of a right dorsoventral connecting rod. " []
+is_a: ECAO:0111300 ! dorsoventral connecting rod animal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111280 ! right dorsoventral connecting rod skeletogenic mesenchyme cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111320
+name: left dorsoventral connecting rod animal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the animal tip of a left dorsoventral connecting rod. " []
+is_a: ECAO:0111300 ! dorsoventral connecting rod animal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111290 ! left dorsoventral connecting rod skeletogenic mesenchyme cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111330
+name: dorsoventral connecting rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a dorsoventral connecting rod, before its bended portion. " []
+is_a: ECAO:0110180 ! skeletal rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111180 ! dorsoventral connecting rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111340
+name: right dorsoventral connecting rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right dorsoventral connecting rod. " []
+is_a: ECAO:0111330 ! dorsoventral connecting rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111190 ! right dorsoventral connecting rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111350
+name: left dorsoventral connecting rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left dorsoventral connecting rod. " []
+is_a: ECAO:0111330 ! dorsoventral connecting rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111200 ! left dorsoventral connecting rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111360
+name: dorsoventral connecting rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a dorsoventral connecting rod, in the vicinity of an anonymous and ventral transverse rod. " []
+is_a: ECAO:0110190 ! skeletal rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111210 ! dorsoventral connecting rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111370
+name: right dorsoventral connecting rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right dorsoventral connecting rod. " []
+is_a: ECAO:0111360 ! dorsoventral connecting rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111220 ! right dorsoventral connecting rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111380
+name: left dorsoventral connecting rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left dorsoventral connecting rod. " []
+is_a: ECAO:0111360 ! dorsoventral connecting rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111230 ! left dorsoventral connecting rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111390
+name: dorsoventral connecting rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a dorsoventral connecting rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110200 ! skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111240 ! dorsoventral connecting rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111400
+name: right dorsoventral connecting rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right dorsoventral connecting rod. " []
+is_a: ECAO:0111390 ! dorsoventral connecting rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111250 ! right dorsoventral connecting rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111410
+name: left dorsoventral connecting rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left dorsoventral connecting rod. " []
+is_a: ECAO:0111390 ! dorsoventral connecting rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111260 ! left dorsoventral connecting rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111420
+name: ventral transverse rod distal tip
+def: "The distal tip of a ventral transverse rod, i.e. away from the connection with the dorsoventral connecting and anonymous rods." []
+is_a: ECAO:0110100 ! skeletal rod distal tip
+relationship: part_of ECAO:0108000 ! ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111430
+name: right ventral transverse rod distal tip
+def: "The distal tip of a right ventral transverse rod." []
+is_a: ECAO:0111180 ! dorsoventral connecting rod distal tip
+relationship: part_of ECAO:0105850 ! right ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111440
+name: left ventral transverse rod distal tip
+def: "The distal tip of a left ventral transverse rod." []
+is_a: ECAO:0111180 ! dorsoventral connecting rod distal tip
+relationship: part_of ECAO:0105860 ! left ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111450
+name: ventral transverse rod proximal tip
+def: "The proximal tip of a ventral transverse rod, i.e. in connection with the dorsoventral connecting and anonymous rods." []
+is_a: ECAO:0110110 ! skeletal rod proximal tip
+relationship: part_of ECAO:0108000 ! ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111460
+name: right ventral transverse rod proximal tip
+def: "The proximal tip of a right ventral transverse rod." []
+is_a: ECAO:0111210 ! dorsoventral connecting rod proximal tip
+relationship: part_of ECAO:0105850 ! right ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111470
+name: left ventral transverse rod proximal tip
+def: "The proximal tip of a left ventral transverse rod." []
+is_a: ECAO:0111210 ! dorsoventral connecting rod proximal tip
+relationship: part_of ECAO:0105860 ! left ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111480
+name: ventral transverse rod middle portion
+def: "The middle portion of a ventral transverse rod, i.e., comprised between the distal and proximal tips of the rod." []
+is_a: ECAO:0110120 ! skeletal rod middle portion
+relationship: part_of ECAO:0108000 ! ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111490
+name: right ventral transverse rod middle portion
+def: "The middle portion of a right ventral transverse rod." []
+is_a: ECAO:0111240 ! dorsoventral connecting rod middle portion
+relationship: part_of ECAO:0105850 ! right ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111500
+name: left ventral transverse rod middle portion
+def: "The middle portion of a left ventral transverse rod." []
+is_a: ECAO:0111240 ! dorsoventral connecting rod middle portion
+relationship: part_of ECAO:0105860 ! left ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111510
+name: ventral transverse rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a ventral transverse rod." []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0108000 ! ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111520
+name: right ventral transverse rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right ventral transverse rod. " []
+is_a: ECAO:0111510 ! ventral transverse rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105850 ! right ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111530
+name: left ventral transverse rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left ventral transverse rod. " []
+is_a: ECAO:0111510 ! ventral transverse rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105860 ! left ventral transverse rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111540
+name: ventral transverse rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a ventral transverse rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111420 ! ventral transverse rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111550
+name: right ventral transverse rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right ventral transverse rod. " []
+is_a: ECAO:0111540 ! ventral transverse rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111430 ! right ventral transverse rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111560
+name: left ventral transverse rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left ventral transverse rod. " []
+is_a: ECAO:0111540 ! ventral transverse rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111440 ! left ventral transverse rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111570
+name: ventral transverse rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a ventral transverse rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111450 ! ventral transverse rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111580
+name: right ventral transverse rod  proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right ventral transverse rod. " []
+is_a: ECAO:0111570 ! ventral transverse rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111460 ! right ventral transverse rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111590
+name: left ventral transverse rod  proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left ventral transverse rod. " []
+is_a: ECAO:0111570 ! ventral transverse rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111470 ! left ventral transverse rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111600
+name: ventral transverse rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a ventral transverse rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110200 ! skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111480 ! ventral transverse rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111610
+name: right ventral transverse rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right ventral transverse rod. " []
+is_a: ECAO:0111600 ! ventral transverse rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111490 ! right ventral transverse rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111620
+name: left ventral transverse rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left ventral transverse rod. " []
+is_a: ECAO:0111600 ! ventral transverse rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111500 ! left ventral transverse rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111630
+name: body rod distal tip
+def: "The growing tip of a body rod as it extends dorsally away from an anonymous rod." []
+synonym: " body rod distal tip" EXACT []
+synonym: "posterior tip body rod" EXACT []
+is_a: ECAO:0110100 ! skeletal rod distal tip
+relationship: part_of ECAO:0105880 ! body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111640
+name: right body rod distal tip
+def: "The distal tip of a right body rod." []
+synonym: "right body rod distal tip" EXACT []
+is_a: ECAO:0111630 ! body rod distal tip
+relationship: part_of ECAO:0105900 ! right body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111650
+name: left body rod distal tip
+def: "The distal tip of a left body rod." []
+synonym: "left body rod distal tip" EXACT []
+is_a: ECAO:0111630 ! body rod distal tip
+relationship: part_of ECAO:0105890 ! left body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111660
+name: body rod proximal tip
+def: "The proximal tip of a body rod, i.e. in connection with an anonymous rod." []
+is_a: ECAO:0110110 ! skeletal rod proximal tip
+relationship: part_of ECAO:0105880 ! body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111670
+name: right body rod proximal tip
+def: "The proximal tip of a right body rod." []
+is_a: ECAO:0111660 ! body rod proximal tip
+relationship: part_of ECAO:0105900 ! right body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111680
+name: left body rod proximal tip
+def: "The proximal tip of a left body rod." []
+is_a: ECAO:0111660 ! body rod proximal tip
+relationship: part_of ECAO:0105890 ! left body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111690
+name: body rod middle portion
+def: "The middle portion of a body rod, i.e., comprised between the distal and proximal tips of the rod." []
+is_a: ECAO:0110120 ! skeletal rod middle portion
+relationship: part_of ECAO:0105880 ! body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111700
+name: right body rod middle portion
+def: "The middle portion of a right body rod." []
+is_a: ECAO:0111690 ! body rod middle portion
+relationship: part_of ECAO:0105900 ! right body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111710
+name: left body rod middle portion
+def: "The middle portion of a left body rod." []
+is_a: ECAO:0111690 ! body rod middle portion
+relationship: part_of ECAO:0105890 ! left body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111720
+name: body rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a body rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105880 ! body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111730
+name: right body rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right body rod. " []
+is_a: ECAO:0111720 ! body rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105900 ! right body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111740
+name: left body rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left body rod. " []
+is_a: ECAO:0111720 ! body rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105890 ! left body rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111750
+name: body rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a body rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111630 ! body rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111760
+name: right body rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right body rod. " []
+is_a: ECAO:0111750 ! body rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111640 ! right body rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111770
+name: left body rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left body rod. " []
+is_a: ECAO:0111750 ! body rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111650 ! left body rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111780
+name: body rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a body rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111660 ! body rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111790
+name: right body rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right body rod. " []
+is_a: ECAO:0111780 ! body rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111670 ! right body rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111800
+name: left body rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left body rod. " []
+is_a: ECAO:0111780 ! body rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111680 ! left body rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111810
+name: body rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a body rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110200 ! skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111690 ! body rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111820
+name: right body rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right body rod. " []
+is_a: ECAO:0111810 ! body rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111700 ! right body rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111830
+name: left body rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left body rod. " []
+is_a: ECAO:0111810 ! body rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111710 ! left body rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111840
+name: scheitel skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a scheitel." []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105870 ! scheitel
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111850
+name: recurrent rod distal tip
+def: "The distal tip of a recurrent rod, i.e. in connection with a dorsoventral connecting rod." []
+is_a: ECAO:0110100 ! skeletal rod distal tip
+relationship: part_of ECAO:0108040 ! recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111860
+name: right recurrent rod distal tip
+def: "The distal tip of a right recurrent rod." []
+is_a: ECAO:0111850 ! recurrent rod distal tip
+relationship: part_of ECAO:0105940 ! right recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111870
+name: left recurrent rod distal tip
+def: "The distal tip of a left recurrent rod." []
+is_a: ECAO:0111850 ! recurrent rod distal tip
+relationship: part_of ECAO:0105950 ! left recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111880
+name: recurrent rod proximal tip
+def: "The proximal tip of a recurrent rod, i.e. away from a dorsoventral connecting rod." []
+is_a: ECAO:0110110 ! skeletal rod proximal tip
+relationship: part_of ECAO:0108040 ! recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111890
+name: right recurrent rod proximal tip
+def: "The proximal tip of a right recurrent rod." []
+is_a: ECAO:0111880 ! recurrent rod proximal tip
+relationship: part_of ECAO:0105940 ! right recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111900
+name: left recurrent rod proximal tip
+def: "The proximal tip of a left recurrent rod." []
+is_a: ECAO:0111880 ! recurrent rod proximal tip
+relationship: part_of ECAO:0105950 ! left recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111910
+name: recurrent rod middle portion
+def: "The middle portion of a recurrent rod, i.e., comprised between the distal and proximal tips of the rod." []
+is_a: ECAO:0110120 ! skeletal rod middle portion
+relationship: part_of ECAO:0108040 ! recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111920
+name: right recurrent rod middle portion
+def: "The middle portion of a right recurrent rod." []
+is_a: ECAO:0111910 ! recurrent rod middle portion
+relationship: part_of ECAO:0105940 ! right recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111930
+name: left recurrent rod middle portion
+def: "The middle portion of a left recurrent rod." []
+is_a: ECAO:0111910 ! recurrent rod middle portion
+relationship: part_of ECAO:0105950 ! left recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111940
+name: recurrent rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a recurrent rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0108040 ! recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111950
+name: right recurrent rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a right recurrent rod. " []
+is_a: ECAO:0111940 ! recurrent rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105940 ! right recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111960
+name: left recurrent rod skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell part of a left recurrent rod. " []
+is_a: ECAO:0111940 ! recurrent rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0105950 ! left recurrent rod
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111970
+name: recurrent rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a recurrent rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111850 ! recurrent rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111980
+name: right recurrent rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a right recurrent rod. " []
+is_a: ECAO:0111970 ! recurrent rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111860 ! right recurrent rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0111990
+name: left recurrent rod distal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the distal tip of a left recurrent rod. " []
+is_a: ECAO:0111970 ! recurrent rod distal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111870 ! left recurrent rod distal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112000
+name: recurrent rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a recurrent rod. " []
+is_a: ECAO:0110170 ! skeletal rod skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111880 ! recurrent rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112010
+name: right recurrent rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a right recurrent rod. " []
+is_a: ECAO:0112000 ! recurrent rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111890 ! right recurrent rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112020
+name: left recurrent rod proximal tip skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the proximal tip of a left recurrent rod. " []
+is_a: ECAO:0112000 ! recurrent rod proximal tip skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111900 ! left recurrent rod proximal tip
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112030
+name: recurrent rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a recurrent rod, comprised between the distal and proximal tips of the rod. " []
+is_a: ECAO:0110200 ! skeletal rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111910 ! recurrent rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112040
+name: right recurrent rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a right recurrent rod. " []
+is_a: ECAO:0112030 ! recurrent rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111920 ! right recurrent rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112050
+name: left recurrent rod middle portion skeletogenic mesenchyme cell
+def: "A skeletogenic mesenchyme cell composing the middle portion of a left recurrent rod. " []
+is_a: ECAO:0112030 ! recurrent rod middle portion skeletogenic mesenchyme cell
+relationship: part_of ECAO:0111930 ! left recurrent rod middle portion
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112060
+name: enoderm cell
+def: "A cell part of the endoderm germ layer." []
+synonym: "endodermal cell" EXACT []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0106020 ! endoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112070
+name: vegetal tier 1 endoderm
+def: "The presumptive endoderm that develops specifically from the cells of the vegetal tier 1." []
+synonym: " veg1 endoderm" EXACT []
+synonym: "veg1 endo" EXACT []
+is_a: ECAO:0106010 ! presumptive endoderm
+relationship: develops_from ECAO:0105220 ! ectoendoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112080
+name: vegetal tier 2 endoderm
+def: "The presumptive endoderm that develops specifically from the cells of the vegetal tier 2." []
+synonym: " veg2 endoderm" EXACT []
+synonym: "veg2 endo" EXACT []
+is_a: ECAO:0106010 ! presumptive endoderm
+relationship: develops_from ECAO:0105230 ! endomesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112090
+name: embryonic endoderm
+def: "The endoderm that is specifically present in an embryo." []
+is_a: ECAO:0106020 ! endoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112100
+name: larval endoderm
+def: "The endoderm that is specifically present in a larva." []
+is_a: ECAO:0106020 ! endoderm
+relationship: develops_from ECAO:0112090 ! embryonic endoderm
+relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112110
+name: pre-metamorphic organism endoderm
+def: "The endoderm that is specifically present in an embryo post-gastrulation and a larva but not in an adult." []
+is_a: ECAO:0106020 ! endoderm
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112120
+name: archenteron tip
+def: "The anterior territory of the archenteron." []
+synonym: " anterior archenteron" EXACT []
+synonym: " tip of archetron" EXACT []
+synonym: "archenteron roof" EXACT []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0106030 ! archenteron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112130
+name: archenteron wall
+def: "The layer of cells that form the archenteron, but at the level of its anterior tip and that of the blastopore." []
+is_a: ECAO:0104070 ! embryonic structure
+relationship: part_of ECAO:0106030 ! archenteron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112140
+name: middle hindgut
+def: "The middle portion of the hindgut, between its anterior and posterior portions." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0106040 ! hindgut
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112150
+name: middle midgut
+def: "The middle portion of the midgut, between its anterior and posterior portions." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0106070 ! midgut
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112160
+name: middle foregut
+def: "The middle portion of the foregut, between its anterior and posterior portions." []
+is_a: ECAO:0109080 ! embryonic region
+relationship: part_of ECAO:0106140 ! foregut
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112170
+name: esophagus
+def: "The anterior end of the animal digestive tract that connects the mouth to the stomach." []
+is_a: ECAO:0104050 ! digestive system element
+relationship: part_of ECAO:0109060 ! post-embryonic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112180
+name: stomach
+def: "The central region of the animal digestive tract that serves as a digestive organ." []
+is_a: ECAO:0104050 ! digestive system element
+relationship: part_of ECAO:0109060 ! post-embryonic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112190
+name: intestine
+def: "The posterior region of the animal digestive tract that extends from the stomach to the anus." []
+is_a: ECAO:0104050 ! digestive system element
+relationship: part_of ECAO:0109060 ! post-embryonic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112200
+name: coelomic evagination
+def: "The outpocketing of the mesoderm constituting the tip of the archenteron and forming a bilobed bag (or pouch) lying on the top of the archenteron roof." []
+synonym: " unpaire evagination of the coelom" EXACT []
+synonym: " unpaired coelomic evaginations" EXACT []
+synonym: " unpaired coelomic outpocketing" EXACT []
+synonym: " unpaired coelomic rudiment" EXACT []
+synonym: "unpaired coelomic pouch" EXACT []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: develops_from ECAO:0112120 ! archenteron tip
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112210
+name: coelomic pouch
+def: "A mesodermally lined pouch (or pocket) lying between the anterior tip of the archenteron and the outer body wall." []
+is_a: ECAO:0106770 ! coelom
+relationship: develops_from ECAO:0112120 ! archenteron tip
+relationship: part_of ECAO:0109050 ! pre-metamorphic organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112220
+name: constriction
+def: "A narrowing (or shrinking) within a tissue or organ to delineate different regions with different fates." []
+is_a: ECAO:0109000 ! anatomical element
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112230
+name: coelomic constriction
+def: "A constriction taking place at the level of a coelom. It can either separate the coelom from the archenteron or lead to the compartmentalization  of the coelom into distinct regions. " []
+synonym: "coelom constriction" EXACT []
+is_a: ECAO:0112220 ! constriction
+relationship: part_of ECAO:0106770 ! coelom
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112240
+name: anterior coelomic pouch
+def: "In species with a posterior enterocoel, the anterior coelomic pouch is the one that develops from the unpaired coelomic evaginations at the tip of the archenteron. " []
+is_a: ECAO:0112210 ! coelomic pouch
+relationship: develops_from ECAO:0112200 ! coelomic evagination
+relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112250
+name: larval epidermis
+def: "An epidermal tissue present in the larva." []
+is_a: ECAO:0104110 ! tissue
+relationship: develops_from ECAO:0104908 ! ectoderm
+relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112260
+name: ventral epiderms
+def: "The epidermal tissue of the larva that surrounds the mouth. " []
+synonym: " circumoral ectoderm" EXACT []
+synonym: " circumoral epithelium" EXACT []
+synonym: "oral epidermis" EXACT []
+is_a: ECAO:0106828 ! larval epithelium
+relationship: develops_from ECAO:0105200 ! ventral ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112270
+name: dorsal epidermis
+def: "The epidermal tissue of the larva that is on the side opposite to the mouth." []
+synonym: "aboral epidermis" EXACT []
+is_a: ECAO:0106828 ! larval epithelium
+relationship: develops_from ECAO:0105210 ! dorsal ectoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112280
+name: mesenchyme
+def: "A tissue composed of mesenchymal cells." []
+is_a: ECAO:0104110 ! tissue
+relationship: develops_from ECAO:0106210 ! mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112290
+name: mesenchyme cell
+def: "A cell that has undergone epithelial to mesenchymal transition and is capable of migration." []
+synonym: " migratory cell" EXACT []
+synonym: " motile cell" EXACT []
+synonym: "mesenchymal cell" EXACT []
+is_a: ECAO:0104030 ! cell
+relationship: develops_from ECAO:0106210 ! mesoderm
+relationship: part_of ECAO:0112280 ! mesenchyme
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112300
+name: presumptive skeletogenic mesoderm
+def: "The region of the early embryo that will develop into skeletogenic mesoderm." []
+is_a: ECAO:0106200 ! presumptive mesoderm
+relationship: develops_from ECAO:0106210 ! mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112310
+name: skeletogenic mesoderm
+def: "The subset of the mesoderm germ layer that will exclusively give rise to the endoskeleton." []
+is_a: ECAO:0104110 ! tissue
+relationship: develops_from ECAO:0112300 ! presumptive skeletogenic mesoderm
+relationship: part_of ECAO:0106210 ! mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112320
+name: skeletogenic mesoderm cell
+def: "A cell that has the potential of developing into a skeletogenic mesenchyme cell (or skeletal cell). " []
+synonym: "skeletogenic cell" EXACT []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0112310 ! skeletogenic mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112330
+name: skeletogenic mesenchyme
+def: "The portion of the mesenchyme tissue that constitutes the endoskeleton." []
+is_a: ECAO:0104110 ! tissue
+relationship: develops_from ECAO:0112310 ! skeletogenic mesoderm
+relationship: part_of ECAO:0112280 ! mesenchyme
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112340
+name: skeletogenic mesenchyme cell
+def: "A cell that after having undergone epithelial to mesenchymal transition participates in constituting the endoskeleton." []
+synonym: "skeletal cell" EXACT []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0112330 ! skeletogenic mesenchyme
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112350
+name: syncytial filipodial cable
+def: "A filopodial cable that participates in the establishment of a syncytium." []
+synonym: " syncytial cable" EXACT []
+synonym: "syncytial lamellipodia" EXACT []
+is_a: ECAO:0104110 ! tissue
+relationship: part_of ECAO:0106250 ! syncytium
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112360
+name: chain of skeletogenic mesenchyme cell
+def: "A straight, syncitial network that either links the two ventrolateral skeletogenic mesenchyme clusters within the subequatorial skeletogenic mesenchyme ring or extends from the ventrolateral skeletogenic mesenchyme clusters towards the animal pole domain." []
+is_a: ECAO:0104070 ! embryonic structure
+relationship: develops_from ECAO:0105698 ! embryonic skeletogenic mesenchyme
+relationship: part_of ECAO:0106270 ! subequatorial skeletogenic mesenchyme ring
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112370
+name: oral chain of skeletogenic mesenchyme cell
+def: "The chain of skeletogenic mesenchyme cell that within the subequatorial skeletogenic mesenchyme ring links the two ventrolateral skeletogenic mesenchyme clusters on the oral side of the embryo. The ventral transverse rods will be deposited along this cellular strand." []
+synonym: " oral chain of PMCs" EXACT []
+synonym: " ventral skeletogenic mesenchyme chain" EXACT []
+synonym: "ventral chain of PMCs" EXACT []
+is_a: ECAO:0112360 ! chain of skeletogenic mesenchyme cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112380
+name: aboral chain of skeletogenic mesenchyme cell
+def: "The chain of skeletogenic mesenchyme cell that within the subequatorial skeletogenic mesenchyme ring links the two ventrolateral skeletogenic mesenchyme clusters on the aboral side of the embryo. The body rods will be deposited along this cellular strand." []
+synonym: " aboral chain of PMCs" EXACT []
+synonym: " dorsal skeletogenic mesenchyme chain" EXACT []
+synonym: "dorsal chain of PMCs" EXACT []
+is_a: ECAO:0112360 ! chain of skeletogenic mesenchyme cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112390
+name: skeletogenic mesenchyme cluster
+def: "A cluster of skeletogenic mesenchyme cells that aggregates before any calcification event whether in the embryo, the larva, or the adult." []
+is_a: ECAO:0103510 ! anatomical structure
+relationship: part_of ECAO:0103560 ! multicellular organism
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112400
+name: lateral chain of skeletogenic mesenchyme cell
+def: "A chain of skeletogenic mesenchyme cell that extends from a ventrolateral cluster toward the animal pole. A dorsoventral connecting rod will be deposited along this cellular strand." []
+synonym: "lateral chain of PMCs" EXACT []
+is_a: ECAO:0112360 ! chain of skeletogenic mesenchyme cell
+relationship: develops_from ECAO:0106240 ! embryonic skeletogenic mesenchyme cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112410
+name: right lateral chain of skeletogenic mesenchyme cell
+def: "The lateral chain that forms on the right side of the embryo from the right ventrolateral cluster." []
+synonym: "right lateral chain of PMCs" EXACT []
+is_a: ECAO:0106320 ! lateral chain of skeletogenic mesenchyme
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112420
+name: left lateral chain of skeletogenic mesenchyme cell
+def: "The lateral chain that forms on the left side of the embryo from the left ventrolateral cluster." []
+synonym: "left lateral chain of PMCs" EXACT []
+is_a: ECAO:0106320 ! lateral chain of skeletogenic mesenchyme
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112430
+name: triradiate spicule
+def: "A skeletal, calcified structure composed of three elongated skeletal rods." []
+synonym: "triradiate element" EXACT []
+is_a: ECAO:0104060 ! skeletal element
+relationship: develops_from ECAO:0105650 ! triradiate spicule rudiment
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112440
+name: ventrolateral spicule granule
+def: "A spicule granule that forms within a ventrolateral cluster of skeletogenic mesenchyme cells." []
+is_a: ECAO:0105630 ! spicule granule
+relationship: develops_from ECAO:0108060 ! ventrolateral skeletogenic mesenchyme cluster
+relationship: part_of ECAO:0103820 ! embryonic endoskeleton
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112450
+name: right ventrolateral spicule granule
+def: "A ventrolateral spicule granule that forms on the right side of the embryo. " []
+is_a: ECAO:0112440 ! ventrolateral spicule granule
+relationship: develops_from ECAO:0106300 ! right ventrolateral skeletogenic mesenchyme cluster
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112460
+name: left ventrolateral spicule granule
+def: "A ventrolateral spicule granule that forms on the left side of the embryo. " []
+is_a: ECAO:0112440 ! ventrolateral spicule granule
+relationship: develops_from ECAO:0106310 ! left ventrolateral skeletogenic mesenchyme cluster
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112470
+name: ventrolateral triradiate spicule rudiment
+def: "A triradiate spicule rudiment that forms within a ventrolateral cluster of skeletogenic mesenchyme cells." []
+is_a: ECAO:0112440 ! ventrolateral spicule granule
+relationship: develops_from ECAO:0112440 ! ventrolateral spicule granule
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112480
+name: presumptive non-skeletogenic mesoderm
+def: "An embryonic, larval or adult region that will develop into non-skeletogenic mesoderm and/or mesenchyme derivatives." []
+is_a: ECAO:0106200 ! presumptive mesoderm
+relationship: develops_from ECAO:0106210 ! mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112490
+name: non-skeletogenic mesoderm
+def: "The subset of the mesoderm germ layer that will give rise to all mesoderm tissue derivatives but the endoskeleton; e.g. muscles, coeloms, pigment cells, blastocoelar cells." []
+is_a: ECAO:0106210 ! mesoderm
+relationship: develops_from ECAO:0112480 ! presumptive non-skeletogenic mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112500
+name: non-skeletogenic mesoderm cell
+def: "A cell part of the mesoderm germ layer subset that will give rise to all mesoderm tissue derivatives but the endoskeleton; e.g. muscles, coeloms, pigment cells, blastocoelar cells." []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0112490 ! non-skeletogenic mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112510
+name: non-skeletogenic mesenchyme
+def: "All mesenchyme present in the embryo, larva, or adult but that does not constitute the endoskeleton." []
+is_a: ECAO:0112280 ! mesenchyme
+relationship: develops_from ECAO:0112490 ! non-skeletogenic mesoderm
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112520
+name: non-skeletogenic mesenchyme cell
+def: "A mesenchymal cell that participates in the elaboration of all mesenchyme derivatives but the endoskeleton; e.g. pigment cells, blastocoelar cells." []
+is_a: ECAO:0104030 ! cell
+relationship: part_of ECAO:0112280 ! mesenchyme
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112530
+name: vegetal tier 2 non-skeletogenic mesoderm
+def: "The presumptive embryonic non-skeletogenic mesoderm that derives from the vegetal 2 tier cells and not from the small micromere descendants." []
+is_a: ECAO:0108070 ! presumptive embryonic non-skeletogenic mesoderm
+relationship: develops_from ECAO:0105100 ! vegetal tier 2
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112540
+name: embryonic mesenchyme cell
+def: "In echinoderms with no embryonic endoskeleton, all embryonic cells that have undergone an epithelial-to-mesenchymal transition and will participate in the elaboration of non-skeletogenic mesoderm derivatives; e.g. pigment cells, blastocoelar cells." []
+is_a: ECAO:0112290 ! mesenchyme cell
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112550
+name: larval mesenchyme cell
+def: "In echinoderms with no larval endoskeleton, all larval mesenchyme cells that participate in the elaboration of non-skeletogenic mesoderm derivatives; e.g. pigment cells, blastocoelar cells." []
+is_a: ECAO:0112290 ! mesenchyme cell
+relationship: part_of ECAO:0103580 ! larva
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112560
+name: oral presumptive embryonic non-skeletogenic mesoderm
+def: "The presumptive embryonic non-skeletogenic mesoderm that in the vegetal plate is on the oral side of the embryo." []
+synonym: " oral non-skeletogenic mesoderm" EXACT []
+synonym: " ventral non-skeletogenic mesoderm" EXACT []
+synonym: "ventral presumptive embryonic non-skeletogenic mesoderm" EXACT []
+is_a: ECAO:0108070 ! presumptive embryonic non-skeletogenic mesoderm
+relationship: part_of ECAO:0104020 ! vegetal plate
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112570
+name: aboral presumptive embryonic non-skeletogenic mesoderm
+def: "The presumptive embryonic non-skeletogenic mesoderm that in the vegetal plate is on the aboral side of the embryo." []
+synonym: " aboral non-skeletogenic mesoderm" EXACT []
+synonym: " dorsal non-skeletogenic mesoderm" EXACT []
+synonym: "dorsal presumptive embryonic non-skeletogenic mesoderm" EXACT []
+is_a: ECAO:0108070 ! presumptive embryonic non-skeletogenic mesoderm
+relationship: part_of ECAO:0104020 ! vegetal plate
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112580
+name: immune cell
+def: "A cell of the immune system that is involved in protecting the body against infectious disease and foreign invaders." []
+synonym: "immunocyte" EXACT []
+is_a: ECAO:0112290 ! mesenchyme cell
+relationship: part_of ECAO:0103660 ! immune system
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112590
+name: phagocytic filopodial cell
+def: "The subset of the filopodial cells that are phagocytic and express the immune effector gene 185/333." []
+is_a: ECAO:0106510 ! filopodial cell
+relationship: develops_from ECAO:0106490 ! blastocoelar cell
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112600
+name: sphincter primordium
+def: "An initial constriction within the archenteron marking where a sphincter will form." []
+synonym: " gut constriction" EXACT []
+synonym: "sphincter constriction" EXACT []
+is_a: ECAO:0112220 ! constriction
+relationship: part_of ECAO:0103570 ! embryo
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112610
+name: pyloric sphincter primordium
+def: "The initial constriction within the archenteron that will develop into the pyloric sphincter and separates the midgut and hindgut." []
+synonym: " midgut-hindgut constriction" EXACT []
+synonym: " pyloric constriction" EXACT []
+synonym: "pyloric sphincter constriction" EXACT []
+is_a: ECAO:0112600 ! sphincter primordium
+relationship: part_of ECAO:0106030 ! archenteron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112620
+name: cardiac sphincter primordium
+def: "The initial constriction within the archenteron that will develop into the cardiac sphincter and separates the foregut and the midgut." []
+synonym: " cardiac constriction" EXACT []
+synonym: " foregut-midgut constriction" EXACT []
+synonym: "cardiac sphincter constriction" EXACT []
+is_a: ECAO:0112600 ! sphincter primordium
+relationship: part_of ECAO:0106030 ! archenteron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112630
+name: anal sphincter primordium
+def: "The initial constriction at the posterior end of the archenteron (i.e. at the level of the blastopore) that will develop into the anal sphincter." []
+synonym: " anal constriction" EXACT []
+synonym: "anal sphincter contriction" EXACT []
+is_a: ECAO:0112600 ! sphincter primordium
+relationship: develops_from ECAO:0106030 ! archenteron
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112640
+name: sphincter cell
+def: "A cell that is part of a sphincter." []
+synonym: "myoepithelial cell" EXACT []
+is_a: ECAO:0108110 ! muscle cell
+relationship: part_of ECAO:0106610 ! sphincter
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112650
+name: pyloric sphincter cell
+def: "A cell that is part of a pyloric sphincter." []
+is_a: ECAO:0112640 ! sphincter cell
+relationship: part_of ECAO:0106620 ! pyloric sphincter
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112660
+name: cardiac sphincter cell
+def: "A cell that is part of a cardiac sphincter." []
+is_a: ECAO:0112640 ! sphincter cell
+relationship: part_of ECAO:0106630 ! cardiac sphincter
+property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
+
+[Term]
+id: ECAO:0112670
+name: anal sphincter cell
+def: "A cell that is part of an anal sphincter." []
+synonym: "anal pore muscle cell" EXACT []
+is_a: ECAO:0112640 ! sphincter cell
+relationship: part_of ECAO:0106640 ! anal sphincter
 property_value: oio:hasOBONamespace "echinoderm_anatomy" xsd:string
 
 [Typedef]
