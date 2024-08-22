@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ecao/ecao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ecao/releases/2024-07-28/ecao-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ecao/releases/2024-08-22/ecao-simple.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Echinoderm Anatomy and Development Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
@@ -2008,6 +2008,424 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         </rdfs:subClassOf>
         <obo:IAO_0000115>invagination episode</obo:IAO_0000115>
         <rdfs:label>invagination episode</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000800 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000800">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000130"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Fertilization has occurred but the zygote has not divided (1-cell stage).</obo:IAO_0000115>
+        <rdfs:label>stage 1</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000810">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000800"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is composed of 2 cells (2-cell stage).</obo:IAO_0000115>
+        <rdfs:label>stage 2</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000820">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000810"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is composed of 4 cells (4-cell stage).</obo:IAO_0000115>
+        <rdfs:label>stage 3</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000830 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000830">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000820"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is composed of 8 cells (8-cell stage).</obo:IAO_0000115>
+        <rdfs:label>stage 4</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000840 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000840">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000830"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is composed of 16 cells (16-cell stage).</obo:IAO_0000115>
+        <rdfs:label>stage 5</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000850 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000850">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000840"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is composed of 28-32 cells (includes 28- and 32-cell stages).</obo:IAO_0000115>
+        <rdfs:label>stage 6</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000860 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000860">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000850"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is composed of 56-64 cells (includes 56-, 60-, and 64-cell stages).</obo:IAO_0000115>
+        <rdfs:label>stage 7</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000870">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000860"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is an early blastula (early blastula stage).</obo:IAO_0000115>
+        <rdfs:label>stage 8</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000880 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000880">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000870"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is a mid-blastula (includes mid-blastula and motile blastula stages).</obo:IAO_0000115>
+        <rdfs:label>stage 9</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000890">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000880"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is a late blastula, it is still spherical, and the vegetal plate has not formed (late blastula stage).</obo:IAO_0000115>
+        <rdfs:label>stage 10</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000900 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000900">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo, whether or not hatched from the fertilization envelope, has formed a vegetal plate but gastrulation has not begun (vegetal plate stage).</obo:IAO_0000115>
+        <rdfs:label>stage 11</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000910 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000910">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000900"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo has hatched from the fertilization envelope and is undergoing the earliest cell movements of gastrulation (includes early, mid-, and late mesenchyme blastula stages and blastopore formation stage).</obo:IAO_0000115>
+        <rdfs:label>stage 12</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000920 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000920">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000910"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is undergoing the first phase of archenteron extension (early gastrula stage).</obo:IAO_0000115>
+        <rdfs:label>stage 13</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000930">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000920"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is undergoing the middle phase of archenteron extension (mid-gastrula stage).</obo:IAO_0000115>
+        <rdfs:label>stage 14</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000940">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000930"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo is undergoing the last phase of archenteron extension (late gastrula stage).</obo:IAO_0000115>
+        <rdfs:label>stage 15</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000950">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000940"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo has completed archenteron elongation and mesenchyme cell ingression is complete (includes early prism and early organogenesis stages).</obo:IAO_0000115>
+        <rdfs:label>stage 16</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000960 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000960">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo has paired coelomic evaginations at the tip of the archenteron but lacks a stomodeal invagination and gut constrictions (includes late prism and mid-organogenesis stages).</obo:IAO_0000115>
+        <rdfs:label>stage 17</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000970 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000970">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000960"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo has paired coelomic pouches along with a stomodeal invagination and gut constrictions (includes late and very late organogenesis stages).</obo:IAO_0000115>
+        <rdfs:label>stage 18</rdfs:label>
+        <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECAO_0000980 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECAO_0000980">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECAO_0000970"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The embryo has an open mouth (open mouth stage).</obo:IAO_0000115>
+        <rdfs:label>stage 19</rdfs:label>
         <oio:hasOBONamespace>ecao_developmental_stage</oio:hasOBONamespace>
     </owl:Class>
     

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ecao/releases/2024-07-28/ecao-simple.owl
+data-version: ecao/releases/2024-08-22/ecao-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -665,6 +665,158 @@ id: ECAO:0000710
 name: invagination episode
 def: "invagination episode" []
 relationship: part_of ECAO:0000320 ! gastrula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000800
+name: stage 1
+def: "Fertilization has occurred but the zygote has not divided (1-cell stage)." []
+relationship: immediately_preceded_by ECAO:0000100 ! spermatogenesis period
+relationship: part_of ECAO:0000130 ! embryogenesis
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000810
+name: stage 2
+def: "The embryo is composed of 2 cells (2-cell stage)." []
+relationship: immediately_preceded_by ECAO:0000800 ! stage 1
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000820
+name: stage 3
+def: "The embryo is composed of 4 cells (4-cell stage)." []
+relationship: immediately_preceded_by ECAO:0000810 ! stage 2
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000830
+name: stage 4
+def: "The embryo is composed of 8 cells (8-cell stage)." []
+relationship: immediately_preceded_by ECAO:0000820 ! stage 3
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000840
+name: stage 5
+def: "The embryo is composed of 16 cells (16-cell stage)." []
+relationship: immediately_preceded_by ECAO:0000830 ! stage 4
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000850
+name: stage 6
+def: "The embryo is composed of 28-32 cells (includes 28- and 32-cell stages)." []
+relationship: immediately_preceded_by ECAO:0000840 ! stage 5
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000860
+name: stage 7
+def: "The embryo is composed of 56-64 cells (includes 56-, 60-, and 64-cell stages)." []
+relationship: immediately_preceded_by ECAO:0000850 ! stage 6
+relationship: part_of ECAO:0000150 ! cleavage period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000870
+name: stage 8
+def: "The embryo is an early blastula (early blastula stage)." []
+relationship: immediately_preceded_by ECAO:0000860 ! stage 7
+relationship: part_of ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000880
+name: stage 9
+def: "The embryo is a mid-blastula (includes mid-blastula and motile blastula stages)." []
+relationship: immediately_preceded_by ECAO:0000870 ! stage 8
+relationship: part_of ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000890
+name: stage 10
+def: "The embryo is a late blastula, it is still spherical, and the vegetal plate has not formed (late blastula stage)." []
+relationship: immediately_preceded_by ECAO:0000880 ! stage 9
+relationship: part_of ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000900
+name: stage 11
+def: "The embryo, whether or not hatched from the fertilization envelope, has formed a vegetal plate but gastrulation has not begun (vegetal plate stage)." []
+relationship: immediately_preceded_by ECAO:0000890 ! stage 10
+relationship: part_of ECAO:0000240 ! blastula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000910
+name: stage 12
+def: "The embryo has hatched from the fertilization envelope and is undergoing the earliest cell movements of gastrulation (includes early, mid-, and late mesenchyme blastula stages and blastopore formation stage)." []
+relationship: immediately_preceded_by ECAO:0000900 ! stage 11
+relationship: part_of ECAO:0000320 ! gastrula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000920
+name: stage 13
+def: "The embryo is undergoing the first phase of archenteron extension (early gastrula stage)." []
+relationship: immediately_preceded_by ECAO:0000910 ! stage 12
+relationship: part_of ECAO:0000320 ! gastrula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000930
+name: stage 14
+def: "The embryo is undergoing the middle phase of archenteron extension (mid-gastrula stage)." []
+relationship: immediately_preceded_by ECAO:0000920 ! stage 13
+relationship: part_of ECAO:0000320 ! gastrula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000940
+name: stage 15
+def: "The embryo is undergoing the last phase of archenteron extension (late gastrula stage)." []
+relationship: immediately_preceded_by ECAO:0000930 ! stage 14
+relationship: part_of ECAO:0000320 ! gastrula period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000950
+name: stage 16
+def: "The embryo has completed archenteron elongation and mesenchyme cell ingression is complete (includes early prism and early organogenesis stages)." []
+relationship: immediately_preceded_by ECAO:0000940 ! stage 15
+relationship: part_of ECAO:0000420 ! organogenesis period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000960
+name: stage 17
+def: "The embryo has paired coelomic evaginations at the tip of the archenteron but lacks a stomodeal invagination and gut constrictions (includes late prism and mid-organogenesis stages)." []
+relationship: immediately_preceded_by ECAO:0000950 ! stage 16
+relationship: part_of ECAO:0000420 ! organogenesis period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000970
+name: stage 18
+def: "The embryo has paired coelomic pouches along with a stomodeal invagination and gut constrictions (includes late and very late organogenesis stages)." []
+relationship: immediately_preceded_by ECAO:0000960 ! stage 17
+relationship: part_of ECAO:0000420 ! organogenesis period
+property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
+
+[Term]
+id: ECAO:0000980
+name: stage 19
+def: "The embryo has an open mouth (open mouth stage)." []
+relationship: immediately_preceded_by ECAO:0000970 ! stage 18
+relationship: part_of ECAO:0000420 ! organogenesis period
 property_value: oio:hasOBONamespace "ecao_developmental_stage" xsd:string
 
 [Term]
