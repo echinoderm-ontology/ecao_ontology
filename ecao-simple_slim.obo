@@ -120,14 +120,14 @@ namespace: ecao_developmental_stage
 [Term]
 id: ECAO:0000131
 name: pan-echinoderm namespace
-def: "1:2 Namespace for Biological process during which the embryo forms. This process starts with the fertilization of a mature oocyte by a mature spermatozoid. It is characterized by a succession of rapid mitotic divisions with no significant growth, but with axis establishment and cellular differentiation, thereby leading to the development of a multicellular embryo." []
+def: "Any developmental stage or other term that is used in a pan-echinoterm context." []
 relationship: part_of ECAO:0000130 ! embryogenesis
 namespace: ecao_developmental_stage
 
 [Term]
 id: ECAO:0000133
 name: in-taxon namespace
-def: "2:2 Namespace for Biological process during which the embryo forms. This process starts with the fertilization of a mature oocyte by a mature spermatozoid. It is characterized by a succession of rapid mitotic divisions with no significant growth, but with axis establishment and cellular differentiation, thereby leading to the development of a multicellular embryo." []
+def: "Any developmental stage or anatomical element that is restricted to only some echinoderm groups or species." []
 relationship: part_of ECAO:0000130 ! embryogenesis
 namespace: ecao_developmental_stage
 
