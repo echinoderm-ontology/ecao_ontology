@@ -1,0 +1,29 @@
+Dear Peter and Troy,
+Jeni, Macie and I have gone through Troy's workflow and we are returning a revised version to you. Here's a summary:
+ 
+1) All cells in RED with STRIKETHROUGH TEXT are no longer relevant to the new ECAO and should be retired/removed. These are mostly: 1) old embryonic terms that have been superceded by new terms in the revised ontology or 2) stage data for terms that are entirely larval or adult. The new ontology focuses on the embryonic phase of the life cycle and we want to wait until a later time to devise proper stages for the larval and adult phases. So for now, it's best not to include any stages for larval/adult terms.
+ 
+2) We have double-checked to ensure that all the embryonic terms in the workflow have the correct pan-echinoderm stages. There were a few errors-  these corrections have already been made and are highlighted by yellow cells.
+ 
+3) Column X (marked by red with strikethrough) should be removed.
+ 
+4) Special notes regarding ONLY the section of the workflow related to developmental stages (rows 1-100):
+ 
+a) Text shown in RED font has been modified compared to the previous version of the workflow (definitions have been updated to match those that will be published).
+b) All cells in grey correspond to P. lividus specific stages (in case Troy would like to indicate those as such)
+c) All cells in pink indicate cells in which the content may change given the Is_a relationship Peter and Troy may be developing to generate a pan-echinoderm stage series in parallel with the species-specific stage series. I
+ 
+I've also read Erik's message- let Jeni and me know if you need to talk with us about his suggestions or if you want to proceed on your own.
+ 
+I hope these changes will smooth the implementation of the ontology on Echinobase so that we can finally submit the manuscript and begin to use the ontology for curation.
+ 
+Best,
+Chuck 
+
+-- 
+Dr. Charles A. Ettensohn
+Professor of Biological Sciences
+Carnegie Mellon University
+Tel: 412-268-5849
+Email: ettensohn@cmu.edu
+
