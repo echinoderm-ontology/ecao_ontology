@@ -1,1 +1,1 @@
-organism|https://docs.google.com/spreadsheets/d/e/2PACX-1vTv2vv-VYgz9QsK390qBuFieNDJrRqjOmOOLlst7krJ7Lk8QJG3l5QQCUzwzovyovlXZkcOSnuUY6o5/pub?output=tsv
+organism|https://docs.google.com/spreadsheets/d/1Y5ycXbl0RxVgZv1EjfQAp_qHuHGxb8sI/export?format=tsv
